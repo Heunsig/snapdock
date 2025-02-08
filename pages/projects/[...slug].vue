@@ -33,39 +33,57 @@ useSeoMeta({
       />
     </main>
     <nav class="col-start-1 md:col-start-2 row-start-2 md:row-start-1 md:row-span-2 flex flex-wrap flex-row md:flex-col items-center md:items-start gap-3 -ml-2 md:ml-0">
-      <UButton
-        color="gray" 
-        variant="link"
-        icon="i-mdi-globe"
+      <NuxtLink
+        v-if="page.meta.homepage"
+        :to="page.meta.homepage"
+        target="_blank"
       >
-        Homepage
+        <UButton
+          color="gray" 
+          variant="link"
+          icon="i-mdi-globe"
+        >
+          Homepage
 
-        <template #trailing>
-          <UIcon name="i-mdi-external-link" class="w-4 h-4"/>
-        </template>
-      </UButton>
-      <UButton
-        color="gray" 
-        variant="link"
-        icon="i-mdi-docker"
+          <template #trailing>
+            <UIcon name="i-mdi-external-link" class="w-4 h-4"/>
+          </template>
+        </UButton>
+      </NuxtLink>
+      <NuxtLink
+        v-if="page.meta.docker"
+        :to="page.meta.docker"
+        target="_blank"
       >
-        Docker Guide
+        <UButton
+          color="gray" 
+          variant="link"
+          icon="i-mdi-docker"
+        >
+          Docker Guide
 
-        <template #trailing>
-          <UIcon name="i-mdi-external-link" class="w-4 h-4"/>
-        </template>
-      </UButton>
-      <UButton 
-        color="gray" 
-        variant="link"
-        icon="i-mdi-github"
+          <template #trailing>
+            <UIcon name="i-mdi-external-link" class="w-4 h-4"/>
+          </template>
+        </UButton>
+      </NuxtLink>
+      <NuxtLink
+        v-if="page.meta.github"
+        :to="page.meta.github"
+        target="_blank"
       >
-        Github
+        <UButton 
+          color="gray" 
+          variant="link"
+          icon="i-mdi-github"
+        >
+          Github
 
-        <template #trailing>
-          <UIcon name="i-mdi-external-link" class="w-4 h-4"/>
-        </template>
-      </UButton>
+          <template #trailing>
+            <UIcon name="i-mdi-external-link" class="w-4 h-4"/>
+          </template>
+        </UButton>
+      </NuxtLink>
     </nav>
   </div>
   <div v-else>Home not found</div>
