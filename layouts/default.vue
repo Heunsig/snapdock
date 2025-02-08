@@ -5,13 +5,15 @@
         <h1 class="text-lg font-bold dark:text-gray-50">SaaS Explorer</h1>
       </NuxtLink>
     </header>
-    <main class="grid flex-1">
-      <div class="p-4">
+    <main 
+      class="grid flex-1"
+    >
+      <div class="p-4 container mx-auto xl:max-w-7xl">
         <slot />
       </div>
     </main>
-    <footer>
-      <h1 class="text-2xl">footer</h1>
+    <footer class="p-4 border-t dark:border-gray-800">
+      SaaS Explorer
     </footer>
   </div>
 </template>

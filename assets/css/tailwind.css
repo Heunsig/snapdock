@@ -8,3 +8,9 @@
     font-weight: normal;
   }
 }
+
+@layer components {
+  .card-title {
+    @apply text-base font-semibold;
+  }
+}

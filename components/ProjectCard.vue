@@ -4,30 +4,33 @@
       id: string,
       name: string,
       description: string,
-      logo?: string
+      logo?: string,
+      tags?: string[]
     }
   }>()
 </script>
 <template>
-  <UCard
-    :ui="{
-      background: 'dark:bg-gray-800',
-      header: {
-         padding: 'px-4 py-4 pb-1'
-      },
-      body: {
-        padding: 'px-4 py-4 pt-1'
-      },
-    }"
-  >
-  <template #header>
-    <h2 class="text-base font-semibold">
-      {{ project.name }}
-    </h2>
-  </template>
-
-  <div>
-    {{ project.description }}
-  </div>
-</UCard>
+  <article class="relative dark:bg-gray-800 ring-1 dark:ring-gray-900 rounded-lg p-4 pb-5 border-t dark:border-gray-700">
+    <div class="pb-4 flex items-center gap-3">
+      <NuxtImg v-if="project.logo" :src="project.logo" :alt="`${project.name} logo`" width="28" />
+      <h3 class="text-lg font-semibold text-gray-100">
+        <!-- inset makes the link full with and height to the card -->
+        <!-- <NuxtLink :to="`/projects/${project.id}`" class="absolute inset-0"></NuxtLink> -->
+        {{ project.name }}
+      </h3>
+    </div>
+    <div class="pt-0">
+      <p class="dark:text-gray-300">
+        {{ project.description }}
+      </p>
+    </div>
+    
+    <div 
+      v-if="project.tags"
+      class="pt-4 flex flex-wrap items-center gap-2"
+    >
+      <span class="text-sm dark:text-gray-400" v-for="tag in project.tags">#{{ tag }}</span>
+      
+    </div>
+  </article>
 </template>
