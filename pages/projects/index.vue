@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const { data } = await useAsyncData('navigation', () => queryCollectionNavigation('projects', ['name', 'description', 'logo', 'tags']).where('draft', '=', false))
+console.log(data)
 const searchKeyword = ref('')
 </script>
 
@@ -51,33 +53,19 @@ const searchKeyword = ref('')
       />
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 mt-8">
-      <ProjectCard 
-        :project="{
-          id: '1',
-          name: 'audiobookshelf',
-          description: 'This is a project description',
-          logo: '/assets/images/logos/audiobookshelf.png',
-          tags: ['monitoring']
-        }"
-      />
-      <ProjectCard 
-        :project="{
-          id: '2',
-          name: 'Dozzle',
-          description: 'This is a project description',
-          logo: '/assets/images/logos/dozzle.svg',
-          tags: ['self-hosted', 'cozy', 'book']
-        }"
-      />
-      <ProjectCard 
-        :project="{
-          id: '3',
-          name: 'Vikunja',
-          description: 'This is a project description',
-          logo: '/assets/images/logos/vikunja.svg',
-          tags: ['greenish']
-        }"
-      />
+      <template v-if="data">
+        <ProjectCard 
+          v-for="project in data[0].children" 
+          :project="{
+            id: project.path,
+            name: project.name,
+            description: project.description,
+            path: project.path,
+            logo: project.logo,
+            tags: project.tags
+          }"
+        />
+      </template>
     </div>
   </div>
 </template>

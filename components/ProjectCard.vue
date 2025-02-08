@@ -1,21 +1,24 @@
 <script setup lang="ts">
-  const props = defineProps<{
+  defineProps<{
     project: {
       id: string,
       name: string,
       description: string,
+      path: string,
       logo?: string,
       tags?: string[]
     }
   }>()
 </script>
 <template>
-  <article class="relative dark:bg-gray-800 ring-1 dark:ring-gray-900 rounded-lg p-4 pb-5 border-t dark:border-gray-700">
+  <article 
+    class="relative dark:bg-gray-800 ring-1 dark:ring-gray-900 rounded-lg p-4 pb-5 border-t dark:border-gray-700 hover:dark:bg-slate-800 transition-all duration-150"
+  >
     <div class="pb-4 flex items-center gap-3">
       <NuxtImg v-if="project.logo" :src="project.logo" :alt="`${project.name} logo`" width="28" />
       <h3 class="text-lg font-semibold text-gray-100">
         <!-- inset makes the link full with and height to the card -->
-        <!-- <NuxtLink :to="`/projects/${project.id}`" class="absolute inset-0"></NuxtLink> -->
+        <NuxtLink :to="project.path" class="absolute inset-0"></NuxtLink>
         {{ project.name }}
       </h3>
     </div>
