@@ -32,7 +32,7 @@ useSeoMeta({
         :value="page"
       />
     </main>
-    <nav class="col-start-1 md:col-start-2 row-start-2 md:row-start-1 md:row-span-2 flex flex-wrap flex-row md:flex-col items-center md:items-start gap-3 -ml-2 md:ml-0">
+    <nav class="col-start-1 md:col-start-2 row-start-2 md:row-start-1 md:row-span-2 flex flex-wrap flex-row md:flex-col items-center md:items-start gap-1 md:gap-3 -ml-2 md:ml-0">
       <NuxtLink
         v-if="page.meta.homepage"
         :to="page.meta.homepage"
