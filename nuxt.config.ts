@@ -1,5 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  routeRules: {
+    "/": {
+      redirect: "/projects"
+    }
+  },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: ['@nuxt/ui', '@nuxt/fonts', '@nuxt/image', '@nuxt/content'],
