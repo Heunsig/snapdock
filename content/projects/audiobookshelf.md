@@ -8,14 +8,29 @@ github: 'https://github.com/advplyr/audiobookshelf'
 draft: false
 ---
 
-# My First Page
+# Getting Started
 
-Here is some content.
-
-  ```js
-  export default () => {
-    console.log('Code block')
-  }
-  ```
-
-> Block quote
+1. Create a folder
+    ```bash
+    mkdir audiobookshelf
+    ```
+2. Move to the folder and create a `docker-compose.yml` file and add the following content:
+    ```yaml
+    services:
+      audiobookshelf:
+        image: ghcr.io/advplyr/audiobookshelf:latest
+        ports:
+          - 13378:80
+        volumes:
+          - .:/audiobooks
+          - .:/podcasts
+          - .:/config
+          - .:/metadata
+        environment:
+          - TZ=America/Toronto
+    ```
+3. Run the following command to start the container:
+    ```bash
+    docker compose up -d
+    ```
+4. Open the browser and go to `http://localhost:13378` to access the Audiobookshelf.
