@@ -1,6 +1,6 @@
 ---
 name: Dozzle
-description: Dozzle is a free and open source audiobook manager for your Mac, Windows, and Linux.
+description: Real-time logging and monitoring for Docker in the browser.
 logo: '/assets/images/logos/dozzle.svg'
 homepage: 'https://dozzle.dev/'
 docker: 'https://dozzle.dev/guide/getting-started'

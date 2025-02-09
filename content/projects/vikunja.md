@@ -1,6 +1,6 @@
 ---
 name: Vikunja
-description: Dozzle is a free and open source audiobook manager for your Mac, Windows, and Linux.
+description: Vikunja, the fluffy, open-source, self-hostable to-do app.
 logo: '/assets/images/logos/vikunja.svg'
 homepage: 'https://vikunja.io/'
 docker: 'https://vikunja.io/docs/full-docker-example/'
