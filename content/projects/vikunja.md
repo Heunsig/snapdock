@@ -4,7 +4,7 @@ description: Dozzle is a free and open source audiobook manager for your Mac, Wi
 logo: '/assets/images/logos/vikunja.svg'
 homepage: 'https://vikunja.io/'
 docker: 'https://vikunja.io/docs/full-docker-example/'
-tags: ['monitoring', 'self-hosted']
+tags: []
 draft: false
 ---
 
