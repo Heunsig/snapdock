@@ -20,16 +20,16 @@ useSeoMeta({
         <NuxtImg
           :src="page.logo"
           :alt="`${page.name} logo`"
-          sizes="48px md:h-12"
           class="md:row-span-2"
+          width="48"
         />
         <h1 class="text-lg font-bold">{{ page.name }}</h1>
         <p class="col-span-2 md:col-span-1 md:col-start-2 text-sm dark:text-gray-300">{{ page.description }}</p>
       </div>
     </header>
-    <main class="row-start-3 md:row-start-2">
+    <main class="row-start-3 md:row-start-2 prose dark:prose-invert max-w-none md:mt-8">
       <ContentRenderer 
-        :value="page" 
+        :value="page"
       />
     </main>
     <nav class="col-start-1 md:col-start-2 row-start-2 md:row-start-1 md:row-span-2 flex flex-wrap flex-row md:flex-col items-center md:items-start gap-3 -ml-2 md:ml-0">

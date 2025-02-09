@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const { data } = await useAsyncData('navigation', () => queryCollectionNavigation('projects', ['name', 'description', 'logo', 'tags']).where('draft', '=', false))
-console.log(data)
 const searchKeyword = ref('')
 </script>
 

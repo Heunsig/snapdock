@@ -11,3 +11,11 @@ draft: false
 # My First Page
 
 Here is some content.
+
+  ```js
+  export default () => {
+    console.log('Code block')
+  }
+  ```
+
+> Block quote
