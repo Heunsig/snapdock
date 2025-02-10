@@ -11,10 +11,10 @@ published: true
 
 ## Getting Started
 
-1. Clone the repository and move to the folder
+1. Clone the repository and move to the docker-compose folder
     ```bash
     git clone https://github.com/docspell/docker docspell-docker
-    cd docspell-docker
+    cd docspell-docker/docker-compose
     ```
 2. Run the following command to start the container
     ```bash
