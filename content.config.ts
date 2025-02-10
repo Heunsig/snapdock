@@ -10,7 +10,7 @@ export default defineContentConfig({
         description: z.string(),
         logo: z.string(),
         tags: z.array(z.string()).optional(),
-        draft: z.boolean().optional()
+        published: z.boolean().optional()
       })
     })
   }

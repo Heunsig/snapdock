@@ -6,7 +6,7 @@ homepage: 'https://dozzle.dev/'
 docker: 'https://dozzle.dev/guide/getting-started'
 github: 'https://github.com/amir20/dozzle'
 tags: []
-draft: false
+published: true
 ---
 
 ## Getting Started

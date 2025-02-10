@@ -5,7 +5,7 @@ logo: '/assets/images/logos/wordpress.svg'
 homepage: 'https://wordpress.org/'
 docker: 'https://github.com/nezhar/wordpress-docker-compose'
 tags: []
-draft: false
+published: true
 ---
 
 ## Getting Started

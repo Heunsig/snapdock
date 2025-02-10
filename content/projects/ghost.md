@@ -6,7 +6,7 @@ homepage: 'https://ghost.org/'
 docker: 'https://hub.docker.com/_/ghost/'
 github: 'https://github.com/TryGhost/Ghost'
 tags: []
-draft: false
+published: true
 ---
 
 ## Getting Started

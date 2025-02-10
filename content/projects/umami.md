@@ -5,7 +5,7 @@ logo: '/assets/images/logos/umami.svg'
 homepage: 'https://umami.is/'
 github: 'https://github.com/umami-software/umami'
 tags: []
-draft: false
+published: true
 ---
 
 ## Getting Started

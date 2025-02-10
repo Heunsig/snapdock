@@ -5,7 +5,7 @@ logo: '/assets/images/logos/uptime-kuma.svg'
 homepage: 'https://uptime.kuma.pet/'
 github: 'https://github.com/louislam/uptime-kuma'
 tags: []
-draft: false
+published: true
 ---
 
 ## Getting Started

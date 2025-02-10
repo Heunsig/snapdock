@@ -5,7 +5,7 @@ logo: '/assets/images/logos/audiobookshelf.png'
 homepage: 'https://www.audiobookshelf.org/'
 docker: 'https://www.audiobookshelf.org/docs/#docker-compose-install'
 github: 'https://github.com/advplyr/audiobookshelf'
-draft: false
+published: true
 ---
 
 ## Getting Started

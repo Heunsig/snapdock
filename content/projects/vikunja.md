@@ -5,7 +5,7 @@ logo: '/assets/images/logos/vikunja.svg'
 homepage: 'https://vikunja.io/'
 docker: 'https://vikunja.io/docs/full-docker-example/'
 tags: []
-draft: false
+published: true
 ---
 
 ## Getting Started

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data } = await useAsyncData('navigation', () => queryCollectionNavigation('projects', ['name', 'description', 'logo', 'tags']).where('draft', '=', false))
+const { data } = await useAsyncData('navigation', () => queryCollectionNavigation('projects', ['name', 'description', 'logo', 'tags']).where('published', '=', true))
 
 const projects = computed(() => data.value?.[0]?.children ?? [])
 const search = useRouteQuery('q', '')

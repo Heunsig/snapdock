@@ -6,7 +6,7 @@ homepage: 'https://filebrowser.org/'
 docker: 'https://filebrowser.org/installation#docker'
 github: 'https://github.com/filebrowser/filebrowser'
 tags: []
-draft: false
+published: true
 ---
 
 ## Getting Started
