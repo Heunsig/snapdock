@@ -8,7 +8,7 @@ tags: []
 draft: false
 ---
 
-# Getting Started
+## Getting Started
 
 1. Run docker 
     ```bash

@@ -8,7 +8,7 @@ tags: []
 draft: false
 ---
 
-# Getting Started
+## Getting Started
 
 1. Create a folder
     ```bash
