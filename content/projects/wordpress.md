@@ -79,4 +79,8 @@ draft: false
     ```bash
     docker compose up -d
     ```
-5. Open the browser and go to `http://localhost` to access the Wordpress.
+5. Open the browser and go to the following URLs to access the Wordpress
+    ```
+    Your site: http://localhost
+    Wordpress Admin: http://localhost/wp-admin
+    ```
