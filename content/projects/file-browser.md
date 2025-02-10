@@ -11,11 +11,12 @@ published: true
 
 ## Getting Started
 
-1. Create a folder
+1. Create a folder and move to the folder
     ```bash
     mkdir file-browser
+    cd file-browser
     ```
-3. Move to the folder and create required folders and files
+3. Create required folders and files
     ```bash
     mkdir srv
     touch filebrowser.db

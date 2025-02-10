@@ -11,11 +11,12 @@ published: true
 
 ## Getting Started
 
-1. Create a folder
+1. Create a folder and move to the folder
     ```bash
     mkdir dozzle
+    cd dozzle
     ```
-2. Move to the folder and create a `docker-compose.yml` file and add the following content:
+2. Create a `docker-compose.yml` file and add the following content:
     ```yaml
     services:
       dozzle:

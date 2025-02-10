@@ -10,11 +10,12 @@ published: true
 
 ## Getting Started
 
-1. Clone github repository
+1. Clone github repository and move to the folder
     ```bash
     git clone https://github.com/umami-software/umami.git
+    cd umami
     ```
-2. Move to the folder and run the following command to start the container:
+2. Run the following command to start the container:
     ```bash
     docker compose up -d
     ```

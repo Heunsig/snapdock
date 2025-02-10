@@ -10,13 +10,13 @@ published: true
 
 ## Getting Started
 
-1. Create a folder
+1. Create a folder and move to the folder
     ```bash
     mkdir vikunja
-    ```
-2. Move to the folder and create `files` folder and change the ownership
-    ```bash
     cd vikunja
+    ```
+2. Create `files` folder and change the ownership
+    ```bash
     mkdir files
     chown 1000 files
     ```
