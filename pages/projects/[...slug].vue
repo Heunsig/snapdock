@@ -84,6 +84,23 @@ useSeoMeta({
           </template>
         </UButton>
       </NuxtLink>
+      <NuxtLink
+        v-if="page.meta.demo"
+        :to="page.meta.demo"
+        target="_blank"
+      >
+        <UButton 
+          color="gray" 
+          variant="link"
+          icon="i-mdi-play-circle"
+        >
+          Live Demo
+
+          <template #trailing>
+            <UIcon name="i-mdi-external-link" class="w-4 h-4"/>
+          </template>
+        </UButton>
+      </NuxtLink>
     </nav>
   </div>
   <div v-else>Home not found</div>
