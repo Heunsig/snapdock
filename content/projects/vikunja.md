@@ -61,4 +61,4 @@ published: true
     ```bash
     docker compose up -d
     ```
-5. Open the browser and go to `http://localhost:3456` to access the Vikunja.
+5. Open the browser and go to [http://localhost:3456](http://localhost:3456) to access the Vikunja.

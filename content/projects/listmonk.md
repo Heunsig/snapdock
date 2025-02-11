@@ -24,4 +24,4 @@ published: true
     ```bash
     docker compose up -d
     ```
-4. Open the browser and go to `http://localhost:9000` to access the Listmonk.
+4. Open the browser and go to [http://localhost:9000](http://localhost:9000) to access the Listmonk.

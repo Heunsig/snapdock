@@ -29,11 +29,10 @@ published: true
     docker exec -it evershop-app-1 npm run user:create -- --email "admin@example.com" --password "evershopadmin" --name "Admin"
     ```
 4. Open the browser and go to the following URLs to access the Evershop
-    ```
-    Your site: http://localhost:3000
-    Evershop Admin: http://localhost:3000/admin
-    ```
-5. Use the following credentials to login
+    - Web site: [http://localhost:3000](http://localhost:3000)
+    - Evershop Admin: [http://localhost:3000/admin](http://localhost:3000/admin)
+
+5. Login to the Evershop Admin using these credentials:
     ```
     Email: admin@example.com
     Password: evershopadmin

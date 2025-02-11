@@ -20,4 +20,4 @@ published: true
     ```bash
     docker compose up -d
     ```
-3. Open the browser and go to `http://localhost:9000` to access the Group Office.
+3. Open the browser and go to [http://localhost:9000](http://localhost:9000) to access the Group Office.

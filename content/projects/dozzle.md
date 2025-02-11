@@ -30,4 +30,4 @@ published: true
     ```bash
     docker compose up -d
     ```
-4. Open the browser and go to `http://localhost:8080` to access the Dozzle.
+4. Open the browser and go to [http://localhost:8080](http://localhost:8080) to access the Dozzle.

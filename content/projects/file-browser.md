@@ -53,7 +53,7 @@ published: true
     ```bash
     docker compose up -d
     ```
-6. Open the browser and go to `http://localhost:8080` to access the File Browser.
+6. Open the browser and go to [http://localhost:8080](http://localhost:8080) to access the File Browser.
 7. Use the following credentials to login:
     ```
     username: admin

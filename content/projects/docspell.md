@@ -20,6 +20,6 @@ published: true
     ```bash
     docker compose up -d
     ```
-3. Open the browser and go to `http://localhost:7880` to access the Docspell.
+3. Open the browser and go to [http://localhost:7880](http://localhost:7880) to access the Docspell.
 
 > Note: When signing up, choose the same name for collective and user. Then login with this name and the password.

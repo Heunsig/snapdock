@@ -34,4 +34,4 @@ published: true
     ```bash
     docker compose up -d
     ```
-4. Open the browser and go to `http://localhost:13378` to access the Audiobookshelf.
+4. Open the browser and go to [http://localhost:13378](http://localhost:13378) to access the Audiobookshelf.

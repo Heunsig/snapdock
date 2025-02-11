@@ -19,7 +19,7 @@ published: true
     ```bash
     docker compose up -d
     ```
-3. Open the browser and go to `http://localhost:3000` to access the Umami.
+3. Open the browser and go to [http://localhost:3000](http://localhost:3000) to access the Umami.
 4. Use the following credentials to login:
     ```
     username: admin

@@ -80,7 +80,5 @@ published: true
     docker compose up -d
     ```
 5. Open the browser and go to the following URLs to access the Wordpress
-    ```
-    Your site: http://localhost
-    Wordpress Admin: http://localhost/wp-admin
-    ```
+    - Web site: [http://localhost](http://localhost)
+    - Wordpress Admin: [http://localhost/wp-admin](http://localhost/wp-admin)

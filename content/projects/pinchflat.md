@@ -33,4 +33,4 @@ published: true
     ```bash
     docker compose up -d
     ```
-4. Open the browser and go to `http://localhost:8945` to access the Pinchflat.
+4. Open the browser and go to [http://localhost:8945](http://localhost:8945) to access the Pinchflat.

@@ -14,4 +14,4 @@ published: true
     ```bash
     docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
     ```
-2. Open the browser and go to `http://localhost:3001` to access the Uptime Kuma.
+2. Open the browser and go to [http://localhost:3001](http://localhost:3001) to access the Uptime Kuma.
