@@ -6,7 +6,7 @@ homepage: 'https://lychee.electerious.com/'
 docker: 'https://hub.docker.com/r/linuxserver/lychee'
 github: 'https://github.com/electerious/Lychee'
 tags: []
-published: false
+published: true
 ---
 
 ## Getting Started
@@ -16,7 +16,7 @@ published: false
     mkdir lychee && cd lychee
     ```
 2. Create a `docker-compose.yml` file and add the following content:
-    ```yaml
+    ```yaml [docker-compose.yml]
     services:
       lychee:
         image: lscr.io/linuxserver/lychee:latest
@@ -31,8 +31,8 @@ published: false
           - DB_USERNAME=postgres
           - DB_PASSWORD=postgres
           - DB_DATABASE=postgres
-          - APP_NAME=Lychee #optional
-          - APP_URL= #optional
+          - APP_NAME=Lychee
+          - APP_URL=http://localhost:8081
           - TRUSTED_PROXIES= #optional
         networks:
           - lychee
@@ -40,7 +40,7 @@ published: false
           - ./config:/config
           - ./pictures:/pictures
         ports:
-          - 80:80
+          - 8081:80
         restart: unless-stopped
 
       database:
@@ -68,4 +68,4 @@ published: false
     ```bash
     docker compose up -d
     ```
-4. Open the browser and go to [http://localhost](http://localhost) to access the Lychee.
+4. Open the browser and go to [http://localhost:8081](http://localhost:8081) to access the Lychee.
