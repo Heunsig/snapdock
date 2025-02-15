@@ -6,7 +6,7 @@ homepage: 'https://fider.io/'
 docker: 'https://docs.fider.io/hosting-instance'
 github: 'https://github.com/getfider/fider'
 tags: []
-published: false
+published: true
 ---
 
 ## Getting Started
