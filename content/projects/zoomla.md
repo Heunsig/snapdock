@@ -1,6 +1,6 @@
 ---
 name: Zoomla
-description: Open source wealth management software built with web technology.
+description: Award-winning content management system (CMS), which enables you to build web sites and powerful online applications.
 logo: '/assets/images/logos/zoomla.svg'
 homepage: 'https://www.joomla.org/'
 docker: 'https://www.avonture.be/blog/docker-joomla/'
