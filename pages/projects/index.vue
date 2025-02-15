@@ -39,6 +39,9 @@ function reset() {
 
 <template>
   <div>
+    <div class="text-sm mb-3 dark:text-gray-400">
+      {{ filteredProjects.length }} / {{ projects.length }} projects
+    </div>
     <div class="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
       <div class="flex items-center md:block">
         <UInput 
