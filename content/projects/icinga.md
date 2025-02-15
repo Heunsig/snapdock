@@ -1,6 +1,6 @@
 ---
 name: Icinga
-description: Vikunja, the fluffy, open-source, self-hostable to-do app.
+description: Monitor Your Entire Infrastructure
 logo: '/assets/images/logos/icinga.png'
 homepage: 'https://icinga.com/'
 github: 'https://github.com/icinga'
