@@ -56,7 +56,7 @@ published: true
     ```
 5. Go to [http://localhost:8080](http://localhost:8080) to access Joomla.
 
-## Installation
+## Install Joomla
 1. Choose your site name
 
     ![image](/assets/images/guides/zoomla/joomla_guide_01.png)
