@@ -22,7 +22,7 @@ published: true
         restart: always
         image: postgres:12
         volumes:
-          - ./pg_data:/var/lib/postgresql/data
+          - fider_data:/var/lib/postgresql/data
         environment:
           POSTGRES_USER: fider
           POSTGRES_PASSWORD: s0m3g00dp4ssw0rd
@@ -50,6 +50,8 @@ published: true
         restart: always
         ports:
           - "8025:8025"
+    volumes:
+      fider_data:
     ```
 3. Run the following command to start the container:
     ```bash
