@@ -28,6 +28,11 @@ defineProps<{
     </div>
     <div class="pt-0">
       <p class="dark:text-gray-300">
+        <!-- 
+          TODO: 
+          "[Vue warn]: Extraneous non-props attributes (data-v-inspector) were passed to component but could not be automatically inherited because component renders fragment or text or teleport root nodes."
+          Error is occured when using WordHighlighter in a component.
+         -->
         <WordHighlighter :query="query">
           {{ project.description }}
         </WordHighlighter>
