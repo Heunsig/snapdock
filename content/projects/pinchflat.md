@@ -5,7 +5,7 @@ logo: '/assets/images/logos/pinchflat.png'
 homepage: 'https://github.com/kieraneglin/pinchflat'
 docker: 'https://github.com/kieraneglin/pinchflat?tab=readme-ov-file#docker'
 github: 'https://github.com/kieraneglin/pinchflat'
-published: true
+published: false
 ---
 
 ## Getting Started

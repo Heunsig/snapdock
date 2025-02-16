@@ -13,8 +13,7 @@ published: true
 
 1. Clone the repository and move to the folder
     ```bash
-    git clone git@github.com:Intermesh/docker-groupoffice.git
-    cd docker-groupoffice
+    git clone git@github.com:Intermesh/docker-groupoffice.git && cd docker-groupoffice
     ```
 2. Run the following command to start the container
     ```bash

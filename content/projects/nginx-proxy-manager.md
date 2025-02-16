@@ -15,11 +15,7 @@ published: true
     ```bash
     mkdir nginx-proxy-manager && cd nginx-proxy-manager
     ```
-2. Create required directories
-    ```bash
-    mkdir -p data letsencrypt
-    ```
-3. Create a `docker-compose.yml` file and add the following content:
+2. Create a `docker-compose.yml` file and add the following content:
     ```yaml [docker-compose.yml]
     services:
       app:
@@ -30,14 +26,17 @@ published: true
           - '81:81'
           - '443:443'
         volumes:
-          - ./data:/data
-          - ./letsencrypt:/etc/letsencrypt
+          - data:/data
+          - letsencrypt:/etc/letsencrypt
+    volumes:
+      data:
+      letsencrypt:
     ```
-4. Run the following command to start the container:
+3. Start the service using docker compose.
     ```bash
     docker compose up -d
     ```
-5. Go to [http://localhost:81](http://localhost:81) to access the Nginx Proxy Manager.
+4. Go to [http://localhost:81](http://localhost:81) to access the Nginx Proxy Manager.
     ```
     Email: admin@example.com
     Password: changeme

@@ -12,8 +12,7 @@ published: true
 
 1. Clone github repository and move to the folder
     ```bash
-    git clone https://github.com/umami-software/umami.git
-    cd umami
+    git clone https://github.com/umami-software/umami.git && cd umami
     ```
 2. Run the following command to start the container:
     ```bash

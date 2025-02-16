@@ -12,8 +12,7 @@ published: true
 
 1. Create a folder and move to it
     ```bash
-    mkdir wordpress
-    cd wordpress
+    mkdir wordpress && cd wordpress
     ```
 2. Create a `docker-compose.yml` file and add the following content:
     ```yaml
@@ -21,64 +20,41 @@ published: true
       wp:
         image: wordpress:latest
         ports:
-          - ${IP}:${PORT}:80
+          - 80:80
         volumes:
-          - ./config/wp_php.ini:/usr/local/etc/php/conf.d/conf.ini
-          - ./wp-app:/var/www/html
+          - wp_app:/var/www/html
         environment:
           WORDPRESS_DB_HOST: db
-          WORDPRESS_DB_NAME: "${DB_NAME}"
+          WORDPRESS_DB_NAME: wordpress
           WORDPRESS_DB_USER: root
-          WORDPRESS_DB_PASSWORD: "${DB_ROOT_PASSWORD}"
+          WORDPRESS_DB_PASSWORD: password
         depends_on:
           - db
         links:
           - db
 
-      pma:
-        image: phpmyadmin:latest
-        environment:
-          PMA_HOST: db
-          PMA_PORT: 3306
-          MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
-          UPLOAD_LIMIT: 50M
-        ports:
-          - ${IP}:8080:80
-        links:
-          - db:db
-        volumes:
-        - ./config/pma_php.ini:/usr/local/etc/php/conf.d/conf.ini
-        - ./config/pma_config.php:/etc/phpmyadmin/config.user.inc.php
-
       db:
         image: mysql:latest
         ports:
-          - ${IP}:3306:3306
+          - 3306:3306
         command: [
             '--character-set-server=utf8mb4',
             '--collation-server=utf8mb4_unicode_ci'
         ]
         volumes:
-          - ./wp-data:/docker-entrypoint-initdb.d
           - db_data:/var/lib/mysql
         environment:
-          MYSQL_DATABASE: "${DB_NAME}"
-          MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
+          MYSQL_DATABASE: wordpress
+          MYSQL_ROOT_PASSWORD: password
 
     volumes:
+      wp_app:
       db_data:
     ```
-3. Create `.env` file and add the following content:
-    ```
-    IP=127.0.0.1
-    PORT=80
-    DB_ROOT_PASSWORD=password
-    DB_NAME=wordpress
-    ```
-4. Run the following command to start the container:
+3. Start the service using docker compose.
     ```bash
     docker compose up -d
     ```
-5. Open the browser and go to the following URLs to access the Wordpress
+4. Open the browser and go to the following URLs to access the Wordpress
     - Web site: [http://localhost](http://localhost)
     - Wordpress Admin: [http://localhost/wp-admin](http://localhost/wp-admin)

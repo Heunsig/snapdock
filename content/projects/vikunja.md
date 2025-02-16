@@ -12,15 +12,9 @@ published: true
 
 1. Create a folder and move to the folder
     ```bash
-    mkdir vikunja
-    cd vikunja
+    mkdir vikunja && cd vikunja
     ```
-2. Create `files` folder and change the ownership
-    ```bash
-    mkdir files
-    chown 1000 files
-    ```
-3. Create a `docker-compose.yml` file and add the following content:
+2. Create a `docker-compose.yml` file and add the following content:
     ```yaml
     services: 
       vikunja:
@@ -32,11 +26,12 @@ published: true
           VIKUNJA_DATABASE_TYPE: mysql
           VIKUNJA_DATABASE_USER: vikunja
           VIKUNJA_DATABASE_DATABASE: vikunja
-          VIKUNJA_SERVICE_JWTSECRET: <a super secure random secret>
+          VIKUNJA_SERVICE_JWTSECRET: qwerqwer$#@#erfwer2334234
         ports:
           - 3456:3456
+        user: 0:0
         volumes:
-          - ./files:/app/vikunja/files
+          - vikunja_files:/app/vikunja/files
         depends_on:
           db:
             condition: service_healthy
@@ -50,15 +45,18 @@ published: true
           MYSQL_PASSWORD: changeme
           MYSQL_DATABASE: vikunja
         volumes:
-          - ./db:/var/lib/mysql
+          - vikunja_db:/var/lib/mysql
         restart: unless-stopped
         healthcheck:
           test: ["CMD-SHELL", "mysqladmin ping -h localhost -u $$MYSQL_USER --password=$$MYSQL_PASSWORD"]
           interval: 2s
           start_period: 30s
+    volumes:
+      vikunja_files:
+      vikunja_db:
     ```
-4. Run the following command to start the container:
+3. Start the service using docker compose.
     ```bash
     docker compose up -d
     ```
-5. Open the browser and go to [http://localhost:3456](http://localhost:3456) to access the Vikunja.
+4. Open the browser and go to [http://localhost:3456](http://localhost:3456) to access the Vikunja.

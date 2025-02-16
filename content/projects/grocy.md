@@ -22,14 +22,14 @@ published: true
         image: lscr.io/linuxserver/grocy:latest
         container_name: grocy
         environment:
-          - PUID=1000
-          - PGID=1000
-          - TZ=Etc/UTC
+          - TZ=Asia/Seoul
         volumes:
-          - ./config:/config
+          - grocy_config:/config
         ports:
           - 9283:80
         restart: unless-stopped
+    volumes:
+      grocy_config:
     ```
 3. Run the following command to start the container:
     ```bash

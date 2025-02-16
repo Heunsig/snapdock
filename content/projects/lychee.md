@@ -22,9 +22,7 @@ published: true
         image: lscr.io/linuxserver/lychee:latest
         container_name: lychee
         environment:
-          - PUID=1000
-          - PGID=1000
-          - TZ=Etc/UTC
+          - TZ=Asia/Seoul
           - DB_CONNECTION=pgsql
           - DB_HOST=database
           - DB_PORT=5432
@@ -37,8 +35,8 @@ published: true
         networks:
           - lychee
         volumes:
-          - ./config:/config
-          - ./pictures:/pictures
+          - lychee_config:/config
+          - lychee_pictures:/pictures
         ports:
           - 8081:80
         restart: unless-stopped
@@ -62,6 +60,8 @@ published: true
         driver: bridge
 
     volumes:
+      lychee_config:
+      lychee_pictures:
       postgres-data:
     ```
 3. Start the service using docker compose.

@@ -15,11 +15,7 @@ published: true
     ```bash
     mkdir zoomla && cd zoomla
     ```
-2. Create required folders
-    ```bash
-    mkdir -p db site_joomla
-    ```
-3. Create a `docker-compose.yml` file and add the following content:
+2. Create a `docker-compose.yml` file and add the following content:
     ```yaml [docker-compose.yml]
     services:
       joomla:
@@ -33,9 +29,8 @@ published: true
         depends_on:
           joomladb:
             condition: service_healthy
-        user: 1000:1000
         volumes:
-          - ./site_joomla:/var/www/html
+          - site_joomla:/var/www/html
 
       joomladb:
         image: mysql:8.0.13
@@ -46,15 +41,17 @@ published: true
           test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
           timeout: 20s
           retries: 10
-        user: 1000:1000
         volumes:
-          - ./db:/var/lib/mysql
+          - db_data:/var/lib/mysql
+    volumes:
+      db_data:
+      site_joomla:
     ```
-4. Start the service using docker compose.
+3. Start the service using docker compose.
     ```bash
     docker compose up -d
     ```
-5. Go to [http://localhost:8080](http://localhost:8080) to access Joomla.
+4. Go to [http://localhost:8080](http://localhost:8080) to access Joomla.
 
 ## Install Joomla
 1. Choose your site name
