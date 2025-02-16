@@ -16,11 +16,6 @@ published: true
     ```bash
     mkdir ackee && cd ackee
     ```
-2. Create `.env` file and add the following content:
-    ```bash [.env]
-    ACKEE_USERNAME=admin
-    ACKEE_PASSWORD=password
-    ```
 2. Create a `docker-compose.yml` file and add the following content:
     ```yaml [docker-compose.yml]
     services:
@@ -29,12 +24,12 @@ published: true
         container_name: ackee
         restart: always
         ports:
-          - "3002:3000"
+          - "3000:3000"
         environment:
           - WAIT_HOSTS=mongo:27017
           - ACKEE_MONGODB=mongodb://mongo:27017/ackee
-        env_file:
-          - .env
+          - ACKEE_USERNAME=admin
+          - ACKEE_PASSWORD=password
         depends_on:
           - mongo
       mongo:
@@ -42,14 +37,17 @@ published: true
         container_name: mongo
         restart: always
         volumes:
-          - ./data:/data/db
+          - ackee_mongodata:/data/db
+    volumes:
+      ackee_mongodata:
     ```
 3. Start the service using docker compose.
     ```bash
     docker compose up -d
     ```
-4. Visit [http://localhost:3002](http://localhost:3002) to access Ackee and login with the following credentials:
+4. Visit [http://localhost:3000](http://localhost:3000) to access Ackee and login with the following credentials:
     ```
     Username: admin
     Password: password
     ```
+
