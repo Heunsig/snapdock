@@ -13,48 +13,30 @@ published: true
 
 1. Create a folder and move to the folder
     ```bash
-    mkdir file-browser
-    cd file-browser
-    ```
-3. Create required folders and files
-    ```bash
-    mkdir srv
-    touch filebrowser.db
-    touch filebrowser.json
+    mkdir file-browser && cd file-browser
     ```
 2. Create a `docker-compose.yml` file and add the following content:
-    ```yaml
+    ```yaml [docker-compose.yml]
     services:
       filebrowser:
         image: filebrowser/filebrowser
         container_name: filebrowser
-        user: 1000:1000
         ports:
           - "8080:80"
         volumes:
-          - ./srv:/srv # files will be stored here
-          - ./filebrowser.db:/database/filebrowser.db # users info/settings will be stored here
-          - ./filebrowser.json:/.filebrowser.json # config file
+          - filebrowser_srv:/srv # files will be stored here
+          - filebrowser_database:/database # users info/settings will be stored here
         restart: always
+    volumes:
+      filebrowser_srv:
+      filebrowser_database:
     ```
-
-4. In the `filebrowser.json` file, add the following content:
-    ```json
-    {
-      "port": 80,
-      "baseURL": "",
-      "address": "",
-      "log": "stdout",
-      "database": "/database/filebrowser.db",
-      "root": "/srv"
-    }
-    ```
-5. Run the following command to start the container:
+3. Run the following command to start the container:
     ```bash
     docker compose up -d
     ```
-6. Open the browser and go to [http://localhost:8080](http://localhost:8080) to access the File Browser.
-7. Use the following credentials to login:
+4. Open the browser and go to [http://localhost:8080](http://localhost:8080) to access the File Browser.
+5. Use the following credentials to login:
     ```
     username: admin
     password: admin
