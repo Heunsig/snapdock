@@ -11,6 +11,9 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'dark'
   },
+  devServer: {
+    port: 9000
+  },
   content: {
     build: {
       markdown: {
