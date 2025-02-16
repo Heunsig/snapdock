@@ -5,7 +5,7 @@ const { data: page } = await useAsyncData(route.path, () => {
 })
 
 useSeoMeta({
-  title: page.value?.title,
+  title: `${page.value?.name} | SnapDock`,
   description: page.value?.description
 })
 </script>
