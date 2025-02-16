@@ -23,20 +23,10 @@ published: true
         ports:
           - 8081:80
         volumes:
-          - ./drupal-data:/opt/drupal
+          - drupal-data:/opt/drupal
         depends_on:
           - mariadb
-        command: [
-          "/bin/sh", 
-          "-c", 
-          "cd /opt/drupal 
-          && composer create-project drupal/recommended-project . 
-          && chmod -R 777 /opt/drupal/web/sites/default 
-          && cp /opt/drupal/web/sites/default/default.settings.php /opt/drupal/web/sites/default/settings.php
-          && chmod -R 777 /opt/drupal/web/sites/default/settings.php
-          && apache2-foreground"
-        ]
-        
+
       mariadb:
         container_name: drupal-mariadb
         image: mariadb
@@ -46,7 +36,10 @@ published: true
           - MARIADB_USER=drupal
           - MARIADB_PASSWORD=drupal
         volumes:
-          - ./mariadb-data:/var/lib/mysql
+          - mariadb-data:/var/lib/mysql
+    volumes:
+      drupal-data:
+      mariadb-data:
     ```
 4. Start the service using docker compose.
     ```bash
