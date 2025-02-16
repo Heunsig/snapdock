@@ -15,11 +15,7 @@ published: true
     ```bash
     mkdir directus && cd directus
     ```
-2. Create required directories
-    ```bash
-    mkdir database uploads extensions
-    ```
-3. Create a `docker-compose.yml` file and add the following content:
+2. Create a `docker-compose.yml` file and add the following content:
     ```yaml [docker-compose.yml]
     services:
       directus:
@@ -27,9 +23,9 @@ published: true
         ports:
           - 8055:8055
         volumes:
-          - ./database:/directus/database
-          - ./uploads:/directus/uploads
-          - ./extensions:/directus/extensions
+          - directus_database:/directus/database
+          - directus_uploads:/directus/uploads
+          - directus_extensions:/directus/extensions
         environment:
           SECRET: "replace-with-secure-random-value"
           ADMIN_EMAIL: "admin@example.com"
@@ -37,12 +33,16 @@ published: true
           DB_CLIENT: "sqlite3"
           DB_FILENAME: "/directus/database/data.db"
           WEBSOCKETS_ENABLED: "true"
+    volumes:
+      directus_database:
+      directus_uploads:
+      directus_extensions:
     ```
-4. Run the following command to start the container:
+3. Run the following command to start the container:
     ```bash
     docker compose up -d
     ```
-5. Go to [http://localhost:8055](http://localhost:8055) to access the Directus using these credentials:
+4. Go to [http://localhost:8055](http://localhost:8055) to access the Directus using these credentials:
     ```bash
     Email: admin@example.com
     Password: d1r3ctu5
