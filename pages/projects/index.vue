@@ -239,6 +239,7 @@ function reset() {
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 mt-8">
       <ProjectCard 
         v-for="project in sortedProjects" 
+        :key="project.path"
         :query="search"
         :project="{
           id: project.path,
