@@ -7,7 +7,9 @@ const orderBy = useRouteQuery('orderBy', 'name')
 const order = useRouteQuery<string>('order', 'asc')
 
 const filteredProjects = computed(() => projects.value.filter((project: any) => {
-  return project.name.toLowerCase().includes(search.value.toLowerCase())
+  const searchTerm = search.value.toLowerCase()
+  return project.name.toLowerCase().includes(searchTerm) || 
+         (project.description && project.description.toLowerCase().includes(searchTerm))
 }))
 
 const sortedProjects = computed(() => {
@@ -237,6 +239,7 @@ function reset() {
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 mt-8">
       <ProjectCard 
         v-for="project in sortedProjects" 
+        :query="search"
         :project="{
           id: project.path,
           name: project.name,

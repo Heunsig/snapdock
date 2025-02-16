@@ -1,14 +1,16 @@
 <script setup lang="ts">
-  defineProps<{
-    project: {
-      id: string,
-      name: string,
-      description: string,
-      path: string,
-      logo?: string,
-      tags?: string[]
-    }
-  }>()
+import WordHighlighter from "vue-word-highlighter";
+defineProps<{
+  query: string,
+  project: {
+    id: string,
+    name: string,
+    description: string,
+    path: string,
+    logo?: string,
+    tags?: string[]
+  }
+}>()
 </script>
 <template>
   <article 
@@ -19,12 +21,16 @@
       <h3 class="text-lg font-semibold text-gray-100">
         <!-- inset makes the link full with and height to the card -->
         <NuxtLink :to="project.path" class="absolute inset-0"></NuxtLink>
+        <WordHighlighter :query="query">
         {{ project.name }}
+        </WordHighlighter>
       </h3>
     </div>
     <div class="pt-0">
       <p class="dark:text-gray-300">
-        {{ project.description }}
+        <WordHighlighter :query="query">
+          {{ project.description }}
+        </WordHighlighter>
       </p>
     </div>
     
