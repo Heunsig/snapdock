@@ -12,8 +12,7 @@ published: true
 
 1. Create a folder and move to the folder
     ```bash
-    mkdir audiobookshelf
-    cd audiobookshelf
+    mkdir audiobookshelf && cd audiobookshelf
     ```
 2. Create a `docker-compose.yml` file and add the following content:
     ```yaml
@@ -23,14 +22,17 @@ published: true
         ports:
           - 13378:80
         volumes:
-          - .:/audiobooks
-          - .:/podcasts
-          - .:/config
-          - .:/metadata
+          - audiobookshelf_data:/audiobooks
+          - audiobookshelf_config:/config
+          - audiobookshelf_metadata:/metadata
         environment:
-          - TZ=America/Toronto
+          - TZ=Asia/Seoul
+    volumes:
+      audiobookshelf_data:
+      audiobookshelf_config:
+      audiobookshelf_metadata:
     ```
-3. Run the following command to start the container:
+3. Start the service using docker compose
     ```bash
     docker compose up -d
     ```
