@@ -27,7 +27,7 @@
               <h1 class="text-lg font-bold dark:text-gray-50">SnapDock</h1>
             </NuxtLink>
             <p class="max-w-lg text-sm md:text-base text-gray-500 dark:text-gray-400 italic pl-1.5">
-              SnapDock is a collection of tools and guides to help you get started with Docker.
+              No setup hassle—just follow the steps and try the live demo!
             </p>
           </div>
         </div>
