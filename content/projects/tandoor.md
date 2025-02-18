@@ -32,7 +32,7 @@ published: true
         restart: always
         image: postgres:16-alpine
         volumes:
-          - ./postgresql:/var/lib/postgresql/data
+          - postgresql:/var/lib/postgresql/data
         env_file:
           - ./.env
 
@@ -43,9 +43,8 @@ published: true
           - ./.env
         volumes:
           - staticfiles:/opt/recipes/staticfiles
-          # Do not make this a bind mount, see https://docs.tandoor.dev/install/docker/#volumes-vs-bind-mounts
           - nginx_config:/opt/recipes/nginx/conf.d
-          - ./mediafiles:/opt/recipes/mediafiles
+          - mediafiles:/opt/recipes/mediafiles
         depends_on:
           - db_recipes
 
@@ -59,14 +58,15 @@ published: true
         depends_on:
           - web_recipes
         volumes:
-          # Do not make this a bind mount, see https://docs.tandoor.dev/install/docker/#volumes-vs-bind-mounts
           - nginx_config:/etc/nginx/conf.d:ro
           - staticfiles:/static:ro
-          - ./mediafiles:/media:ro
+          - mediafiles:/media:ro
 
     volumes:
+      postgresql:
       nginx_config:
       staticfiles:
+      mediafiles:
     ```
 3. Start the service using docker compose.
     ```bash
