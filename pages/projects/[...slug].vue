@@ -25,6 +25,15 @@ useSeoMeta({
         />
         <h1 class="text-lg font-bold">{{ page.name }}</h1>
         <p class="col-span-2 md:col-span-1 md:col-start-2 text-sm dark:text-gray-300">{{ page.description }}</p>
+        <div class="col-span-2 md:col-span-1 md:col-start-2 flex flex-wrap gap-2 mt-3">
+          <span
+            v-for="tag in page.tags"
+            :key="tag"
+            class="text-xs bg-gray-100 dark:bg-gray-800 rounded-md px-2 py-1"
+          >
+            #{{ tag }}
+          </span>
+        </div>
       </div>
     </header>
     <main class="row-start-3 md:row-start-2 prose dark:prose-invert max-w-none md:mt-8">
