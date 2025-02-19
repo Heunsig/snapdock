@@ -6,7 +6,7 @@ homepage: 'https://grafana.com/'
 docker: 'https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/'
 github: 'https://github.com/grafana/grafana'
 demo: 'https://play.grafana.org/'
-tags: ["monitoring"]
+tags: ["monitoring", "visualization", "dashboard"]
 published: true
 ---
 

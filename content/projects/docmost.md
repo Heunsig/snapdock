@@ -5,7 +5,7 @@ logo: '/assets/images/logos/docmost.png'
 homepage: 'https://docmost.com/'
 docker: 'https://docmost.com/docs/installation'
 github: 'https://github.com/docmost/docmost'
-tags: []
+tags: ["wiki"]
 published: true
 ---
 

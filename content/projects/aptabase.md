@@ -5,7 +5,7 @@ logo: '/assets/images/logos/aptabase.svg'
 homepage: 'https://aptabase.com/'
 docker: 'https://github.com/aptabase/self-hosting'
 github: 'https://github.com/aptabase/aptabase'
-tags: []
+tags: ["analytics"]
 published: true
 ---
 

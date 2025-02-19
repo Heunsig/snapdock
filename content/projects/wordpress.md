@@ -4,7 +4,7 @@ description: The world’s most popular tool for building websites & blogs
 logo: '/assets/images/logos/wordpress.svg'
 homepage: 'https://wordpress.org/'
 docker: 'https://github.com/nezhar/wordpress-docker-compose'
-tags: []
+tags: ["CMS"]
 published: true
 ---
 

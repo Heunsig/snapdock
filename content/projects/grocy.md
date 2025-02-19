@@ -6,6 +6,7 @@ homepage: 'https://grocy.info/'
 docker: 'https://github.com/grocy/grocy?tab=readme-ov-file#how-to-run-using-docker'
 github: 'https://github.com/grocy/grocy'
 demo: 'https://en.demo.grocy.info/'
+tags: ["inventory"]
 published: true
 ---
 

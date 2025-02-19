@@ -6,7 +6,7 @@ homepage: 'https://actualbudget.org/'
 docker: 'https://actualbudget.org/docs/install/docker'
 github: 'https://github.com/actualbudget/actual'
 demo: 'https://demo.actualbudget.org/'
-tags: []
+tags: ["finance"]
 published: true
 ---
 

@@ -5,7 +5,7 @@ logo: '/assets/images/logos/dozzle.svg'
 homepage: 'https://dozzle.dev/'
 docker: 'https://dozzle.dev/guide/getting-started'
 github: 'https://github.com/amir20/dozzle'
-tags: ["monitoring"]
+tags: ["monitoring", "Docker"]
 published: true
 ---
 

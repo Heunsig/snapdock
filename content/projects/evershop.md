@@ -5,7 +5,7 @@ logo: '/assets/images/logos/evershop.svg'
 homepage: 'https://evershop.io/'
 docker: 'https://evershop.io/docs/development/getting-started/installation-guide'
 github: 'https://github.com/evershopcommerce/evershop'
-tags: []
+tags: ["ecommerce"]
 published: true
 ---
 

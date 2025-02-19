@@ -5,7 +5,7 @@ logo: '/assets/images/logos/wikijs.svg'
 homepage: 'https://js.wiki/'
 docker: 'https://docs.requarks.io/install/docker'
 github: 'https://github.com/Requarks/wiki'
-tags: []
+tags: ["wiki"]
 published: true
 ---
 

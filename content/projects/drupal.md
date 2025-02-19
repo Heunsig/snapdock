@@ -4,7 +4,7 @@ description: Open-source content management system (CMS) that helps users build,
 logo: '/assets/images/logos/drupal.svg'
 homepage: 'https://new.drupal.org'
 github: 'https://github.com/drupal/drupal'
-tags: []
+tags: ["CMS"]
 published: true
 ---
 

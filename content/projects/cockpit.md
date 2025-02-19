@@ -5,7 +5,7 @@ logo: '/assets/images/logos/cockpit.svg'
 homepage: 'https://getcockpit.com/'
 docker: 'https://getcockpit.com/documentation/core/quickstart/installation#docker'
 github: 'https://github.com/Cockpit-HQ/Cockpit'
-tags: []
+tags: ["CMS"]
 published: true
 ---
 
