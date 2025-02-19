@@ -1,6 +1,6 @@
 ---
 name: Beszel
-description: Real-time logging and monitoring for Docker in the browser.
+description: Simple, lightweight server monitoring
 logo: '/assets/images/logos/beszel.svg'
 homepage: 'https://beszel.dev/'
 docker: 'https://beszel.dev/guide/hub-installation'
