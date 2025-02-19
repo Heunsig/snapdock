@@ -25,7 +25,10 @@ useSeoMeta({
         />
         <h1 class="text-lg font-bold">{{ page.name }}</h1>
         <p class="col-span-2 md:col-span-1 md:col-start-2 text-sm dark:text-gray-300">{{ page.description }}</p>
-        <div class="col-span-2 md:col-span-1 md:col-start-2 flex flex-wrap gap-2 mt-3">
+        <div 
+          v-if="page.tags && page.tags.length > 0"
+          class="col-span-2 md:col-span-1 md:col-start-2 flex flex-wrap gap-2 mt-3"
+        >
           <span
             v-for="tag in page.tags"
             :key="tag"
