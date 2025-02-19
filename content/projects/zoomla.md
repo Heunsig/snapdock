@@ -5,7 +5,7 @@ logo: '/assets/images/logos/zoomla.svg'
 homepage: 'https://www.joomla.org/'
 docker: 'https://www.avonture.be/blog/docker-joomla/'
 github: 'https://github.com/joomla/joomla-cms'
-tags: []
+tags: ["CMS"]
 published: true
 ---
 
