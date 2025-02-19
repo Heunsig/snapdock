@@ -4,7 +4,7 @@ description: Uptime Kuma is an easy-to-use self-hosted monitoring tool.
 logo: '/assets/images/logos/uptime-kuma.svg'
 homepage: 'https://uptime.kuma.pet/'
 github: 'https://github.com/louislam/uptime-kuma'
-tags: []
+tags: ["monitoring"]
 published: true
 ---
 

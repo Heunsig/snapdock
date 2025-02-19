@@ -5,7 +5,7 @@ logo: '/assets/images/logos/zabbix.svg'
 homepage: 'https://www.zabbix.com/'
 docker: 'https://www.zabbix.com/documentation/current/en/manual/installation/containers'
 github: 'https://github.com/zabbix/zabbix'
-tags: []
+tags: ["monitoring"]
 published: true
 ---
 

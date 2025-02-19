@@ -5,7 +5,7 @@ logo: '/assets/images/logos/hyper-dx.svg'
 homepage: 'https://www.hyperdx.io/'
 github: 'https://github.com/hyperdxio/hyperdx'
 demo: 'https://www.hyperdx.io/search'
-tags: []
+tags: ["monitoring"]
 published: true
 ---
 

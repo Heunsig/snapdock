@@ -5,7 +5,7 @@ logo: '/assets/images/logos/beszel.svg'
 homepage: 'https://beszel.dev/'
 docker: 'https://beszel.dev/guide/hub-installation'
 github: 'https://github.com/henrygd/beszel'
-tags: []
+tags: ["monitoring"]
 published: true
 ---
 
