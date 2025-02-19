@@ -13,14 +13,13 @@ published: true
 
 1. Create a folder and move to the folder
     ```bash
-    mkdir dozzle
-    cd dozzle
+    mkdir dozzle && cd dozzle
     ```
 2. Create a `docker-compose.yml` file and add the following content:
     ```yaml
     services:
       dozzle:
-        image: amir20/dozzle:latest
+        image: amir20/dozzle:v8
         volumes:
           - /var/run/docker.sock:/var/run/docker.sock
         ports:
