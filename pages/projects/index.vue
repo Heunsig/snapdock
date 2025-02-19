@@ -9,7 +9,8 @@ const order = useRouteQuery<string>('order', 'asc')
 const filteredProjects = computed(() => projects.value.filter((project: any) => {
   const searchTerm = search.value.toLowerCase()
   return project.name.toLowerCase().includes(searchTerm) || 
-         (project.description && project.description.toLowerCase().includes(searchTerm))
+         (project.description && project.description.toLowerCase().includes(searchTerm)) ||
+         (project.tags && project.tags.some((tag: string) => tag.toLowerCase().includes(searchTerm)))
 }))
 
 const sortedProjects = computed(() => {

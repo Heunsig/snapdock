@@ -43,7 +43,11 @@ defineProps<{
       v-if="project.tags"
       class="pt-4 flex flex-wrap items-center gap-2"
     >
-      <span class="text-sm dark:text-gray-400" v-for="tag in project.tags">#{{ tag }}</span>
+      <span class="text-sm dark:text-gray-400" v-for="tag in project.tags">
+        <WordHighlighter :query="query">
+          #{{ tag }}
+        </WordHighlighter>
+      </span>
       
     </div>
   </article>
