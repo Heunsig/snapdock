@@ -52,6 +52,7 @@ function copyCode() {
     >
       <span 
         class="text-sm dark:text-[hsla(0,0%,100%,.6)]"
+        translate="no"
       >
         {{ filename }}
       </span>
@@ -60,6 +61,7 @@ function copyCode() {
       <pre
         :class="$props.class"
         class="my-0 pr-12 sm:pr-0"
+        translate="no"
       ><slot /></pre>
 
       <div class="absolute top-2 right-2">

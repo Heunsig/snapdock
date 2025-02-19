@@ -23,7 +23,7 @@ useSeoMeta({
           class="md:row-span-2"
           width="48"
         />
-        <h1 class="text-lg font-bold">{{ page.name }}</h1>
+        <h1 class="text-lg font-bold" translate="no">{{ page.name }}</h1>
         <p class="col-span-2 md:col-span-1 md:col-start-2 text-sm dark:text-gray-300">{{ page.description }}</p>
         <div 
           v-if="page.tags && page.tags.length > 0"
@@ -33,6 +33,7 @@ useSeoMeta({
             v-for="tag in page.tags"
             :key="tag"
             class="text-xs bg-gray-100 dark:bg-gray-800 rounded-md px-2 py-1"
+            translate="no"
           >
             #{{ tag }}
           </span>
@@ -49,6 +50,7 @@ useSeoMeta({
         v-if="page.meta.homepage"
         :to="page.meta.homepage"
         target="_blank"
+        translate="no"
       >
         <UButton
           color="gray" 
@@ -66,6 +68,7 @@ useSeoMeta({
         v-if="page.meta.docker"
         :to="page.meta.docker"
         target="_blank"
+        translate="no"
       >
         <UButton
           color="gray" 
@@ -83,6 +86,7 @@ useSeoMeta({
         v-if="page.meta.github"
         :to="page.meta.github"
         target="_blank"
+        translate="no"
       >
         <UButton 
           color="gray" 
@@ -100,6 +104,7 @@ useSeoMeta({
         v-if="page.meta.demo"
         :to="page.meta.demo"
         target="_blank"
+        translate="no"
       >
         <UButton 
           color="gray" 

@@ -7,7 +7,7 @@
       <div class="container mx-auto xl:max-w-7xl">
         <NuxtLink to="/projects" class="inline-flex items-center gap-2">
           <NuxtImg src="/assets/images/logo.png" alt="SnapDock" width="48"/>
-          <h1 class="text-xl font-bold dark:text-gray-50">SnapDock</h1>
+          <h1 class="text-xl font-bold dark:text-gray-50" translate="no">SnapDock</h1>
         </NuxtLink>
       </div>
     </header>
@@ -24,7 +24,7 @@
           <div class="flex flex-col gap-6 max-w-sm">
             <NuxtLink to="/projects" class="inline-flex items-center gap-2">
               <NuxtImg src="/assets/images/logo.png" alt="SnapDock" width="48"/>
-              <h1 class="text-lg font-bold dark:text-gray-50">SnapDock</h1>
+              <h1 class="text-lg font-bold dark:text-gray-50" translate="no">SnapDock</h1>
             </NuxtLink>
             <p class="max-w-lg text-sm md:text-base text-gray-500 dark:text-gray-400 italic pl-1.5">
               No setup hassle—just follow the steps and try the live demo!

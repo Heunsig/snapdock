@@ -18,10 +18,10 @@ defineProps<{
   >
     <div class="pb-4 flex items-center gap-3">
       <NuxtImg v-if="project.logo" :src="project.logo" :alt="`${project.name} logo`" width="28" />
-      <h3 class="text-lg font-semibold text-gray-100">
+      <h3 class="text-lg font-semibold text-gray-100" translate="no">
         <!-- inset makes the link full with and height to the card -->
         <NuxtLink :to="project.path" class="absolute inset-0"></NuxtLink>
-        <WordHighlighter :query="query">
+        <WordHighlighter :query="query" translate="no">
         {{ project.name }}
         </WordHighlighter>
       </h3>
@@ -43,7 +43,7 @@ defineProps<{
       v-if="project.tags"
       class="pt-4 flex flex-wrap items-center gap-2"
     >
-      <span class="text-sm dark:text-gray-400" v-for="tag in project.tags">
+      <span class="text-sm dark:text-gray-400" v-for="tag in project.tags" translate="no">
         <WordHighlighter :query="query">
           #{{ tag }}
         </WordHighlighter>
