@@ -21,18 +21,13 @@ defineProps<{
       <h3 class="text-lg font-semibold text-gray-100" translate="no">
         <!-- inset makes the link full with and height to the card -->
         <NuxtLink :to="project.path" class="absolute inset-0"></NuxtLink>
-        <WordHighlighter :query="query" translate="no">
-        {{ project.name }}
+        <WordHighlighter :query="query">
+          {{ project.name }}
         </WordHighlighter>
       </h3>
     </div>
     <div class="pt-0">
       <p class="dark:text-gray-300">
-        <!-- 
-          TODO: 
-          "[Vue warn]: Extraneous non-props attributes (data-v-inspector) were passed to component but could not be automatically inherited because component renders fragment or text or teleport root nodes."
-          Error is occured when using WordHighlighter in a component.
-         -->
         <WordHighlighter :query="query">
           {{ project.description }}
         </WordHighlighter>
