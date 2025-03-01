@@ -16,32 +16,40 @@ published: true
     ```bash
     mkdir kavita && cd kavita
     ```
-2. Create required directories
-    ```bash
-    mkdir -p external_data
-    ```
-3. Create a `docker-compose.yml` file and add the following content:
+2. Create a `docker-compose.yml` file and add the following content:
     ```yaml [docker-compose.yml]
     services:
       kavita:
-        image: jvmilazz0/kavita:latest    # Using the stable branch from the official dockerhub repo.
+        image: jvmilazz0/kavita:latest
         container_name: kavita
         volumes:
-          - ./external_data:/external_data
-          - kavita_config:/kavita/config     # /kavita/config must not be changed
+          - kavita_data:/kavita_data
+          - kavita_config:/kavita/config
         environment:
           - TZ=Asia/Seoul
           - DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true
         ports:
           - "5000:5000"
         restart: unless-stopped
+      filebrowser:
+        image: filebrowser/filebrowser
+        ports:
+          - "9999:80"
+        environment:
+          - FB_NOAUTH=true
+        volumes:
+          - kavita_data:/srv
+          - filebrowser_database:/database
+        restart: always
     volumes:
+      kavita_data:
       kavita_config:
+      filebrowser_database:
     ```
-4. Run the following command to start the container:
+3. Run the following command to start the container:
     ```bash
     docker compose up -d
     ```
-5. Go to [http://localhost:5000](http://localhost:5000) to access the Kavita.
+4. Go to [http://localhost:5000](http://localhost:5000) to access the Kavita.
 
-NOTE: Add your manga, comics, books, etc. to the `external_data` folder.
+NOTE: To upload files, go to [http://localhost:9999](http://localhost:9999). The data will be stored in the `kavita_data` directory.
