@@ -19,7 +19,7 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: false },
-  modules: ['@nuxt/ui', '@nuxt/fonts', '@nuxt/image', '@nuxt/content', '@vueuse/nuxt'],
+  modules: ['@nuxt/ui', '@nuxt/fonts', '@nuxt/image', '@nuxt/content', '@vueuse/nuxt', "@nuxt/scripts"],
   colorMode: {
     preference: 'dark'
   },
@@ -39,6 +39,13 @@ export default defineNuxtConfig({
             sepia: 'monokai'
           }
         }
+      }
+    }
+  },
+  scripts: {
+    registry: {
+      googleTagManager: {
+        id: 'GTM-NB38HJ5Z'
       }
     }
   }
