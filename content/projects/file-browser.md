@@ -5,7 +5,7 @@ logo: '/assets/images/logos/file-browser.png'
 homepage: 'https://filebrowser.org/'
 docker: 'https://filebrowser.org/installation#docker'
 github: 'https://github.com/filebrowser/filebrowser'
-tags: []
+tags: ["storage", "file manager"]
 published: true
 ---
 
