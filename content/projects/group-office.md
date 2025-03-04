@@ -5,7 +5,7 @@ logo: '/assets/images/logos/group-office.svg'
 homepage: 'https://www.group-office.com/'
 docker: 'https://github.com/Intermesh/docker-groupoffice?tab=readme-ov-file#using-docker-compose'
 github: 'https://github.com/Intermesh/docker-groupoffice'
-tags: []
+tags: ["CRM"]
 published: true
 ---
 

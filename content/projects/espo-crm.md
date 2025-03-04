@@ -5,7 +5,7 @@ logo: '/assets/images/logos/espo-crm.png'
 homepage: 'https://www.espocrm.com/'
 docker: 'https://docs.espocrm.com/administration/docker/installation/#install-espocrm-with-docker-compose'
 github: 'https://github.com/espocrm/espocrm'
-tags: []
+tags: ["CRM"]
 published: true
 ---
 
