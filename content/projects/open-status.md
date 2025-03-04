@@ -5,7 +5,7 @@ logo: '/assets/images/logos/open-status.png'
 homepage: 'https://www.openstatus.dev/'
 github: 'https://github.com/openstatushq/openstatus'
 demo: 'https://www.openstatus.dev/public/monitors/1'
-tags: ["monitoring"]
+tags: ["monitoring", "LIVE DEMO"]
 published: true
 ---
 

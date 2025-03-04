@@ -5,7 +5,7 @@ logo: '/assets/images/logos/flarum.svg'
 homepage: 'https://flarum.org/'
 github: 'https://github.com/flarum/flarum'
 demo: 'https://demo.flarum.site/'
-tags: ["forum"]
+tags: ["forum", "LIVE DEMO"]
 published: true
 ---
 

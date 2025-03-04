@@ -6,7 +6,7 @@ homepage: 'https://wiki.kavitareader.com/'
 docker: 'https://wiki.kavitareader.com/installation/docker/dockerhub/'
 github: 'https://github.com/Kareadita/Kavita'
 demo: 'https://demo.kavitareader.com/login?apiKey=9003cf99-9213-4206-a787-af2fe4cc5f1f'
-tags: []
+tags: ["book", "LIVE DEMO"]
 published: true
 ---
 

@@ -6,7 +6,7 @@ homepage: 'https://hedgedoc.org/'
 docker: 'https://docs.hedgedoc.org/setup/docker/'
 github: 'https://github.com/hedgedoc/hedgedoc'
 demo: 'https://demo.hedgedoc.org/'
-tags: []
+tags: ["wiki", "LIVE DEMO"]
 published: true
 ---
 

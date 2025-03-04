@@ -5,7 +5,7 @@ logo: '/assets/images/logos/uptrace.svg'
 homepage: 'https://uptrace.dev/'
 github: 'https://github.com/uptrace/uptrace'
 demo: 'https://app.uptrace.dev/'
-tags: ["monitoring"]
+tags: ["monitoring", "LIVE DEMO"]
 published: true
 ---
 

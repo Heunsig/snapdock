@@ -6,7 +6,7 @@ homepage: 'https://www.bookstackapp.com/'
 docker: 'https://www.bookstackapp.com/docs/admin/installation/#docker'
 github: 'https://github.com/BookStackApp/BookStack'
 demo: 'https://demo.bookstackapp.com/'
-tags: ["wiki"]
+tags: ["wiki", "LIVE DEMO"]
 published: true
 ---
 

@@ -6,7 +6,7 @@ homepage: 'https://ghostfol.io/'
 docker: 'https://github.com/ghostfolio/ghostfolio?tab=readme-ov-file#run-with-docker-compose'
 github: 'https://github.com/ghostfolio/ghostfolio'
 demo: 'https://ghostfol.io/en/demo'
-tags: ["finance"]
+tags: ["finance", "LIVE DEMO"]
 published: true
 ---
 

@@ -6,7 +6,7 @@ homepage: 'https://www.usememos.com/'
 docker: 'https://www.usememos.com/docs/install/container-install'
 github: 'https://github.com/usememos/memos'
 demo: 'https://demo.usememos.com/'
-tags: []
+tags: ["note", "LIVE DEMO"]
 published: true
 ---
 
