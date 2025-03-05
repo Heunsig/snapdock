@@ -5,7 +5,7 @@ logo: '/assets/images/logos/snipe-it.png'
 homepage: 'https://snipeitapp.com/'
 github: 'https://github.com/snipe/snipe-it'
 demo: 'https://demo.snipeitapp.com/'
-tags: ["inventory", "LIVE DEMO"]
+tags: ["inventory"]
 published: true
 ---
 

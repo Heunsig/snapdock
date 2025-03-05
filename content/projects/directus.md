@@ -6,7 +6,7 @@ homepage: 'https://directus.io/'
 docker: 'https://docs.directus.io/self-hosted/quickstart.html#create-a-docker-compose-file'
 github: 'https://github.com/directus/directus'
 demo: 'https://directus.pizza/admin/login?template=cms'
-tags: ["CMS", "LIVE DEMO"]
+tags: ["CMS"]
 published: true
 ---
 

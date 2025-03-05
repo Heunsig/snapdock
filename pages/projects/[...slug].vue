@@ -26,7 +26,7 @@ useSeoMeta({
         <h1 class="text-lg font-bold" translate="no">{{ page.name }}</h1>
         <p class="col-span-2 md:col-span-1 md:col-start-2 text-sm dark:text-gray-300">{{ page.description }}</p>
         <div 
-          v-if="page.tags && page.tags.length > 0"
+          v-if="page.tags && page.tags.length > 0 || page.demo"
           class="col-span-2 md:col-span-1 md:col-start-2 flex flex-wrap gap-2 mt-3"
         >
           <span
@@ -36,6 +36,13 @@ useSeoMeta({
             translate="no"
           >
             #{{ tag }}
+          </span>
+          <span
+            v-if="page.demo"
+            class="text-xs bg-gray-100 dark:bg-gray-800 rounded-md px-2 py-1"
+            translate="no"
+          >
+            #LIVE DEMO
           </span>
         </div>
       </div>
@@ -101,8 +108,8 @@ useSeoMeta({
         </UButton>
       </NuxtLink>
       <NuxtLink
-        v-if="page.meta.demo"
-        :to="page.meta.demo"
+        v-if="page.demo"
+        :to="page.demo"
         target="_blank"
         translate="no"
       >

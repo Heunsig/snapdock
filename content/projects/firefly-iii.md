@@ -6,7 +6,7 @@ homepage: 'https://firefly-iii.org/'
 docker: 'https://docs.firefly-iii.org/how-to/firefly-iii/installation/docker/'
 github: 'https://github.com/firefly-iii/firefly-iii/'
 demo: 'https://demo.firefly-iii.org/'
-tags: ["finance", "LIVE DEMO"]
+tags: ["finance"]
 published: true
 ---
 

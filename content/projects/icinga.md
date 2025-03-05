@@ -5,7 +5,7 @@ logo: '/assets/images/logos/icinga.png'
 homepage: 'https://icinga.com/'
 github: 'https://github.com/icinga'
 demo: 'https://icinga.com/demo/authentication/login'
-tags: ["monitoring", "LIVE DEMO"]
+tags: ["monitoring"]
 published: true
 ---
 

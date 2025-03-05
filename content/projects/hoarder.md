@@ -6,7 +6,7 @@ homepage: 'https://hoarder.app/'
 docker: 'https://docs.hoarder.app/Installation/docker'
 github: 'https://github.com/hoarder-app/hoarder'
 demo: 'https://try.hoarder.app/signin'
-tags: ["bookmark", "ai", "LIVE DEMO"]
+tags: ["bookmark", "ai"]
 published: true
 ---
 

@@ -5,7 +5,7 @@ logo: '/assets/images/logos/librenms.png'
 homepage: 'https://www.librenms.org/'
 github: 'https://github.com/librenms/librenms'
 demo: 'https://demo.librenms.org/'
-tags: ["monitoring", "LIVE DEMO"]
+tags: ["monitoring"]
 published: true
 ---
 

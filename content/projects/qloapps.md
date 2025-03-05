@@ -6,7 +6,7 @@ homepage: 'https://qloapps.com/'
 github: 'https://github.com/Qloapps/QloApps'
 docker: 'https://hub.docker.com/r/webkul/qloapps_docker'
 demo: 'https://demo.qloapps.com/'
-tags: ["CMS", "LIVE DEMO"]
+tags: ["CMS"]
 published: true
 ---
 

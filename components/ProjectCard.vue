@@ -8,7 +8,7 @@ defineProps<{
     description: string,
     path: string,
     logo?: string,
-    tags?: string[]
+    tags?: string[],
   }
 }>()
 </script>
@@ -35,7 +35,7 @@ defineProps<{
     </div>
     
     <div 
-      v-if="project.tags"
+      v-if="project.tags" 
       class="pt-4 flex flex-wrap items-center gap-2"
     >
       <span class="text-sm dark:text-gray-400" v-for="tag in project.tags" translate="no">
@@ -43,7 +43,7 @@ defineProps<{
           #{{ tag }}
         </WordHighlighter>
       </span>
-      
     </div>
   </article>
 </template>
+

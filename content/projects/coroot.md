@@ -6,7 +6,7 @@ homepage: 'https://coroot.com/'
 docker: 'https://docs.coroot.com/installation/docker'
 github: 'https://github.com/coroot/coroot'
 demo: 'https://demo.coroot.com/'
-tags: ["monitoring", "LIVE DEMO"]
+tags: ["monitoring"]
 published: true
 ---
 

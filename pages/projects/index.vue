@@ -1,16 +1,22 @@
 <script setup lang="ts">
-const { data } = await useAsyncData('navigation', () => queryCollectionNavigation('projects', ['name', 'description', 'logo', 'tags']).where('published', '=', true))
+const { data } = await useAsyncData('navigation', () => queryCollectionNavigation('projects', ['name', 'description', 'logo', 'tags', 'demo']).where('published', '=', true))
 
 const projects = computed(() => data.value?.[0]?.children ?? [])
 const search = useRouteQuery('q', '')
 const orderBy = useRouteQuery('orderBy', 'name')
 const order = useRouteQuery<string>('order', 'asc')
 
+// TODO: remove this once we have a better way to get the tags
+function getTags(project: any) {
+  return [...(project.tags || []), project.demo ? 'LIVE DEMO' : null].filter(Boolean)
+}
+
 const filteredProjects = computed(() => projects.value.filter((project: any) => {
   const searchTerm = search.value.toLowerCase()
+  const tags = getTags(project)
   return project.name.toLowerCase().includes(searchTerm) || 
          (project.description && project.description.toLowerCase().includes(searchTerm)) ||
-         (project.tags && project.tags.some((tag: string) => tag.toLowerCase().includes(searchTerm)))
+         (tags && tags.some((tag: string) => `#${tag.toLowerCase()}`.includes(searchTerm)))
 }))
 
 const sortedProjects = computed(() => {
@@ -248,7 +254,7 @@ function reset() {
           description: project.description,
           path: project.path,
           logo: project.logo,
-          tags: project.tags
+          tags: getTags(project)
         }"
       />
     </div>

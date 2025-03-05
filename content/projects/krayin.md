@@ -5,7 +5,7 @@ logo: '/assets/images/logos/krayin.svg'
 homepage: 'https://krayincrm.com/'
 github: 'https://github.com/krayin/laravel-crm'
 demo: 'https://demo.krayincrm.com/'
-tags: ["CRM", "LIVE DEMO"]
+tags: ["CRM"]
 published: true
 ---
 

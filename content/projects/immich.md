@@ -6,7 +6,7 @@ homepage: 'https://immich.app/'
 docker: 'https://immich.app/docs/install/docker-compose'
 github: 'https://github.com/immich-app/immich'
 demo: 'https://demo.immich.app/'
-tags: ["photo", "video", "LIVE DEMO"]
+tags: ["photo", "video"]
 published: true
 ---
 

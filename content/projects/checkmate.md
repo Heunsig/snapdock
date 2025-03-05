@@ -6,7 +6,7 @@ homepage: 'https://checkmate.so/'
 docker: 'https://docs.checkmate.so/users-guide/quickstart'
 github: 'https://github.com/bluewave-labs/Checkmate'
 demo: 'https://checkmate-demo.bluewavelabs.ca/'
-tags: ['monitoring', 'status', 'uptime', 'healthcheck', 'LIVE DEMO']
+tags: ['monitoring', 'status', 'uptime', 'healthcheck']
 published: true
 ---
 

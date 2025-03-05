@@ -4,7 +4,7 @@ description: Observability platform specifically designed for Kubernetes
 logo: '/assets/images/logos/metoro.svg'
 homepage: 'https://metoro.io/'
 demo: 'https://demo.us-east.metoro.io/'
-tags: ["monitoring", "kubernetes", "LIVE DEMO"]
+tags: ["monitoring", "kubernetes"]
 published: true
 ---
 

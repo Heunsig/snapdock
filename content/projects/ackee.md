@@ -6,7 +6,7 @@ homepage: 'https://ackee.electerious.com/'
 docker: 'https://docs.ackee.electerious.com/#/docs/Get%20started#with-docker-compose'
 github: 'https://github.com/electerious/Ackee'
 demo: 'https://demo.ackee.electerious.com/'
-tags: ["analytics", "LIVE DEMO"]
+tags: ["analytics"]
 published: true
 ---
 
