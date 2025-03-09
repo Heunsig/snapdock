@@ -8,6 +8,15 @@ useSeoMeta({
   title: `${page.value?.name} | SnapDock`,
   description: page.value?.description
 })
+
+const screenshots = computed(() => page.value?.screenshots ?? [])
+const isOpen = ref(false)
+const expandedImage = ref('')
+
+function zoom(image: string) {
+  isOpen.value = true
+  expandedImage.value = image
+}
 </script>
 
 <template>
@@ -42,7 +51,14 @@ useSeoMeta({
             class="text-xs bg-gray-100 dark:bg-gray-800 rounded-md px-2 py-1"
             translate="no"
           >
-            #LIVE DEMO
+            #Live Demo
+          </span>
+          <span
+            v-if="page.screenshots && page.screenshots.length > 0"
+            class="text-xs bg-gray-100 dark:bg-gray-800 rounded-md px-2 py-1"
+            translate="no"
+          >
+            #Screenshots
           </span>
         </div>
       </div>
@@ -52,80 +68,124 @@ useSeoMeta({
         :value="page"
       />
     </main>
-    <nav class="col-start-1 md:col-start-2 row-start-2 md:row-start-1 md:row-span-2 flex flex-wrap flex-row md:flex-col items-center md:items-start gap-1 md:gap-3 -ml-2 md:ml-0">
-      <NuxtLink
-        v-if="page.meta.homepage"
-        :to="page.meta.homepage"
-        target="_blank"
-        translate="no"
-      >
-        <UButton
-          color="gray" 
-          variant="link"
-          icon="i-mdi-globe"
+    <div class="col-start-1 md:col-start-2 row-start-2 md:row-start-1 md:row-span-2">
+      <nav class="flex flex-wrap flex-row md:flex-col items-center md:items-start gap-1 md:gap-3 -ml-2 md:ml-0">
+        <NuxtLink
+          v-if="page.meta.homepage"
+          :to="page.meta.homepage"
+          target="_blank"
+          translate="no"
         >
-          Homepage
+          <UButton
+            color="gray" 
+            variant="link"
+            icon="i-mdi-globe"
+          >
+            Homepage
 
-          <template #trailing>
-            <UIcon name="i-mdi-external-link" class="w-4 h-4"/>
-          </template>
-        </UButton>
-      </NuxtLink>
-      <NuxtLink
-        v-if="page.meta.docker"
-        :to="page.meta.docker"
-        target="_blank"
-        translate="no"
-      >
-        <UButton
-          color="gray" 
-          variant="link"
-          icon="i-mdi-docker"
+            <template #trailing>
+              <UIcon name="i-mdi-external-link" class="w-4 h-4"/>
+            </template>
+          </UButton>
+        </NuxtLink>
+        <NuxtLink
+          v-if="page.meta.docker"
+          :to="page.meta.docker"
+          target="_blank"
+          translate="no"
         >
-          Docker Guide
+          <UButton
+            color="gray" 
+            variant="link"
+            icon="i-mdi-docker"
+          >
+            Docker Guide
 
-          <template #trailing>
-            <UIcon name="i-mdi-external-link" class="w-4 h-4"/>
-          </template>
-        </UButton>
-      </NuxtLink>
-      <NuxtLink
-        v-if="page.meta.github"
-        :to="page.meta.github"
-        target="_blank"
-        translate="no"
-      >
-        <UButton 
-          color="gray" 
-          variant="link"
-          icon="i-mdi-github"
+            <template #trailing>
+              <UIcon name="i-mdi-external-link" class="w-4 h-4"/>
+            </template>
+          </UButton>
+        </NuxtLink>
+        <NuxtLink
+          v-if="page.meta.github"
+          :to="page.meta.github"
+          target="_blank"
+          translate="no"
         >
-          Github
+          <UButton 
+            color="gray" 
+            variant="link"
+            icon="i-mdi-github"
+          >
+            Github
 
-          <template #trailing>
-            <UIcon name="i-mdi-external-link" class="w-4 h-4"/>
-          </template>
-        </UButton>
-      </NuxtLink>
-      <NuxtLink
-        v-if="page.demo"
-        :to="page.demo"
-        target="_blank"
-        translate="no"
-      >
-        <UButton 
-          color="gray" 
-          variant="link"
-          icon="i-mdi-play-circle"
+            <template #trailing>
+              <UIcon name="i-mdi-external-link" class="w-4 h-4"/>
+            </template>
+          </UButton>
+        </NuxtLink>
+        <NuxtLink
+          v-if="page.demo"
+          :to="page.demo"
+          target="_blank"
+          translate="no"
         >
-          Live Demo
+          <UButton 
+            color="gray" 
+            variant="link"
+            icon="i-mdi-play-circle"
+          >
+            Live Demo
 
-          <template #trailing>
-            <UIcon name="i-mdi-external-link" class="w-4 h-4"/>
-          </template>
-        </UButton>
-      </NuxtLink>
-    </nav>
+            <template #trailing>
+              <UIcon name="i-mdi-external-link" class="w-4 h-4"/>
+            </template>
+          </UButton>
+        </NuxtLink>
+      </nav>
+      <div class="mt-4 md:ml-3" v-if="screenshots && screenshots.length > 0">
+        <h2 class="text-base font-semibold mb-2">Screenshots ({{ screenshots.length }})</h2>
+        <UCarousel 
+          v-slot="{ item }" 
+          :items="screenshots" 
+          :ui="{ 
+            container: 'gap-1',
+            item: 'snap-align-none'
+          }">
+          <div class="p-1">
+            <button
+              type="button"
+              class="rounded-lg overflow-hidden outline-none hover:ring-2 ring-offset-2 ring-gray-400 dark:ring-offset-gray-900 focus:ring-2"
+              :class="{
+                'ring-2': expandedImage === item
+              }"
+              @click="zoom(item)"
+            >
+              <NuxtImg
+                :src="item" 
+                class="w-full cursor-zoom-in" 
+                sizes="108 md:126"
+                draggable="false"
+              />
+            </button>
+          </div>
+        </UCarousel>
+      </div>
+    </div>
+    
+    <UModal 
+      v-model="isOpen" 
+      :ui="{
+        width: 'w-full sm:max-w-[600px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1200px]'
+      }"
+    >
+      <NuxtImg
+        :src="expandedImage"
+        class="rounded-lg w-full"
+        sizes="400px sm:600px md:1200px"
+        loading="lazy"
+      />
+    </UModal>
   </div>
   <div v-else>Home not found</div>
 </template>

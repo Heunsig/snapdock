@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data } = await useAsyncData('navigation', () => queryCollectionNavigation('projects', ['name', 'description', 'logo', 'tags', 'demo']).where('published', '=', true))
+const { data } = await useAsyncData('navigation', () => queryCollectionNavigation('projects', ['name', 'description', 'logo', 'tags', 'demo', 'screenshots']).where('published', '=', true))
 
 const projects = computed(() => data.value?.[0]?.children ?? [])
 const search = useRouteQuery('q', '')
@@ -8,7 +8,7 @@ const order = useRouteQuery<string>('order', 'asc')
 
 // TODO: remove this once we have a better way to get the tags
 function getTags(project: any) {
-  return [...(project.tags || []), project.demo ? 'LIVE DEMO' : null].filter(Boolean)
+  return [...(project.tags || []), project.demo ? 'Live Demo' : null, project.screenshots && project.screenshots.length > 0 ? 'Screenshots' : null].filter(Boolean)
 }
 
 const filteredProjects = computed(() => projects.value.filter((project: any) => {
