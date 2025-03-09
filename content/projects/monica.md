@@ -6,6 +6,14 @@ homepage: 'https://monicahq.com/'
 docker: 'https://github.com/monicahq/docker'
 github: 'https://github.com/monicahq/monica'
 tags: ["crm"]
+screenshots: [
+  '/assets/images/screenshots/monica/monica_01.png',
+  '/assets/images/screenshots/monica/monica_02.png',
+  '/assets/images/screenshots/monica/monica_03.png',
+  '/assets/images/screenshots/monica/monica_04.png',
+  '/assets/images/screenshots/monica/monica_05.png',
+  '/assets/images/screenshots/monica/monica_06.png',
+]
 published: true
 ---
 

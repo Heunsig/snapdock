@@ -7,6 +7,14 @@ docker: 'https://docs.hoarder.app/Installation/docker'
 github: 'https://github.com/hoarder-app/hoarder'
 demo: 'https://try.hoarder.app/signin'
 tags: ["bookmark", "ai"]
+screenshots: [
+  '/assets/images/screenshots/hoarder/hoarder_01.png',
+  '/assets/images/screenshots/hoarder/hoarder_02.png',
+  '/assets/images/screenshots/hoarder/hoarder_03.png',
+  '/assets/images/screenshots/hoarder/hoarder_04.png',
+  '/assets/images/screenshots/hoarder/hoarder_05.png',
+  '/assets/images/screenshots/hoarder/hoarder_06.png',
+]
 published: true
 ---
 

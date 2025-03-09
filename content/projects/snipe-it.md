@@ -6,6 +6,12 @@ homepage: 'https://snipeitapp.com/'
 github: 'https://github.com/snipe/snipe-it'
 demo: 'https://demo.snipeitapp.com/'
 tags: ["inventory"]
+screenshots: [
+  '/assets/images/screenshots/snipe-it/snipe-it_01.png',
+  '/assets/images/screenshots/snipe-it/snipe-it_02.png',
+  '/assets/images/screenshots/snipe-it/snipe-it_03.png',
+  '/assets/images/screenshots/snipe-it/snipe-it_04.png',
+]
 published: true
 ---
 

@@ -6,6 +6,13 @@ homepage: 'https://github.com/causefx/Organizr'
 docker: 'https://github.com/causefx/Organizr?tab=readme-ov-file#usage'
 github: 'https://github.com/causefx/Organizr'
 tags: ["dashboard"]
+screenshots: [
+  '/assets/images/screenshots/organizr/organizr_01.png',
+  '/assets/images/screenshots/organizr/organizr_02.png',
+  '/assets/images/screenshots/organizr/organizr_03.png',
+  '/assets/images/screenshots/organizr/organizr_04.png',
+  '/assets/images/screenshots/organizr/organizr_05.png',
+]
 published: true
 ---
 

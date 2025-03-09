@@ -7,6 +7,13 @@ docker: 'https://www.bookstackapp.com/docs/admin/installation/#docker'
 github: 'https://github.com/BookStackApp/BookStack'
 demo: 'https://demo.bookstackapp.com/'
 tags: ["wiki"]
+screenshots: [
+  '/assets/images/screenshots/bookstack/bookstack_01.png',
+  '/assets/images/screenshots/bookstack/bookstack_02.png',
+  '/assets/images/screenshots/bookstack/bookstack_03.png',
+  '/assets/images/screenshots/bookstack/bookstack_04.png',
+  '/assets/images/screenshots/bookstack/bookstack_05.png',
+]
 published: true
 ---
 

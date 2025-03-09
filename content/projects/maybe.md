@@ -6,6 +6,14 @@ homepage: 'https://maybefinance.com/'
 docker: 'https://github.com/maybe-finance/maybe/blob/main/docs/hosting/docker.md'
 github: 'https://github.com/maybe-finance/maybe'
 tags: ["finance"]
+screenshots: [
+  '/assets/images/screenshots/maybe/maybe_01.png',
+  '/assets/images/screenshots/maybe/maybe_02.png',
+  '/assets/images/screenshots/maybe/maybe_03.png',
+  '/assets/images/screenshots/maybe/maybe_04.png',
+  '/assets/images/screenshots/maybe/maybe_05.png',
+  '/assets/images/screenshots/maybe/maybe_06.png',
+]
 published: true
 ---
 

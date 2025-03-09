@@ -6,6 +6,12 @@ homepage: 'https://filegator.io/'
 docker: 'https://docs.filegator.io/install.html'
 github: 'https://github.com/filegator/filegator'
 tags: ["storage", "file manager"]
+screenshots: [
+  '/assets/images/screenshots/file-gator/file-gator_01.png',
+  '/assets/images/screenshots/file-gator/file-gator_02.png',
+  '/assets/images/screenshots/file-gator/file-gator_03.png',
+  '/assets/images/screenshots/file-gator/file-gator_04.png',
+]
 published: true
 ---
 

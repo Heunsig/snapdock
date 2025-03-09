@@ -7,6 +7,16 @@ github: 'https://github.com/Qloapps/QloApps'
 docker: 'https://hub.docker.com/r/webkul/qloapps_docker'
 demo: 'https://demo.qloapps.com/'
 tags: ["CMS"]
+screenshots: [
+  '/assets/images/screenshots/qloapps/qloapps_01.png',
+  '/assets/images/screenshots/qloapps/qloapps_02.png',
+  '/assets/images/screenshots/qloapps/qloapps_03.png',
+  '/assets/images/screenshots/qloapps/qloapps_04.png',
+  '/assets/images/screenshots/qloapps/qloapps_admin_01.png',
+  '/assets/images/screenshots/qloapps/qloapps_admin_02.png',
+  '/assets/images/screenshots/qloapps/qloapps_admin_03.png',
+  '/assets/images/screenshots/qloapps/qloapps_admin_04.png',
+]
 published: true
 ---
 

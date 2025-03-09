@@ -6,6 +6,12 @@ homepage: 'https://homarr.dev/'
 docker: 'https://homarr.dev/docs/getting-started/installation/docker'
 github: 'https://github.com/homarr-labs/homarr'
 tags: ["dashboard"]
+screenshots: [
+  '/assets/images/screenshots/homarr/homarr_01.png',
+  '/assets/images/screenshots/homarr/homarr_02.png',
+  '/assets/images/screenshots/homarr/homarr_03.png',
+  '/assets/images/screenshots/homarr/homarr_04.png',
+]
 published: true
 ---
 

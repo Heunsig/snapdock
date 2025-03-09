@@ -7,6 +7,13 @@ docker: 'https://docs.paperless-ngx.com/setup/#docker'
 github: 'https://github.com/paperless-ngx/paperless-ngx'
 demo: 'https://demo.paperless-ngx.com/'
 tags: ['document management']
+screenshots: [
+  '/assets/images/screenshots/paperless-ngx/paperless-ngx_01.png',
+  '/assets/images/screenshots/paperless-ngx/paperless-ngx_02.png',
+  '/assets/images/screenshots/paperless-ngx/paperless-ngx_03.png',
+  '/assets/images/screenshots/paperless-ngx/paperless-ngx_04.png',
+  '/assets/images/screenshots/paperless-ngx/paperless-ngx_05.png',
+]
 published: true
 ---
 

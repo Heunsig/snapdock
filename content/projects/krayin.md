@@ -6,6 +6,13 @@ homepage: 'https://krayincrm.com/'
 github: 'https://github.com/krayin/laravel-crm'
 demo: 'https://demo.krayincrm.com/'
 tags: ["CRM"]
+screenshots: [
+  '/assets/images/screenshots/krayin/krayin_01.png',
+  '/assets/images/screenshots/krayin/krayin_02.png',
+  '/assets/images/screenshots/krayin/krayin_03.png',
+  '/assets/images/screenshots/krayin/krayin_04.png',
+  '/assets/images/screenshots/krayin/krayin_05.png',
+]
 published: true
 ---
 

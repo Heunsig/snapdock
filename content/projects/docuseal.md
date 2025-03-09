@@ -6,6 +6,14 @@ homepage: 'https://www.docuseal.com/'
 docker: 'https://www.docuseal.com/install'
 github: 'https://github.com/docusealco/docuseal'
 tags: []
+screenshots: [
+  '/assets/images/screenshots/docuseal/docuseal_01.png',
+  '/assets/images/screenshots/docuseal/docuseal_02.png',
+  '/assets/images/screenshots/docuseal/docuseal_03.png',
+  '/assets/images/screenshots/docuseal/docuseal_04.png',
+  '/assets/images/screenshots/docuseal/docuseal_05.png',
+  '/assets/images/screenshots/docuseal/docuseal_06.png',
+]
 published: true
 ---
 

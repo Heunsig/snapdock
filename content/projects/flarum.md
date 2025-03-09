@@ -6,6 +6,15 @@ homepage: 'https://flarum.org/'
 github: 'https://github.com/flarum/flarum'
 demo: 'https://demo.flarum.site/'
 tags: ["forum"]
+screenshots: [
+  '/assets/images/screenshots/flarum/flarum_01.png',
+  '/assets/images/screenshots/flarum/flarum_02.png',
+  '/assets/images/screenshots/flarum/flarum_03.png',
+  '/assets/images/screenshots/flarum/flarum_04.png',
+  '/assets/images/screenshots/flarum/flarum_05.png',
+  '/assets/images/screenshots/flarum/flarum_06.png',
+  '/assets/images/screenshots/flarum/flarum_07.png',
+]
 published: true
 ---
 

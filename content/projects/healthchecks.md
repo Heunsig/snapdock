@@ -6,6 +6,13 @@ homepage: 'https://healthchecks.io/'
 docker: 'https://healthchecks.io/docs/self_hosted_docker/'
 github: 'https://github.com/healthchecks/healthchecks'
 tags: ["monitoring", "healthcheck"]
+screenshots: [
+  '/assets/images/screenshots/healthchecks/healthchecks_01.png',
+  '/assets/images/screenshots/healthchecks/healthchecks_02.png',
+  '/assets/images/screenshots/healthchecks/healthchecks_03.png',
+  '/assets/images/screenshots/healthchecks/healthchecks_04.png',
+  '/assets/images/screenshots/healthchecks/healthchecks_05.png',
+]
 published: true
 ---
 

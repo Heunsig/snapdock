@@ -7,6 +7,12 @@ docker: 'https://github.com/mpepping/docker-cyberchef'
 github: 'https://github.com/gchq/CyberChef/'
 demo: 'https://gchq.github.io/CyberChef/'
 tags: ["encryption", "compression"]
+screenshots: [
+  '/assets/images/screenshots/cyberchef/cyberchef_01.png',
+  '/assets/images/screenshots/cyberchef/cyberchef_02.png',
+  '/assets/images/screenshots/cyberchef/cyberchef_03.png',
+  '/assets/images/screenshots/cyberchef/cyberchef_04.png',
+]
 published: true
 ---
 

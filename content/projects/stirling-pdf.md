@@ -7,6 +7,12 @@ docker: 'https://docs.stirlingpdf.com/Installation/Docker%20Install'
 github: 'https://github.com/Stirling-Tools/Stirling-PDF'
 demo: 'https://stirlingpdf.io/'
 tags: ["PDF"]
+screenshots: [
+  '/assets/images/screenshots/stirling-pdf/stirling-pdf_01.png',
+  '/assets/images/screenshots/stirling-pdf/stirling-pdf_02.png',
+  '/assets/images/screenshots/stirling-pdf/stirling-pdf_03.png',
+  '/assets/images/screenshots/stirling-pdf/stirling-pdf_04.png',
+]
 published: true
 ---
 

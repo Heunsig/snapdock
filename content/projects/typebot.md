@@ -5,6 +5,14 @@ logo: '/assets/images/logos/typebot.svg'
 homepage: 'https://typebot.io/'
 docker: 'https://docs.typebot.io/self-hosting/deploy/docker'
 github: 'https://github.com/baptisteArno/typebot.io'
+screenshots: [
+  '/assets/images/screenshots/typebot/typebot_01.png',
+  '/assets/images/screenshots/typebot/typebot_02.png',
+  '/assets/images/screenshots/typebot/typebot_03.png',
+  '/assets/images/screenshots/typebot/typebot_04.png',
+  '/assets/images/screenshots/typebot/typebot_05.png',
+  '/assets/images/screenshots/typebot/typebot_06.png',
+]
 published: true
 ---
 
