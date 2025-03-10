@@ -6,6 +6,13 @@ homepage: 'https://fider.io/'
 docker: 'https://docs.fider.io/hosting-instance'
 github: 'https://github.com/getfider/fider'
 tags: []
+screenshots: [
+  '/assets/images/screenshots/fider/fider_01.png',
+  '/assets/images/screenshots/fider/fider_02.png',
+  '/assets/images/screenshots/fider/fider_03.png',
+  '/assets/images/screenshots/fider/fider_04.png',
+  '/assets/images/screenshots/fider/fider_05.png',
+]
 published: true
 ---
 
