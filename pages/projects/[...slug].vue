@@ -155,7 +155,7 @@ function zoom(image: string) {
           <div class="p-1">
             <button
               type="button"
-              class="rounded-lg overflow-hidden outline-none hover:ring-2 ring-offset-2 ring-gray-400 dark:ring-offset-gray-900 focus:ring-2"
+              class="rounded-lg overflow-hidden outline-none hover:ring-2 ring-offset-2 ring-yellow-500 dark:ring-offset-gray-900 focus:ring-2"
               :class="{
                 'ring-2': expandedImage === item
               }"
