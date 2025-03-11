@@ -164,7 +164,7 @@ function zoom(image: string) {
               <NuxtImg
                 :src="item" 
                 class="w-full cursor-zoom-in" 
-                sizes="108 md:126"
+                sizes="110"
                 draggable="false"
               />
             </button>
