@@ -17,6 +17,14 @@ function zoom(image: string) {
   isOpen.value = true
   expandedImage.value = image
 }
+
+
+const target = useTemplateRef('target')
+onClickOutside(target, () => {
+  expandedImage.value = ''
+}, {
+  ignore: ['.zoom-modal']
+})
 </script>
 
 <template>
@@ -154,6 +162,7 @@ function zoom(image: string) {
           }">
           <div class="p-1">
             <button
+              ref="target"
               type="button"
               class="rounded-lg overflow-hidden outline-none hover:ring-2 ring-offset-2 ring-yellow-500 dark:ring-offset-gray-900 focus:ring-2"
               :class="{
@@ -174,8 +183,9 @@ function zoom(image: string) {
     </div>
     
     <UModal 
-      v-model="isOpen" 
+      v-model="isOpen"
       :ui="{
+        wrapper: 'zoom-modal',
         width: 'w-full sm:max-w-[600px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1200px]'
       }"
     >
