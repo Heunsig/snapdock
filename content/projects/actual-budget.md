@@ -7,6 +7,15 @@ docker: 'https://actualbudget.org/docs/install/docker'
 github: 'https://github.com/actualbudget/actual'
 demo: 'https://demo.actualbudget.org/'
 tags: ["finance"]
+screenshots: [
+  '/assets/images/screenshots/actual-budget/actual-budget_01.png',
+  '/assets/images/screenshots/actual-budget/actual-budget_02.png',
+  '/assets/images/screenshots/actual-budget/actual-budget_03.png',
+  '/assets/images/screenshots/actual-budget/actual-budget_04.png',
+  '/assets/images/screenshots/actual-budget/actual-budget_05.png',
+  '/assets/images/screenshots/actual-budget/actual-budget_06.png',
+  
+]
 published: true
 ---
 
