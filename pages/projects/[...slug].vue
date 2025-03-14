@@ -18,6 +18,23 @@ function zoom(image: string) {
   expandedImage.value = image
 }
 
+const disabledPrev = computed(() => screenshots.value.indexOf(expandedImage.value) === 0)
+function prev() {
+  const currentIndex = screenshots.value.indexOf(expandedImage.value)
+  const prevIndex = currentIndex - 1
+  if (prevIndex >= 0) {
+    expandedImage.value = screenshots.value[prevIndex]
+  }
+}
+
+const disabledNext = computed(() => screenshots.value.indexOf(expandedImage.value) === screenshots.value.length - 1)
+function next() {
+  const currentIndex = screenshots.value.indexOf(expandedImage.value)
+  const nextIndex = currentIndex + 1
+  if (nextIndex < screenshots.value.length) {
+    expandedImage.value = screenshots.value[nextIndex]
+  }
+}
 
 const target = useTemplateRef('target')
 onClickOutside(target, () => {
@@ -185,10 +202,22 @@ onClickOutside(target, () => {
     <UModal 
       v-model="isOpen"
       :ui="{
-        wrapper: 'zoom-modal',
-        width: 'w-full sm:max-w-[600px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1200px]'
+        wrapper: 'zoom-modal test',
+        width: 'w-full sm:max-w-[600px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1200px]',
+        background: 'dark:bg-transparent'
       }"
     >
+      <div class="flex items-center justify-center gap-4">
+        <UButton type="button" color="black" variant="link" @click="prev" class="text-lg" :disabled="disabledPrev">
+          <UIcon name="i-mdi-chevron-left" class="w-6 h-6"/>
+          Prev
+        </UButton>
+        <UButton type="button" color="black" variant="link" @click="next" class="text-lg" :disabled="disabledNext">
+          Next
+          <UIcon name="i-mdi-chevron-right" class="w-6 h-6"/>
+        </UButton>
+      </div>
+
       <NuxtImg
         :src="expandedImage"
         class="rounded-lg w-full"
