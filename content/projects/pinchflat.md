@@ -5,7 +5,15 @@ logo: '/assets/images/logos/pinchflat.png'
 homepage: 'https://github.com/kieraneglin/pinchflat'
 docker: 'https://github.com/kieraneglin/pinchflat?tab=readme-ov-file#docker'
 github: 'https://github.com/kieraneglin/pinchflat'
-published: false
+tags: ["youtube", "downloader"]
+screenshots: [
+  '/assets/images/screenshots/pinchflat/pinchflat_01.png',
+  '/assets/images/screenshots/pinchflat/pinchflat_02.png',
+  '/assets/images/screenshots/pinchflat/pinchflat_03.png',
+  '/assets/images/screenshots/pinchflat/pinchflat_04.png',
+  '/assets/images/screenshots/pinchflat/pinchflat_05.png',
+]
+published: true
 ---
 
 ## Getting Started
@@ -21,8 +29,7 @@ published: false
       pinchflat:
         image: ghcr.io/kieraneglin/pinchflat:latest
         environment:
-          # Set the timezone to your local timezone
-          - TZ=America/New_York
+          - TZ=Asia/Seoul
         ports:
           - '8945:8945'
         volumes:
