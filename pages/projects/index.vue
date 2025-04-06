@@ -2,7 +2,9 @@
 const { data } = await useAsyncData('navigation', () => queryCollectionNavigation('projects', ['name', 'description', 'logo', 'tags', 'demo', 'screenshots']).where('published', '=', true))
 
 const projects = computed(() => data.value?.[0]?.children ?? [])
-const search = useRouteQuery('q', '')
+const search = useRouteQuery('q', '', {
+  route: useRoute()
+})
 const orderBy = useRouteQuery('orderBy', 'name')
 const order = useRouteQuery<string>('order', 'asc')
 
