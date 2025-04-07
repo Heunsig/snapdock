@@ -7,6 +7,14 @@ docker: 'https://www.bytebase.com/docs/get-started/self-host/#docker'
 github: 'https://github.com/bytebase/bytebase'
 tags: []
 published: true
+screenshots: [
+  '/assets/images/screenshots/bytebase/bytebase_01.png',
+  '/assets/images/screenshots/bytebase/bytebase_02.png',
+  '/assets/images/screenshots/bytebase/bytebase_03.png',
+  '/assets/images/screenshots/bytebase/bytebase_04.png',
+  '/assets/images/screenshots/bytebase/bytebase_05.png',
+  '/assets/images/screenshots/bytebase/bytebase_06.png',
+]
 ---
 
 ## Getting Started
