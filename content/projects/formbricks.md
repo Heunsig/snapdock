@@ -6,6 +6,18 @@ homepage: 'https://formbricks.com/'
 docker: 'https://formbricks.com/docs/self-hosting/setup/docker'
 github: 'https://github.com/formbricks/formbricks'
 tags: ["feedback", "survey"]
+screenshots: [
+  '/assets/images/screenshots/formbricks/formbricks_01.png',
+  '/assets/images/screenshots/formbricks/formbricks_02.png',
+  '/assets/images/screenshots/formbricks/formbricks_03.png',
+  '/assets/images/screenshots/formbricks/formbricks_04.png',
+  '/assets/images/screenshots/formbricks/formbricks_05.png',
+  '/assets/images/screenshots/formbricks/formbricks_06.png',
+  '/assets/images/screenshots/formbricks/formbricks_07.png',
+  '/assets/images/screenshots/formbricks/formbricks_08.png',
+  '/assets/images/screenshots/formbricks/formbricks_09.png',
+  '/assets/images/screenshots/formbricks/formbricks_10.png',
+]
 published: true
 ---
 
