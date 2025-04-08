@@ -40,11 +40,37 @@ function copyCode() {
   }, 500)
 }
 
+const preRef = useTemplateRef('pre')
+const isOverflowing = ref(false)
+const isExpanded = ref(false)
+
+function checkOverflow() {
+  if (!preRef.value) {
+    return;
+  }
+  if (preRef.value.offsetHeight > 500) {
+    isOverflowing.value = true
+  }
+}
+
+function expandContent() {
+  isExpanded.value = true
+}
+
+function collapseContent() {
+  isExpanded.value = false
+}
+
+watch(preRef, () => {
+  checkOverflow()
+})
 </script>
 
 <template>
   <div 
-    class="my-4"
+    :class="cn('my-4 max-h-[500px] overflow-y-clip relative', {
+      'max-h-none': isExpanded
+    })"
   >
     <div 
       v-if="filename" 
@@ -59,6 +85,7 @@ function copyCode() {
     </div>
     <div class="relative">
       <pre
+        ref="pre"
         :class="$props.class"
         class="my-0 pr-12 sm:pr-0"
         translate="no"
@@ -66,13 +93,37 @@ function copyCode() {
 
       <div class="absolute top-2 right-2">
         <UButton
+          v-if="isOverflowing"
+          variant="link"
+          color="gray"
+          size="sm"
+          icon="i-mdi-chevron-up"
+          @click="() => collapseContent()"
+          title="Collapse"
+        />
+        <UButton
           variant="link"
           color="gray"
           size="sm"
           :icon="isCopied ? 'i-mdi-check' : 'i-mdi-content-copy'"
           @click="() => copyCode()"
+          title="Copy"
         />
       </div>
+    </div>
+
+    <div
+      v-if="isOverflowing && !isExpanded"
+      class="flex items-end justify-center absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-white dark:to-black"
+    >
+      <UButton 
+        label="Expand" 
+        color="gray"
+        variant="link"
+        size="sm"
+        class="mb-2"
+        @click="() => expandContent()"
+      />
     </div>
   </div>
 </template>
