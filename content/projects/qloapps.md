@@ -11,7 +11,6 @@ screenshots: [
   '/assets/images/screenshots/qloapps/qloapps_01.png',
   '/assets/images/screenshots/qloapps/qloapps_02.png',
   '/assets/images/screenshots/qloapps/qloapps_03.png',
-  '/assets/images/screenshots/qloapps/qloapps_04.png',
   '/assets/images/screenshots/qloapps/qloapps_admin_01.png',
   '/assets/images/screenshots/qloapps/qloapps_admin_02.png',
   '/assets/images/screenshots/qloapps/qloapps_admin_03.png',
