@@ -12,7 +12,9 @@ export default defineContentConfig({
         tags: z.array(z.string()).optional(),
         published: z.boolean().optional(),
         demo: z.string().optional(),
-        screenshots: z.array(z.string()).optional()
+        screenshots: z.array(z.string()).optional(),
+        createdAt: z.string().optional(),
+        updatedAt: z.string().optional()
       })
     })
   }
