@@ -97,9 +97,9 @@ watch(preRef, () => {
           variant="link"
           color="gray"
           size="sm"
-          icon="i-mdi-chevron-up"
-          @click="() => collapseContent()"
-          title="Collapse"
+          :icon="isExpanded ? 'i-mdi-chevron-up' : 'i-mdi-chevron-down'"
+          @click="() => isExpanded ? collapseContent() : expandContent()"
+          :title="isExpanded ? 'Collapse' : 'Expand'"
         />
         <UButton
           variant="link"
