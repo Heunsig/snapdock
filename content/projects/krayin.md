@@ -14,6 +14,8 @@ screenshots: [
   '/assets/images/screenshots/krayin/krayin_05.png',
 ]
 published: true
+createdAt: "2025-03-04T13:27:49.000Z"
+updatedAt: "2025-03-09T06:02:43.000Z"
 ---
 
 ## Getting Started

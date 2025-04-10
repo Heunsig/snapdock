@@ -7,6 +7,8 @@ github: 'https://github.com/uptrace/uptrace'
 demo: 'https://app.uptrace.dev/'
 tags: ["monitoring"]
 published: true
+createdAt: "2025-02-19T13:57:55.000Z"
+updatedAt: "2025-03-05T13:21:25.000Z"
 ---
 
 ## Getting Started

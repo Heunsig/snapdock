@@ -8,6 +8,8 @@ github: 'https://github.com/immich-app/immich'
 demo: 'https://demo.immich.app/'
 tags: ["photo", "video"]
 published: true
+createdAt: "2025-02-17T22:05:38.000Z"
+updatedAt: "2025-03-05T13:21:25.000Z"
 ---
 
 ## Getting Started

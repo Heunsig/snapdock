@@ -8,6 +8,8 @@ github: 'https://github.com/electerious/Ackee'
 demo: 'https://demo.ackee.electerious.com/'
 tags: ["analytics"]
 published: true
+createdAt: "2025-02-15T13:51:53.000Z"
+updatedAt: "2025-04-09T13:51:53.000Z"
 ---
 
 ## Getting Started

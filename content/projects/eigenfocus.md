@@ -5,6 +5,8 @@ logo: '/assets/images/logos/eigenfocus.svg'
 homepage: 'https://eigenfocus.com/'
 docker: 'https://github.com/Eigenfocus/eigenfocus?tab=readme-ov-file#docker-compose'
 github: 'https://github.com/Eigenfocus/eigenfocus'
+createdAt: "2025-02-22T07:07:41.000Z"
+updatedAt: "2025-02-22T07:07:41.000Z"
 published: true
 ---
 

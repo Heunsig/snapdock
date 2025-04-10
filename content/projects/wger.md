@@ -7,6 +7,8 @@ docker: 'https://github.com/wger-project/docker'
 github: 'https://github.com/wger-project/wger'
 tags: []
 published: true
+createdAt: "2025-02-18T12:35:34.000Z"
+updatedAt: "2025-02-18T12:35:34.000Z"
 ---
 
 ## Getting Started

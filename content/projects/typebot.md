@@ -14,6 +14,8 @@ screenshots: [
   '/assets/images/screenshots/typebot/typebot_06.png',
 ]
 published: true
+createdAt: "2025-03-01T06:29:24.000Z"
+updatedAt: "2025-03-09T06:02:43.000Z"
 ---
 
 ## Getting Started

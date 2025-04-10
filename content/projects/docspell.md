@@ -6,6 +6,8 @@ homepage: 'https://docspell.org/'
 docker: 'https://docspell.org/#get-started'
 github: 'https://github.com/eikek/docspell'
 tags: []
+createdAt: "2025-02-10T12:21:24.000Z"
+updatedAt: "2025-02-16T11:19:36.000Z"
 published: true
 ---
 

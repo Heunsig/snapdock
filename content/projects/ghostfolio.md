@@ -8,6 +8,8 @@ github: 'https://github.com/ghostfolio/ghostfolio'
 demo: 'https://ghostfol.io/en/demo'
 tags: ["finance"]
 published: true
+createdAt: "2025-02-12T13:04:10.000Z"
+updatedAt: "2025-03-05T13:21:25.000Z"
 ---
 
 ## Getting Started

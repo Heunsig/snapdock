@@ -14,6 +14,8 @@ screenshots: [
   '/assets/images/screenshots/owncloud/owncloud_06.png',
 ]
 published: true
+createdAt: "2025-04-06T01:35:10.000Z"
+updatedAt: "2025-04-06T01:35:10.000Z"
 ---
 
 ## Getting Started

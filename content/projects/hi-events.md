@@ -7,6 +7,8 @@ docker: 'https://hi.events/docs/getting-started/quick-start#quick-start-with-doc
 github: 'https://github.com/HiEventsDev/hi.events'
 tags: []
 published: true
+createdAt: "2025-02-13T13:50:31.000Z"
+updatedAt: "2025-02-13T13:50:31.000Z"
 ---
 
 ## Getting Started

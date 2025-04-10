@@ -14,6 +14,8 @@ screenshots: [
   '/assets/images/screenshots/organizr/organizr_05.png',
 ]
 published: true
+createdAt: "2025-02-25T13:32:03.000Z"
+updatedAt: "2025-03-09T06:02:43.000Z"
 ---
 
 ## Getting Started

@@ -5,6 +5,8 @@ logo: '/assets/images/logos/drupal.svg'
 homepage: 'https://new.drupal.org'
 github: 'https://github.com/drupal/drupal'
 tags: ["CMS"]
+createdAt: "2025-02-16T02:41:23.000Z"
+updatedAt: "2025-02-19T14:26:50.000Z"
 published: true
 ---
 

@@ -7,6 +7,8 @@ docker: 'https://nginxproxymanager.com/guide/#quick-setup'
 github: 'https://github.com/NginxProxyManager/nginx-proxy-manager'
 tags: []
 published: true
+createdAt: "2025-02-15T15:45:39.000Z"
+updatedAt: "2025-02-16T13:51:23.000Z"
 ---
 
 ## Getting Started

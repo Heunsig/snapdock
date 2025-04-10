@@ -15,6 +15,8 @@ screenshots: [
   '/assets/images/screenshots/monica/monica_06.png',
 ]
 published: true
+createdAt: "2025-03-08T15:08:09.000Z"
+updatedAt: "2025-03-09T06:02:43.000Z"
 ---
 
 ## Getting Started

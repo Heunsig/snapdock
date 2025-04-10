@@ -14,6 +14,8 @@ screenshots: [
   '/assets/images/screenshots/stirling-pdf/stirling-pdf_04.png',
 ]
 published: true
+createdAt: "2025-03-07T12:00:06.000Z"
+updatedAt: "2025-03-09T06:02:43.000Z"
 ---
 
 ## Getting Started

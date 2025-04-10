@@ -7,6 +7,8 @@ docker: 'https://docs.nocodb.com/getting-started/self-hosted/installation/docker
 github: 'https://github.com/nocodb/nocodb'
 tags: []
 published: true
+createdAt: "2025-02-13T13:10:30.000Z"
+updatedAt: "2025-02-13T13:10:30.000Z"
 ---
 
 ## Getting Started

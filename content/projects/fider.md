@@ -13,6 +13,8 @@ screenshots: [
   '/assets/images/screenshots/fider/fider_04.png',
   '/assets/images/screenshots/fider/fider_05.png',
 ]
+createdAt: "2025-02-14T16:23:36.000Z"
+updatedAt: "2025-03-10T12:28:36.000Z"
 published: true
 ---
 

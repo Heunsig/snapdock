@@ -7,6 +7,8 @@ docker: 'https://hub.docker.com/_/ghost/'
 github: 'https://github.com/TryGhost/Ghost'
 tags: []
 published: true
+createdAt: "2025-02-10T11:53:56.000Z"
+updatedAt: "2025-02-11T15:20:34.000Z"
 ---
 
 ## Getting Started

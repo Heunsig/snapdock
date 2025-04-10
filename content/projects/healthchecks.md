@@ -14,6 +14,8 @@ screenshots: [
   '/assets/images/screenshots/healthchecks/healthchecks_05.png',
 ]
 published: true
+createdAt: "2025-03-08T14:30:07.000Z"
+updatedAt: "2025-03-09T06:02:43.000Z"
 ---
 
 ## Getting Started

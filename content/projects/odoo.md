@@ -6,6 +6,8 @@ homepage: 'https://www.odoo.com/'
 github: 'https://github.com/odoo/odoo'
 tags: []
 published: true
+createdAt: "2025-02-19T12:52:36.000Z"
+updatedAt: "2025-02-19T12:52:36.000Z"
 ---
 
 ## Getting Started

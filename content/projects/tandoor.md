@@ -7,6 +7,8 @@ docker: 'https://docs.tandoor.dev/install/docker/'
 github: 'https://github.com/TandoorRecipes/recipes'
 tags: []
 published: true
+createdAt: "2025-02-15T02:12:26.000Z"
+updatedAt: "2025-02-18T11:54:46.000Z"
 ---
 
 ## Getting Started

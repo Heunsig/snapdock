@@ -7,6 +7,8 @@ docker: 'https://github.com/Intermesh/docker-groupoffice?tab=readme-ov-file#usin
 github: 'https://github.com/Intermesh/docker-groupoffice'
 tags: ["CRM"]
 published: true
+createdAt: "2025-02-10T13:56:49.000Z"
+updatedAt: "2025-03-04T13:28:40.000Z"
 ---
 
 ## Getting Started

@@ -7,6 +7,8 @@ docker: 'https://www.zabbix.com/documentation/current/en/manual/installation/con
 github: 'https://github.com/zabbix/zabbix'
 tags: ["monitoring"]
 published: true
+createdAt: "2025-02-12T13:52:30.000Z"
+updatedAt: "2025-02-19T13:58:12.000Z"
 ---
 
 ## Getting Started

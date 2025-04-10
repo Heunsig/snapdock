@@ -7,6 +7,8 @@ docker: 'https://support.rallly.co/self-hosting/docker-compose'
 github: 'https://github.com/lukevella/rallly'
 tags: ['calendar', 'scheduling']
 published: true
+createdAt: "2025-02-24T12:39:44.000Z"
+updatedAt: "2025-02-24T12:39:44.000Z"
 ---
 
 ## Getting Started

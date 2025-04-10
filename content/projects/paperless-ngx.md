@@ -15,6 +15,8 @@ screenshots: [
   '/assets/images/screenshots/paperless-ngx/paperless-ngx_05.png',
 ]
 published: true
+createdAt: "2025-03-08T16:18:14.000Z"
+updatedAt: "2025-03-09T06:02:43.000Z"
 ---
 
 ## Getting Started

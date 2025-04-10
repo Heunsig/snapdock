@@ -7,6 +7,8 @@ docker: 'https://docs.illacloud.com/self-hosted-deployment#docker'
 github: 'https://github.com/illacloud/illa-builder'
 tags: []
 published: true
+createdAt: "2025-02-12T12:48:28.000Z"
+updatedAt: "2025-02-12T12:48:28.000Z"
 ---
 
 ## Getting Started

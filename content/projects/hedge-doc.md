@@ -8,6 +8,8 @@ github: 'https://github.com/hedgedoc/hedgedoc'
 demo: 'https://demo.hedgedoc.org/'
 tags: ["wiki"]
 published: true
+createdAt: "2025-02-17T12:22:25.000Z"
+updatedAt: "2025-03-05T13:21:25.000Z"
 ---
 
 ## Getting Started

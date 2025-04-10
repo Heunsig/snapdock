@@ -6,6 +6,8 @@ homepage: 'https://filebrowser.org/'
 docker: 'https://filebrowser.org/installation#docker'
 github: 'https://github.com/filebrowser/filebrowser'
 tags: ["storage", "file manager"]
+createdAt: "2025-02-09T13:55:21.000Z"
+updatedAt: "2025-03-03T13:21:20.000Z"
 published: true
 ---
 

@@ -8,6 +8,8 @@ github: 'https://github.com/grafana/grafana'
 demo: 'https://play.grafana.org/'
 tags: ["monitoring", "visualization", "dashboard"]
 published: true
+createdAt: "2025-02-16T06:35:37.000Z"
+updatedAt: "2025-03-05T13:21:25.000Z"
 ---
 
 ## Getting Started

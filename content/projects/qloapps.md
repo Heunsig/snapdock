@@ -17,6 +17,8 @@ screenshots: [
   '/assets/images/screenshots/qloapps/qloapps_admin_04.png',
 ]
 published: true
+createdAt: "2025-03-02T12:48:23.000Z"
+updatedAt: "2025-04-08T13:02:09.000Z"
 ---
 
 ## Live Demo

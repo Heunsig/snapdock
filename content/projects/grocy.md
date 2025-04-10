@@ -8,6 +8,8 @@ github: 'https://github.com/grocy/grocy'
 demo: 'https://en.demo.grocy.info/'
 tags: ["inventory"]
 published: true
+createdAt: "2025-02-13T14:03:32.000Z"
+updatedAt: "2025-03-05T13:21:25.000Z"
 ---
 
 ## Getting Started

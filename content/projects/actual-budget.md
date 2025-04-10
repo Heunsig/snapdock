@@ -16,6 +16,8 @@ screenshots: [
   '/assets/images/screenshots/actual-budget/actual-budget_06.png',
   
 ]
+createdAt: "2025-02-16T14:04:20.000Z"
+updatedAt: "2025-03-05T13:21:25.000Z"
 published: true
 ---
 

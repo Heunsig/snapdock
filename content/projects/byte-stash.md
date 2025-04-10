@@ -6,6 +6,8 @@ homepage: 'https://github.com/jordan-dalby/ByteStash'
 docker: 'https://github.com/jordan-dalby/ByteStash?tab=readme-ov-file#docker'
 github: 'https://github.com/jordan-dalby/ByteStash'
 tags: []
+createdAt: "2025-02-13T12:49:47.000Z"
+updatedAt: "2025-02-13T12:49:47.000Z"
 published: true
 ---
 

@@ -6,6 +6,8 @@ homepage: 'https://www.espocrm.com/'
 docker: 'https://docs.espocrm.com/administration/docker/installation/#install-espocrm-with-docker-compose'
 github: 'https://github.com/espocrm/espocrm'
 tags: ["CRM"]
+createdAt: "2025-02-13T13:20:55.000Z"
+updatedAt: "2025-03-04T13:28:40.000Z"
 published: true
 ---
 

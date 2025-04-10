@@ -23,6 +23,8 @@ screenshots: [
   '/assets/images/screenshots/gomft/gomft_14.png',
 ]
 published: true
+createdAt: "2025-04-09T13:48:03.000Z"
+updatedAt: "2025-04-09T13:48:03.000Z"
 ---
 
 ## Getting Started

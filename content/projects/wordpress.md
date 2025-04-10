@@ -6,6 +6,8 @@ homepage: 'https://wordpress.org/'
 docker: 'https://github.com/nezhar/wordpress-docker-compose'
 tags: ["CMS"]
 published: true
+createdAt: "2025-02-10T11:34:00.000Z"
+updatedAt: "2025-02-19T14:26:50.000Z"
 ---
 
 ## Getting Started

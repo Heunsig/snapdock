@@ -7,6 +7,8 @@ docker: 'https://help.penpot.app/technical-guide/getting-started/#start-penpot'
 github: 'https://github.com/penpot/penpot'
 tags: []
 published: true
+createdAt: "2025-02-13T14:44:02.000Z"
+updatedAt: "2025-02-13T14:44:02.000Z"
 ---
 
 ## Getting Started

@@ -6,6 +6,8 @@ homepage: 'https://umami.is/'
 github: 'https://github.com/umami-software/umami'
 tags: []
 published: true
+createdAt: "2025-02-09T14:07:45.000Z"
+updatedAt: "2025-02-16T13:51:23.000Z"
 ---
 
 ## Getting Started

@@ -6,6 +6,8 @@ homepage: 'https://uptime.kuma.pet/'
 github: 'https://github.com/louislam/uptime-kuma'
 tags: ["monitoring"]
 published: true
+createdAt: "2025-02-09T11:58:11.000Z"
+updatedAt: "2025-02-19T13:58:12.000Z"
 ---
 
 ## Getting Started

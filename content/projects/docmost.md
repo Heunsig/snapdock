@@ -6,6 +6,8 @@ homepage: 'https://docmost.com/'
 docker: 'https://docmost.com/docs/installation'
 github: 'https://github.com/docmost/docmost'
 tags: ["wiki"]
+createdAt: "2025-02-17T15:06:32.000Z"
+updatedAt: "2025-02-19T14:26:50.000Z"
 published: true
 ---
 

@@ -7,6 +7,8 @@ docker: 'https://docs.leantime.io/installation/docker'
 github: 'https://github.com/Leantime/leantime'
 tags: []
 published: true
+createdAt: "2025-02-15T14:06:28.000Z"
+updatedAt: "2025-02-15T14:06:28.000Z"
 ---
 
 ## Getting Started

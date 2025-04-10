@@ -8,6 +8,8 @@ github: 'https://github.com/usememos/memos'
 demo: 'https://demo.usememos.com/'
 tags: ["note"]
 published: true
+createdAt: "2025-02-17T21:34:24.000Z"
+updatedAt: "2025-03-05T13:21:25.000Z"
 ---
 
 ## Getting Started

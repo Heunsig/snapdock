@@ -6,6 +6,8 @@ homepage: 'https://getcockpit.com/'
 docker: 'https://getcockpit.com/documentation/core/quickstart/installation#docker'
 github: 'https://github.com/Cockpit-HQ/Cockpit'
 tags: ["CMS"]
+createdAt: "2025-02-13T13:00:24.000Z"
+updatedAt: "2025-02-19T14:26:50.000Z"
 published: true
 ---
 

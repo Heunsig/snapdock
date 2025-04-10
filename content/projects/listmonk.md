@@ -7,6 +7,8 @@ docker: 'https://listmonk.app/docs/installation/#docker'
 github: 'https://github.com/knadh/listmonk'
 tags: []
 published: true
+createdAt: "2025-02-11T13:43:11.000Z"
+updatedAt: "2025-02-11T15:20:34.000Z"
 ---
 
 ## Getting Started

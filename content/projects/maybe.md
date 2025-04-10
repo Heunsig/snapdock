@@ -15,6 +15,8 @@ screenshots: [
   '/assets/images/screenshots/maybe/maybe_06.png',
 ]
 published: true
+createdAt: "2025-02-26T12:40:11.000Z"
+updatedAt: "2025-03-09T06:02:43.000Z"
 ---
 
 ## Getting Started

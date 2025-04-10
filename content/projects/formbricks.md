@@ -18,6 +18,8 @@ screenshots: [
   '/assets/images/screenshots/formbricks/formbricks_09.png',
   '/assets/images/screenshots/formbricks/formbricks_10.png',
 ]
+createdAt: "2025-02-19T22:17:49.000Z"
+updatedAt: "2025-04-08T13:21:35.000Z"
 published: true
 ---
 

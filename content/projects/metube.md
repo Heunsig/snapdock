@@ -7,6 +7,8 @@ docker: 'https://github.com/alexta69/metube?tab=readme-ov-file#run-using-docker-
 github: 'https://github.com/alexta69/metube'
 tags: []
 published: true
+createdAt: "2025-02-17T12:05:37.000Z"
+updatedAt: "2025-02-17T12:05:37.000Z"
 ---
 
 ## Getting Started

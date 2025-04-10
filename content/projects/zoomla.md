@@ -7,6 +7,8 @@ docker: 'https://www.avonture.be/blog/docker-joomla/'
 github: 'https://github.com/joomla/joomla-cms'
 tags: ["CMS"]
 published: true
+createdAt: "2025-02-15T10:15:50.000Z"
+updatedAt: "2025-02-19T15:01:06.000Z"
 ---
 
 ## Getting Started

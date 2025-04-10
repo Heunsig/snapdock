@@ -6,6 +6,8 @@ homepage: 'https://checkmk.com/'
 docker: 'https://docs.checkmk.com/latest/en/introduction_docker.html'
 github: 'https://github.com/Checkmk/checkmk'
 tags: ['monitoring']
+createdAt: "2025-02-22T09:07:23.000Z"
+updatedAt: "2025-02-22T09:07:23.000Z"
 published: true
 ---
 

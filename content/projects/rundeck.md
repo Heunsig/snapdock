@@ -7,6 +7,8 @@ docker: 'https://docs.rundeck.com/docs/administration/install/docker.html'
 github: 'https://github.com/rundeck/rundeck'
 tags: ["automation"]
 published: true
+createdAt: "2025-02-19T15:47:47.000Z"
+updatedAt: "2025-02-19T15:47:47.000Z"
 ---
 
 ## Getting Started

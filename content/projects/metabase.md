@@ -7,6 +7,8 @@ docker: 'https://www.metabase.com/docs/latest/installation-and-operation/running
 github: 'https://github.com/metabase/metabase'
 tags: []
 published: true
+createdAt: "2025-02-15T04:30:59.000Z"
+updatedAt: "2025-02-15T04:30:59.000Z"
 ---
 
 ## Getting Started

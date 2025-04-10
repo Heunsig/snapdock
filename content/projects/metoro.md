@@ -6,6 +6,8 @@ homepage: 'https://metoro.io/'
 demo: 'https://demo.us-east.metoro.io/'
 tags: ["monitoring", "kubernetes"]
 published: true
+createdAt: "2025-02-23T02:04:14.000Z"
+updatedAt: "2025-03-05T13:21:25.000Z"
 ---
 
 ## Getting Started

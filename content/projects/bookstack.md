@@ -14,6 +14,8 @@ screenshots: [
   '/assets/images/screenshots/bookstack/bookstack_04.png',
   '/assets/images/screenshots/bookstack/bookstack_05.png',
 ]
+createdAt: "2025-03-01T08:41:23.000Z"
+updatedAt: "2025-03-09T06:02:43.000Z"
 published: true
 ---
 

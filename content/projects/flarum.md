@@ -15,6 +15,8 @@ screenshots: [
   '/assets/images/screenshots/flarum/flarum_06.png',
   '/assets/images/screenshots/flarum/flarum_07.png',
 ]
+createdAt: "2025-03-01T06:48:16.000Z"
+updatedAt: "2025-03-09T06:02:43.000Z"
 published: true
 ---
 

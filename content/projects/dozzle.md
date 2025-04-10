@@ -6,6 +6,8 @@ homepage: 'https://dozzle.dev/'
 docker: 'https://dozzle.dev/guide/getting-started'
 github: 'https://github.com/amir20/dozzle'
 tags: ["monitoring", "Docker"]
+createdAt: "2025-02-09T11:19:00.000Z"
+updatedAt: "2025-02-19T14:26:50.000Z"
 published: true
 ---
 

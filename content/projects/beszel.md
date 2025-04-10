@@ -6,6 +6,8 @@ homepage: 'https://beszel.dev/'
 docker: 'https://beszel.dev/guide/hub-installation'
 github: 'https://github.com/henrygd/beszel'
 tags: ["monitoring"]
+createdAt: "2025-02-19T12:38:17.000Z"
+updatedAt: "2025-02-19T13:58:12.000Z"
 published: true
 ---
 

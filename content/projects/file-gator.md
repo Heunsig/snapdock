@@ -12,6 +12,8 @@ screenshots: [
   '/assets/images/screenshots/file-gator/file-gator_03.png',
   '/assets/images/screenshots/file-gator/file-gator_04.png',
 ]
+createdAt: "2025-03-03T13:20:48.000Z"
+updatedAt: "2025-03-09T06:02:43.000Z"
 published: true
 ---
 

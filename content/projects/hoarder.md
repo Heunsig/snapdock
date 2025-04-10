@@ -16,6 +16,8 @@ screenshots: [
   '/assets/images/screenshots/hoarder/hoarder_06.png',
 ]
 published: true
+createdAt: "2025-02-27T12:23:23.000Z"
+updatedAt: "2025-03-09T06:02:43.000Z"
 ---
 
 ## Getting Started

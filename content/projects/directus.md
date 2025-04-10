@@ -7,6 +7,8 @@ docker: 'https://docs.directus.io/self-hosted/quickstart.html#create-a-docker-co
 github: 'https://github.com/directus/directus'
 demo: 'https://directus.pizza/admin/login?template=cms'
 tags: ["CMS"]
+createdAt: "2025-02-14T17:13:03.000Z"
+updatedAt: "2025-03-05T13:21:25.000Z"
 published: true
 ---
 

@@ -5,6 +5,8 @@ logo: '/assets/images/logos/audiobookshelf.png'
 homepage: 'https://www.audiobookshelf.org/'
 docker: 'https://www.audiobookshelf.org/docs/#docker-compose-install'
 github: 'https://github.com/advplyr/audiobookshelf'
+createdAt: "2025-02-10T11:44:29.000Z"
+updatedAt: "2025-02-10T12:33:05.000Z"
 published: true
 ---
 

@@ -6,6 +6,8 @@ homepage: 'https://vikunja.io/'
 docker: 'https://vikunja.io/docs/full-docker-example/'
 tags: []
 published: true
+createdAt: "2025-02-08T13:40:43.000Z"
+updatedAt: "2025-02-16T13:51:23.000Z"
 ---
 
 ## Getting Started

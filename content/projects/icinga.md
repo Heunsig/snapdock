@@ -7,6 +7,8 @@ github: 'https://github.com/icinga'
 demo: 'https://icinga.com/demo/authentication/login'
 tags: ["monitoring"]
 published: true
+createdAt: "2025-02-12T14:10:09.000Z"
+updatedAt: "2025-03-05T13:21:25.000Z"
 ---
 
 ## Getting Started

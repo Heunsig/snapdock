@@ -14,6 +14,8 @@ screenshots: [
   '/assets/images/screenshots/docuseal/docuseal_05.png',
   '/assets/images/screenshots/docuseal/docuseal_06.png',
 ]
+createdAt: "2025-03-01T10:44:41.000Z"
+updatedAt: "2025-03-09T06:02:43.000Z"
 published: true
 ---
 

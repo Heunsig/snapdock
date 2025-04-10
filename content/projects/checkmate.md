@@ -7,6 +7,8 @@ docker: 'https://docs.checkmate.so/users-guide/quickstart'
 github: 'https://github.com/bluewave-labs/Checkmate'
 demo: 'https://checkmate-demo.bluewavelabs.ca/'
 tags: ['monitoring', 'status', 'uptime', 'healthcheck']
+createdAt: "2025-02-22T15:22:26.000Z"
+updatedAt: "2025-03-05T13:21:25.000Z"
 published: true
 ---
 

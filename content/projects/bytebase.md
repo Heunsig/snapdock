@@ -6,6 +6,8 @@ homepage: 'https://www.bytebase.com/'
 docker: 'https://www.bytebase.com/docs/get-started/self-host/#docker'
 github: 'https://github.com/bytebase/bytebase'
 tags: []
+createdAt: "2025-02-16T07:02:32.000Z"
+updatedAt: "2025-04-07T12:33:41.000Z"
 published: true
 screenshots: [
   '/assets/images/screenshots/bytebase/bytebase_01.png',

@@ -6,6 +6,8 @@ homepage: 'https://evershop.io/'
 docker: 'https://evershop.io/docs/development/getting-started/installation-guide'
 github: 'https://github.com/evershopcommerce/evershop'
 tags: ["ecommerce"]
+createdAt: "2025-02-11T13:07:43.000Z"
+updatedAt: "2025-02-19T14:26:50.000Z"
 published: true
 ---
 

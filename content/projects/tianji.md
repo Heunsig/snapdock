@@ -7,6 +7,8 @@ docker: 'https://tianji.msgbyte.com/docs/intro'
 github: 'https://github.com/msgbyte/tianji'
 tags: ["monitoring", "analytics", "uptime"]
 published: true
+createdAt: "2025-02-23T03:17:54.000Z"
+updatedAt: "2025-02-23T03:17:54.000Z"
 ---
 
 ## Getting Started

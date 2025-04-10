@@ -6,6 +6,8 @@ homepage: 'https://aptabase.com/'
 docker: 'https://github.com/aptabase/self-hosting'
 github: 'https://github.com/aptabase/aptabase'
 tags: ["analytics"]
+createdAt: "2025-02-17T15:22:42.000Z"
+updatedAt: "2025-02-19T14:26:50.000Z"
 published: true
 ---
 

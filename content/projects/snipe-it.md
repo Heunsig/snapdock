@@ -13,6 +13,8 @@ screenshots: [
   '/assets/images/screenshots/snipe-it/snipe-it_04.png',
 ]
 published: true
+createdAt: "2025-03-01T13:43:01.000Z"
+updatedAt: "2025-03-09T06:02:43.000Z"
 ---
 
 ## Getting Started

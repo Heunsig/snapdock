@@ -7,6 +7,8 @@ docker: 'https://docs.firefly-iii.org/how-to/firefly-iii/installation/docker/'
 github: 'https://github.com/firefly-iii/firefly-iii/'
 demo: 'https://demo.firefly-iii.org/'
 tags: ["finance"]
+createdAt: "2025-02-11T15:15:55.000Z"
+updatedAt: "2025-03-05T13:21:25.000Z"
 published: true
 ---
 

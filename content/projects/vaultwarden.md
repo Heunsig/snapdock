@@ -7,6 +7,8 @@ docker: 'https://github.com/dani-garcia/vaultwarden?tab=readme-ov-file#docker-co
 github: 'https://github.com/dani-garcia/vaultwarden'
 tags: []
 published: true
+createdAt: "2025-02-18T12:08:44.000Z"
+updatedAt: "2025-02-18T12:08:44.000Z"
 ---
 
 ## Getting Started

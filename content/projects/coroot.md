@@ -7,6 +7,8 @@ docker: 'https://docs.coroot.com/installation/docker'
 github: 'https://github.com/coroot/coroot'
 demo: 'https://demo.coroot.com/'
 tags: ["monitoring"]
+createdAt: "2025-02-19T13:46:02.000Z"
+updatedAt: "2025-03-05T13:21:25.000Z"
 published: true
 ---
 

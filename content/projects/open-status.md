@@ -7,6 +7,8 @@ github: 'https://github.com/openstatushq/openstatus'
 demo: 'https://www.openstatus.dev/public/monitors/1'
 tags: ["monitoring"]
 published: true
+createdAt: "2025-02-19T14:08:47.000Z"
+updatedAt: "2025-03-05T13:21:25.000Z"
 ---
 
 ## Getting Started

@@ -14,6 +14,8 @@ screenshots: [
   '/assets/images/screenshots/pinchflat/pinchflat_05.png',
 ]
 published: true
+createdAt: "2025-02-11T13:26:08.000Z"
+updatedAt: "2025-03-14T13:00:31.000Z"
 ---
 
 ## Getting Started
