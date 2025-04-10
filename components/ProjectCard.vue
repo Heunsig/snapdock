@@ -15,6 +15,7 @@ defineProps<{
     updatedAt?: string
   }
 }>()
+
 </script>
 <template>
   <article 
@@ -25,6 +26,33 @@ defineProps<{
       <h3 class="text-lg font-semibold text-gray-100" translate="no">
         <!-- inset makes the link full with and height to the card -->
         <NuxtLink :to="project.path" class="absolute inset-0"></NuxtLink>
+        <UPopover
+          class="absolute top-3 right-2"
+        >
+          <UButton
+            color="gray"
+            variant="link"
+            icon="i-mdi-information-outline"
+          />
+
+          <template #panel>
+            <div 
+              v-if="project.createdAt || project.updatedAt"
+              class="p-2 space-y-1"
+            >
+              <div class="text-xs dark:text-gray-300 font-light" v-if="project.updatedAt">Updated At: {{ dayjs(project.updatedAt).format('YYYY/MM/DD') }}</div>
+              <div class="text-xs dark:text-gray-300 font-light" v-if="project.createdAt">Created At: {{ dayjs(project.createdAt).format('YYYY/MM/DD') }}</div>
+            </div>
+            <div 
+              v-else
+              class="p-2 text-xs dark:text-gray-300"
+            >
+              No information available
+            </div>
+          </template>
+        </UPopover>
+       
+
         <WordHighlighter :query="query">
           {{ project.name }}
         </WordHighlighter>
@@ -47,14 +75,6 @@ defineProps<{
           #{{ tag }}
         </WordHighlighter>
       </span>
-    </div>
-
-    <div 
-      v-if="project.createdAt || project.updatedAt"
-      class="mt-auto pt-3 flex flex-wrap items-center gap-2"
-    >
-      <span class="text-xs dark:text-gray-500" v-if="project.createdAt">Created At: {{ dayjs(project.createdAt).format('YYYY/MM/DD') }}</span>
-      <span class="text-xs dark:text-gray-500" v-if="project.updatedAt">Updated At: {{ dayjs(project.updatedAt).format('YYYY/MM/DD') }}</span>
     </div>
   </article>
 </template>
