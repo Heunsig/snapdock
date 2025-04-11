@@ -1,12 +1,14 @@
 <script setup lang="ts">
+import dayjs from 'dayjs'
+
 const { data } = await useAsyncData('navigation', () => queryCollectionNavigation('projects', ['name', 'description', 'logo', 'tags', 'demo', 'screenshots', 'createdAt', 'updatedAt']).where('published', '=', true))
 
 const projects = computed(() => data.value?.[0]?.children ?? [])
 const search = useRouteQuery('q', '', {
   route: useRoute()
 })
-const orderBy = useRouteQuery('orderBy', 'name')
-const order = useRouteQuery<string>('order', 'asc')
+const orderBy = useRouteQuery<string>('orderBy', 'updatedAt', { route: useRoute() })
+const order = useRouteQuery<string>('order', 'desc', { route: useRoute() })
 
 // TODO: remove this once we have a better way to get the tags
 function getTags(project: any) {
@@ -23,6 +25,10 @@ const filteredProjects = computed(() => projects.value.filter((project: any) => 
 
 const sortedProjects = computed(() => {
   return filteredProjects.value.sort((a: any, b: any) => {
+    if (orderBy.value === 'createdAt' || orderBy.value === 'updatedAt') {
+      return order.value === 'asc' ? dayjs(a[orderBy.value]).diff(dayjs(b[orderBy.value])) : dayjs(b[orderBy.value]).diff(dayjs(a[orderBy.value]))
+    }
+
     return order.value === 'asc' ? a[orderBy.value].localeCompare(b[orderBy.value]) : b[orderBy.value].localeCompare(a[orderBy.value])
   })
 })
@@ -31,9 +37,16 @@ function toggleOrder() {
   order.value = order.value === 'asc' ? 'desc' : 'asc'
 }
 
-const options = ['name']
-
-const selected = ref(options[0])
+const options = ref([{
+  label: 'Name',
+  value: 'name'
+}, {
+  label: 'Created At',
+  value: 'createdAt'
+}, {
+  label: 'Updated At',
+  value: 'updatedAt'
+}])
 
 const isOpen = ref(false)
 
@@ -43,8 +56,8 @@ function openModal() {
 
 function reset() {
   search.value = ''
-  orderBy.value = 'name'
-  order.value = 'asc'
+  orderBy.value = 'updatedAt'
+  order.value = 'desc'
 }
 </script>
 
@@ -116,7 +129,7 @@ function reset() {
           }"
           class="ml-2 md:hidden"
         />
-
+          
         <UModal v-model="isOpen">
           <UCard>
             <UButtonGroup 
@@ -139,10 +152,13 @@ function reset() {
                 }"
               />
               <USelectMenu 
-                v-model="selected" 
+                v-model="orderBy" 
                 :options="options"
                 color="gray"
+                value-attribute="value"
+                option-attribute="label"
                 :ui="{
+                  base: 'min-w-32',
                   padding: {
                     '2xs': 'py-3',
                     xs: 'py-3',
@@ -154,10 +170,10 @@ function reset() {
                 }"
               >
                 <template #label>
-                  <span class="capitalize">{{ selected }}</span>
+                  <span class="capitalize">{{ orderBy }}</span>
                 </template>
                 <template #option="{ option }">
-                  <span class="capitalize">{{ option }}</span>
+                  <span class="capitalize">{{ option.label }}</span>
                 </template>
               </USelectMenu>
             </UButtonGroup>
@@ -204,10 +220,13 @@ function reset() {
             }"
           />
           <USelectMenu 
-            v-model="selected" 
+            v-model="orderBy" 
             :options="options"
             color="gray"
+            value-attribute="value"
+            option-attribute="label"
             :ui="{
+              base: 'min-w-32',
               padding: {
                 '2xs': 'py-3',
                 xs: 'py-3',
@@ -219,10 +238,10 @@ function reset() {
             }"
           >
             <template #label>
-              <span class="capitalize">{{ selected }}</span>
+              <span class="capitalize">{{ orderBy }}</span>
             </template>
             <template #option="{ option }">
-              <span class="capitalize">{{ option }}</span>
+              <span class="capitalize">{{ option.label }}</span>
             </template>
           </USelectMenu>
         </UButtonGroup>
