@@ -5,7 +5,7 @@ logo: '/assets/images/logos/docuseal.svg'
 homepage: 'https://www.docuseal.com/'
 docker: 'https://www.docuseal.com/install'
 github: 'https://github.com/docusealco/docuseal'
-tags: []
+tags: ["document", "signing"]
 screenshots: [
   '/assets/images/screenshots/docuseal/docuseal_01.png',
   '/assets/images/screenshots/docuseal/docuseal_02.png',
@@ -15,7 +15,7 @@ screenshots: [
   '/assets/images/screenshots/docuseal/docuseal_06.png',
 ]
 createdAt: "2025-03-01T10:44:41.000Z"
-updatedAt: "2025-03-09T06:02:43.000Z"
+updatedAt: "2025-04-11T14:40:31.000Z"
 published: true
 ---
 
