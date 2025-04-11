@@ -6,8 +6,8 @@ homepage: 'https://github.com/iib0011/omni-tools'
 docker: 'https://github.com/iib0011/omni-tools?tab=readme-ov-file#docker-compose'
 github: 'https://github.com/iib0011/omni-tools'
 demo: 'https://omnitools.app/'
-createdAt: "2025-04-11T14:40:31.000Z"
-updatedAt: "2025-04-11T14:40:31.000Z"
+createdAt: "2025-04-11T16:02:32.000Z"
+updatedAt: "2025-04-11T16:02:32.000Z"
 published: true
 screenshots: [
   '/assets/images/screenshots/omni-tools/omnitools_01.png',
