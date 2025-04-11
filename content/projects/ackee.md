@@ -9,7 +9,14 @@ demo: 'https://demo.ackee.electerious.com/'
 tags: ["analytics"]
 published: true
 createdAt: "2025-02-15T13:51:53.000Z"
-updatedAt: "2025-03-05T13:21:25.000Z"
+updatedAt: "2025-04-11T14:33:53.000Z"
+screenshots: [
+  '/assets/images/screenshots/ackee/ackee_01.png',
+  '/assets/images/screenshots/ackee/ackee_02.png',
+  '/assets/images/screenshots/ackee/ackee_03.png',
+  '/assets/images/screenshots/ackee/ackee_04.png',
+  '/assets/images/screenshots/ackee/ackee_05.png',
+]
 ---
 
 ## Getting Started
