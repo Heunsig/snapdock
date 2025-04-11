@@ -8,8 +8,18 @@ github: 'https://github.com/bluewave-labs/Checkmate'
 demo: 'https://checkmate-demo.bluewavelabs.ca/'
 tags: ['monitoring', 'status', 'uptime', 'healthcheck']
 createdAt: "2025-02-22T15:22:26.000Z"
-updatedAt: "2025-03-05T13:21:25.000Z"
+updatedAt: "2025-04-11T14:40:31.000Z"
 published: true
+screenshots: [
+  '/assets/images/screenshots/checkmate/checkmate_01.png',
+  '/assets/images/screenshots/checkmate/checkmate_02.png',
+  '/assets/images/screenshots/checkmate/checkmate_03.png',
+  '/assets/images/screenshots/checkmate/checkmate_04.png',
+  '/assets/images/screenshots/checkmate/checkmate_05.png',
+  '/assets/images/screenshots/checkmate/checkmate_06.png',
+  '/assets/images/screenshots/checkmate/checkmate_07.png',
+  '/assets/images/screenshots/checkmate/checkmate_08.png',
+]
 ---
 
 ## Getting Started
