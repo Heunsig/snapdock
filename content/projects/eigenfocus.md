@@ -6,8 +6,17 @@ homepage: 'https://eigenfocus.com/'
 docker: 'https://github.com/Eigenfocus/eigenfocus?tab=readme-ov-file#docker-compose'
 github: 'https://github.com/Eigenfocus/eigenfocus'
 createdAt: "2025-02-22T07:07:41.000Z"
-updatedAt: "2025-02-22T07:07:41.000Z"
+updatedAt: "2025-04-12T05:09:56.000Z"
 published: true
+screenshots: [
+  "/assets/images/screenshots/eigenfocus/eigenfocus_01.png",
+  "/assets/images/screenshots/eigenfocus/eigenfocus_02.png",
+  "/assets/images/screenshots/eigenfocus/eigenfocus_03.png",
+  "/assets/images/screenshots/eigenfocus/eigenfocus_04.png",
+  "/assets/images/screenshots/eigenfocus/eigenfocus_05.png",
+  "/assets/images/screenshots/eigenfocus/eigenfocus_06.png",
+]
+tags: ["project management", "time tracking", "focus"]
 ---
 
 ## Getting Started
