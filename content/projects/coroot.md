@@ -8,8 +8,17 @@ github: 'https://github.com/coroot/coroot'
 demo: 'https://demo.coroot.com/'
 tags: ["monitoring"]
 createdAt: "2025-02-19T13:46:02.000Z"
-updatedAt: "2025-03-05T13:21:25.000Z"
+updatedAt: "2025-05-07T12:48:31Z"
 published: true
+screenshots: [
+  '/assets/images/screenshots/coroot/coroot_01.png',
+  '/assets/images/screenshots/coroot/coroot_02.png',
+  '/assets/images/screenshots/coroot/coroot_03.png',
+  '/assets/images/screenshots/coroot/coroot_04.png',
+  '/assets/images/screenshots/coroot/coroot_05.png',
+  '/assets/images/screenshots/coroot/coroot_06.png',
+  '/assets/images/screenshots/coroot/coroot_07.png',
+]
 ---
 
 ## Getting Started
