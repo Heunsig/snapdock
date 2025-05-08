@@ -9,7 +9,15 @@ demo: 'https://demo.hedgedoc.org/'
 tags: ["wiki"]
 published: true
 createdAt: "2025-02-17T12:22:25.000Z"
-updatedAt: "2025-03-05T13:21:25.000Z"
+updatedAt: "2025-05-08T12:37:31Z"
+screenshots: [
+  '/assets/images/screenshots/hedgedoc/hedgedoc_01.png',
+  '/assets/images/screenshots/hedgedoc/hedgedoc_02.png',
+  '/assets/images/screenshots/hedgedoc/hedgedoc_03.png',
+  '/assets/images/screenshots/hedgedoc/hedgedoc_04.png',
+  '/assets/images/screenshots/hedgedoc/hedgedoc_05.png',
+  '/assets/images/screenshots/hedgedoc/hedgedoc_06.png',
+]
 ---
 
 ## Getting Started
