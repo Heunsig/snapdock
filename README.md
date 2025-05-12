@@ -13,3 +13,5 @@ pnpm install
 ```bash
 pnpm dev
 ```
+
+3. Open the browser and navigate to `http://localhost:9000`
