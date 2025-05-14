@@ -7,8 +7,20 @@ docker: 'https://github.com/aptabase/self-hosting'
 github: 'https://github.com/aptabase/aptabase'
 tags: ["analytics"]
 createdAt: "2025-02-17T15:22:42.000Z"
-updatedAt: "2025-02-19T14:26:50.000Z"
+updatedAt: "2025-05-14T14:20:39Z"
 published: true
+screenshots: [
+  '/assets/images/screenshots/aptabase/aptabase_01.png',
+  '/assets/images/screenshots/aptabase/aptabase_02.png',
+  '/assets/images/screenshots/aptabase/aptabase_03.png',
+  '/assets/images/screenshots/aptabase/aptabase_04.png',
+  '/assets/images/screenshots/aptabase/aptabase_05.png',
+  '/assets/images/screenshots/aptabase/aptabase_06.png',
+  '/assets/images/screenshots/aptabase/aptabase_07.png',
+  '/assets/images/screenshots/aptabase/aptabase_08.png',
+  '/assets/images/screenshots/aptabase/aptabase_09.png',
+  '/assets/images/screenshots/aptabase/aptabase_10.png',
+]
 ---
 
 ## Getting Started
