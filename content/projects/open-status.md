@@ -8,7 +8,11 @@ demo: 'https://www.openstatus.dev/public/monitors/1'
 tags: ["monitoring"]
 published: true
 createdAt: "2025-02-19T14:08:47.000Z"
-updatedAt: "2025-03-05T13:21:25.000Z"
+updatedAt: "2025-07-07T12:59:40Z"
+screenshots: [
+  '/assets/images/screenshots/open-status/OpenStatus_01.png',
+  '/assets/images/screenshots/open-status/OpenStatus_02.png',
+]
 ---
 
 ## Getting Started
