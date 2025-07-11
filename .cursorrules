@@ -1,0 +1,79 @@
+---
+description: This rule is to create a better git commit message. Use this rule, when generating git commit message.
+alwaysApply: false
+---
+# Git Commit Message Guidelines
+
+1. Always write in **English**.
+
+2. Commit messages must follow this format:
+
+   ```
+   <type>(<scope>): <subject>
+
+   <body>
+
+   <footer>
+   ```
+
+   * `<subject>` (required)
+
+     * Write a concise, one-line summary of the changes.
+     * Use the **imperative present tense** (e.g., avoid using expressions like "added", "fixed", "removed").
+     * Do **not** capitalize the first letter, and **do not** end with a period (.).
+   * `<body>` (optional)
+
+     * Describe the reason for the change, detailed information, technical decisions, and considerations.
+     * You can write multiple lines. Help the reader understand *why* the change was made.
+     * If necessary, explain structural changes and their impact.
+   * `<footer>` (optional)
+
+     * Mention related issue numbers, breaking changes, or notes for reviewers.
+     * Examples: `Refs:` or `Related to:` for referencing issues.
+     * Example: `BREAKING CHANGE:` to highlight major changes.
+
+3. Follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) specification.
+
+## Conventional Commit Types
+
+* **build**:
+  Changes that affect build tools, configurations, or external dependencies.
+  Example: updates to `npm`, `yarn`, `pnpm`, `webpack`, `vite` configurations.
+
+* **ci**:
+  Changes to CI (Continuous Integration) configuration or scripts.
+  Does not affect application logic. Used when modifying test/build/deploy pipelines (e.g., GitHub Actions, Travis CI, Jenkins).
+
+* **docs**:
+  Documentation-only changes.
+  Example: updating README, API docs, developer guides, or comments.
+
+* **feat**:
+  Introducing a new feature for the user or system.
+  Use when adding a completely new capability.
+
+* **fix**:
+  Bug fixes.
+  Use when correcting unintended behavior or addressing known issues.
+
+* **perf**:
+  Performance improvements.
+  Example: algorithm optimization, reducing memory usage, increasing speed (without changing functionality).
+
+* **refactor**:
+  Code refactoring without adding features or fixing bugs.
+  Example: renaming variables, splitting functions, removing duplication, organizing file structures.
+
+* **style**:
+  Code style changes only.
+  Example: indentation, line breaks, white space, semicolons (no impact on functionality).
+  ⚠️ Note: UI code changes (like CSS, HTML) do not count here.
+
+* **test**:
+  Adding or updating test code.
+  Includes unit tests, integration tests, mocks, and utilities — does not affect business logic.
+
+* **chore**:
+  Maintenance tasks that do not modify `src` or test files.
+  Example: updating dependencies, editing `.gitignore`, renaming folders, unrelated config changes.
+
