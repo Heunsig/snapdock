@@ -9,6 +9,15 @@ tags: ["wiki"]
 createdAt: "2025-02-17T15:06:32.000Z"
 updatedAt: "2025-02-19T14:26:50.000Z"
 published: true
+screenshots: [
+  '/assets/images/screenshots/docmost/docmost_01.png',
+  '/assets/images/screenshots/docmost/docmost_02.png',
+  '/assets/images/screenshots/docmost/docmost_03.png',
+  '/assets/images/screenshots/docmost/docmost_04.png',
+  '/assets/images/screenshots/docmost/docmost_05.png',
+  '/assets/images/screenshots/docmost/docmost_06.png',
+  '/assets/images/screenshots/docmost/docmost_07.png',
+]
 ---
 
 ## Getting Started
