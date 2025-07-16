@@ -7,7 +7,14 @@ demo: 'https://demo.us-east.metoro.io/'
 tags: ["monitoring", "kubernetes"]
 published: true
 createdAt: "2025-02-23T02:04:14.000Z"
-updatedAt: "2025-03-05T13:21:25.000Z"
+updatedAt: "2025-07-16T13:29:38Z"
+screenshots: [
+  '/assets/images/screenshots/metoro/metoro_01.png',
+  '/assets/images/screenshots/metoro/metoro_02.png',
+  '/assets/images/screenshots/metoro/metoro_03.png',
+  '/assets/images/screenshots/metoro/metoro_04.png',
+  '/assets/images/screenshots/metoro/metoro_05.png',
+]
 ---
 
 ## Getting Started
