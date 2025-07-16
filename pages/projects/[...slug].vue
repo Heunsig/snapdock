@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import dayjs from 'dayjs'
+
 const route = useRoute()
 const { data: page } = await useAsyncData(route.path, () => {
   return queryCollection('projects').path(route.path).first()
@@ -42,6 +44,12 @@ onClickOutside(target, () => {
 }, {
   ignore: ['.zoom-modal']
 })
+
+// Format date for display
+function formatDate(dateString: string) {
+  if (!dateString) return ''
+  return dayjs(dateString).format('YYYY-MM-DD')
+}
 </script>
 
 <template>
@@ -85,6 +93,31 @@ onClickOutside(target, () => {
           >
             #Screenshots
           </span>
+        </div>
+        
+        <!-- Date information -->
+        <div 
+          v-if="page.createdAt || page.updatedAt"
+          class="col-span-2 md:col-span-1 md:col-start-2 mt-4 flex flex-wrap gap-2"
+        >
+          <div 
+            v-if="page.createdAt" 
+            class="inline-flex items-center gap-1.5 text-xs text-gray-400"
+          >
+            <UTooltip text="Created at">
+              <UIcon name="i-mdi-calendar-plus" class="w-3.5 h-3.5"/>
+            </UTooltip>
+            <span class="font-medium">{{ formatDate(page.createdAt) }}</span>
+          </div>
+          <div 
+            v-if="page.updatedAt" 
+            class="inline-flex items-center gap-1.5 text-xs text-gray-400"
+          >
+            <UTooltip text="Updated at">
+              <UIcon name="i-mdi-calendar-edit" class="w-3.5 h-3.5"/>
+            </UTooltip>
+            <span class="font-medium">{{ formatDate(page.updatedAt) }}</span>
+          </div>
         </div>
       </div>
     </header>
