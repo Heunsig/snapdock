@@ -8,8 +8,15 @@ github: 'https://github.com/directus/directus'
 demo: 'https://directus.pizza/admin/login?template=cms'
 tags: ["CMS"]
 createdAt: "2025-02-14T17:13:03.000Z"
-updatedAt: "2025-03-05T13:21:25.000Z"
+updatedAt: "2025-07-17T13:07:31Z"
 published: true
+screenshots:
+  - '/assets/images/screenshots/directus/directus_01.png'
+  - '/assets/images/screenshots/directus/directus_02.png'
+  - '/assets/images/screenshots/directus/directus_03.png'
+  - '/assets/images/screenshots/directus/directus_04.png'
+  - '/assets/images/screenshots/directus/directus_05.png'
+  - '/assets/images/screenshots/directus/directus_06.png'
 ---
 
 ## Getting Started
