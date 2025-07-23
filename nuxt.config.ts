@@ -48,5 +48,8 @@ export default defineNuxtConfig({
         id: 'GTM-NB38HJ5Z'
       }
     }
+  },
+  tailwindcss: {
+    cssPath: `~/assets/css/tailwind.css`
   }
 })
