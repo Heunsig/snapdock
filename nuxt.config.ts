@@ -1,9 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  srcDir: '.',
-  dir: {
-    app: 'app'
-  },
   app: {
     head: {
       link: [
@@ -52,5 +48,8 @@ export default defineNuxtConfig({
         id: 'GTM-NB38HJ5Z'
       }
     }
+  },
+  tailwindcss: {
+    cssPath: `~/assets/css/tailwind.css`
   }
 })
