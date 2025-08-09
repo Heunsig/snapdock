@@ -114,7 +114,7 @@ watch(preRef, () => {
 
     <div
       v-if="isOverflowing && !isExpanded"
-      class="flex items-end justify-center absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-white dark:to-black"
+      class="flex items-end justify-center absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-neutral-100 dark:to-black"
     >
       <UButton 
         label="Expand" 
