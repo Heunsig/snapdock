@@ -1,3 +1,21 @@
+<script setup lang="ts">
+const colorMode = useColorMode()
+const colorModeOptions = [
+  {
+    label: 'System',
+    value: 'system'
+  },
+  {
+    label: 'Light',
+    value: 'light'
+  },
+  
+  {
+    label: 'Dark',
+    value: 'dark'
+  },
+]
+</script>
 
 <template>
   <div class="flex flex-col min-h-screen dark:bg-gray-900">
@@ -5,10 +23,20 @@
       class="px-4 py-3 flex items-center justify-between border-b dark:border-gray-800"
     >
       <div class="container mx-auto xl:max-w-7xl">
-        <NuxtLink to="/projects" class="inline-flex items-center gap-2">
-          <NuxtImg src="/assets/images/logo.png" alt="SnapDock" width="48"/>
-          <h1 class="text-xl font-bold dark:text-gray-50" translate="no">SnapDock</h1>
-        </NuxtLink>
+        <div class="flex items-center justify-between">
+          <NuxtLink to="/projects" class="inline-flex items-center gap-2">
+            <NuxtImg src="/assets/images/logo.png" alt="SnapDock" width="48"/>
+            <h1 class="text-xl font-bold text-neutral-800 dark:text-gray-50" translate="no">SnapDock</h1>
+          </NuxtLink>
+
+
+          <!-- System, Light, Dark -->
+          <USelectMenu
+            v-model="colorMode.preference"
+            :options="colorModeOptions"
+            value-attribute="value"
+          />
+        </div>
       </div>
     </header>
     <main 
@@ -24,9 +52,9 @@
           <div class="flex flex-col gap-6 max-w-sm">
             <NuxtLink to="/projects" class="inline-flex items-center gap-2">
               <NuxtImg src="/assets/images/logo.png" alt="SnapDock" width="48"/>
-              <h1 class="text-lg font-bold dark:text-gray-50" translate="no">SnapDock</h1>
+              <h1 class="text-lg font-bold text-neutral-800 dark:text-gray-50" translate="no">SnapDock</h1>
             </NuxtLink>
-            <p class="max-w-lg text-sm md:text-base text-gray-500 dark:text-gray-400 italic pl-1.5">
+            <p class="max-w-lg text-sm md:text-base text-neutral-500 dark:text-gray-400 italic pl-1.5">
               No setup hassle—just follow the steps and try the live demo!
             </p>
           </div>

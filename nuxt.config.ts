@@ -21,7 +21,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: ['@nuxt/ui', '@nuxt/fonts', '@nuxt/image', '@nuxt/content', '@vueuse/nuxt', "@nuxt/scripts"],
   colorMode: {
-    preference: 'dark'
+    preference: 'system'
   },
   devServer: {
     port: 9000

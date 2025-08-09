@@ -77,7 +77,7 @@ watch(preRef, () => {
       class="flex items-center justify-between px-2 pb-2"
     >
       <span 
-        class="text-sm dark:text-[hsla(0,0%,100%,.6)]"
+        class="text-sm text-neutral-400 dark:text-[hsla(0,0%,100%,.6)]"
         translate="no"
       >
         {{ filename }}
@@ -87,7 +87,7 @@ watch(preRef, () => {
       <pre
         ref="pre"
         :class="$props.class"
-        class="my-0 pr-12 sm:pr-0"
+        class="my-0 pr-12 sm:pr-0 bg-neutral-100 dark:bg-gray-950"
         translate="no"
       ><slot /></pre>
 
