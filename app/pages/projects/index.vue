@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import dayjs from 'dayjs'
 
-const { data } = await useAsyncData('navigation', () => queryCollectionNavigation('projects', ['name', 'description', 'logo', 'tags', 'demo', 'screenshots', 'createdAt', 'updatedAt']).where('published', '=', true))
+const { data } = await useAsyncData('navigation', () => queryCollection('projects').where('published', '=', true).all())
 
-const projects = computed(() => data.value?.[0]?.children ?? [])
+const projects = computed(() => data.value ?? [])
 const search = useRouteQuery('q', '', {
   route: useRoute()
 })
