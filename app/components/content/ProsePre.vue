@@ -87,7 +87,7 @@ watch(preRef, () => {
       <pre
         ref="pre"
         :class="$props.class"
-        class="my-0 pr-12 sm:pr-0 bg-neutral-100 dark:bg-gray-950"
+        class="my-0 pr-12 sm:pr-0 bg-neutral-100 dark:bg-gray-950 text-neutral-900 dark:text-gray-100"
         translate="no"
       ><slot /></pre>
 
