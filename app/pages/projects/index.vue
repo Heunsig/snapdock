@@ -105,11 +105,6 @@ function reset() {
               xl: 'py-3'
             },
             rounded: 'rounded-lg',
-            color: {
-              gray: {
-                outline: 'dark:focus:ring-yellow-500'
-              },
-            }
           }"
         />
         <UButton 
