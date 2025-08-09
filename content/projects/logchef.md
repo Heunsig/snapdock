@@ -18,6 +18,7 @@ screenshots: [
   '/assets/images/screenshots/logchef/logchef_07.png',
 ]
 published: true
+tags: ['kibana', 'log', 'elasticsearch']
 ---
 
 ## Getting Started
