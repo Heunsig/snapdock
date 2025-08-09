@@ -7,7 +7,16 @@ docker: 'https://vikunja.io/docs/full-docker-example/'
 tags: []
 published: true
 createdAt: "2025-02-08T13:40:43.000Z"
-updatedAt: "2025-02-16T13:51:23.000Z"
+updatedAt: "2025-08-09T05:04:19Z"
+screenshots: [
+  '/assets/images/screenshots/vikunja/vikunja_01.png',
+  '/assets/images/screenshots/vikunja/vikunja_02.png',
+  '/assets/images/screenshots/vikunja/vikunja_03.png',
+  '/assets/images/screenshots/vikunja/vikunja_04.png',
+  '/assets/images/screenshots/vikunja/vikunja_05.png',
+  '/assets/images/screenshots/vikunja/vikunja_06.png',
+  '/assets/images/screenshots/vikunja/vikunja_07.png',
+]
 ---
 
 ## Getting Started
