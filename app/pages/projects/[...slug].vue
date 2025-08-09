@@ -13,7 +13,7 @@ useSeoMeta({
 
 const screenshots = computed(() => page.value?.screenshots ?? [])
 const isOpen = ref(false)
-const expandedImage = ref('')
+const expandedImage = ref<string>('')
 
 function zoom(image: string) {
   isOpen.value = true
@@ -25,7 +25,7 @@ function prev() {
   const currentIndex = screenshots.value.indexOf(expandedImage.value)
   const prevIndex = currentIndex - 1
   if (prevIndex >= 0) {
-    expandedImage.value = screenshots.value[prevIndex]
+    expandedImage.value = screenshots.value[prevIndex] ?? ''
   }
 }
 
@@ -34,7 +34,7 @@ function next() {
   const currentIndex = screenshots.value.indexOf(expandedImage.value)
   const nextIndex = currentIndex + 1
   if (nextIndex < screenshots.value.length) {
-    expandedImage.value = screenshots.value[nextIndex]
+    expandedImage.value = screenshots.value[nextIndex] ?? ''
   }
 }
 
@@ -102,7 +102,7 @@ function formatDate(dateString: string) {
         >
           <div 
             v-if="page.createdAt" 
-            class="inline-flex items-center gap-1.5 text-xs text-gray-400"
+            class="inline-flex items-center gap-1.5 text-xs text-neutral-500 dark:text-gray-400"
           >
             <UTooltip text="Created at">
               <UIcon name="i-mdi-calendar-plus" class="w-3.5 h-3.5"/>
@@ -111,7 +111,7 @@ function formatDate(dateString: string) {
           </div>
           <div 
             v-if="page.updatedAt" 
-            class="inline-flex items-center gap-1.5 text-xs text-gray-400"
+            class="inline-flex items-center gap-1.5 text-xs text-neutral-500 dark:text-gray-400"
           >
             <UTooltip text="Updated at">
               <UIcon name="i-mdi-calendar-edit" class="w-3.5 h-3.5"/>
@@ -214,7 +214,7 @@ function formatDate(dateString: string) {
             <button
               ref="target"
               type="button"
-              class="rounded-lg overflow-hidden outline-none hover:ring-2 ring-offset-2 ring-yellow-500 dark:ring-offset-gray-900 focus:ring-2"
+              class="rounded-lg overflow-hidden outline-none hover:ring-2 ring-offset-2 ring-yellow-500 ring-offset-white dark:ring-offset-gray-900 focus:ring-2 border border-neutral-200 dark:border-gray-950"
               :class="{
                 'ring-2': expandedImage === item
               }"
