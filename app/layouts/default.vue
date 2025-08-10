@@ -31,11 +31,17 @@ const colorModeOptions = [
 
 
           <!-- System, Light, Dark -->
-          <USelectMenu
-            v-model="colorMode.preference"
-            :options="colorModeOptions"
-            value-attribute="value"
-          />
+          <ClientOnly>
+            <USelectMenu
+              v-model="colorMode.preference"
+              :options="colorModeOptions"
+              value-attribute="value"
+            />
+
+            <template #fallback>
+              <USkeleton class="h-8 w-24" />
+            </template>
+          </ClientOnly>
         </div>
       </div>
     </header>
