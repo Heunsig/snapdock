@@ -237,7 +237,8 @@ function formatDate(dateString: string) {
       :ui="{
         wrapper: 'zoom-modal test',
         width: 'w-full sm:max-w-[600px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1200px]',
-        background: 'dark:bg-transparent'
+        background: 'bg-transparent dark:bg-transparent',
+        shadow: 'shadow-none',
       }"
     >
       <div class="flex items-center justify-center gap-4">
@@ -251,12 +252,14 @@ function formatDate(dateString: string) {
         </UButton>
       </div>
 
-      <NuxtImg
-        :src="expandedImage"
-        class="rounded-lg w-full"
-        sizes="400px sm:600px md:1200px"
-        loading="lazy"
-      />
+      <div class="shadow-lg">
+        <NuxtImg
+          :src="expandedImage"
+          class="rounded-lg w-full"
+          sizes="400px sm:600px md:1200px"
+          loading="lazy"
+        />
+      </div>
     </UModal>
   </div>
   <div v-else>Home not found</div>
