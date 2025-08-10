@@ -138,6 +138,7 @@ function formatDate(dateString: string) {
             color="gray" 
             variant="link"
             icon="i-mdi-globe"
+            tabindex="-1"
           >
             Homepage
 
@@ -156,6 +157,7 @@ function formatDate(dateString: string) {
             color="gray" 
             variant="link"
             icon="i-mdi-docker"
+            tabindex="-1"
           >
             Docker Guide
 
@@ -174,6 +176,7 @@ function formatDate(dateString: string) {
             color="gray" 
             variant="link"
             icon="i-mdi-github"
+            tabindex="-1"
           >
             Github
 
@@ -192,6 +195,7 @@ function formatDate(dateString: string) {
             color="gray" 
             variant="link"
             icon="i-mdi-play-circle"
+            tabindex="-1"
           >
             Live Demo
 
