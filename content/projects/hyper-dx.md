@@ -9,6 +9,18 @@ tags: ["monitoring"]
 published: true
 createdAt: "2025-02-19T13:45:51.000Z"
 updatedAt: "2025-03-05T13:21:25.000Z"
+screenshots: [
+  '/assets/images/screenshots/hyperdx/hyperdx_01.png',
+  '/assets/images/screenshots/hyperdx/hyperdx_02.png',
+  '/assets/images/screenshots/hyperdx/hyperdx_03.png',
+  '/assets/images/screenshots/hyperdx/hyperdx_04.png',
+  '/assets/images/screenshots/hyperdx/hyperdx_05.png',
+  '/assets/images/screenshots/hyperdx/hyperdx_06.png',
+  '/assets/images/screenshots/hyperdx/hyperdx_07.png',
+  '/assets/images/screenshots/hyperdx/hyperdx_08.png',
+  '/assets/images/screenshots/hyperdx/hyperdx_09.png',
+  '/assets/images/screenshots/hyperdx/hyperdx_10.png',
+]
 ---
 
 ## Getting Started
