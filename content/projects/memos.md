@@ -9,7 +9,15 @@ demo: 'https://demo.usememos.com/'
 tags: ["note"]
 published: true
 createdAt: "2025-02-17T21:34:24.000Z"
-updatedAt: "2025-03-05T13:21:25.000Z"
+updatedAt: "2025-08-11T12:44:51Z"
+screenshots: [
+  '/assets/images/screenshots/memos/memos_01.png',
+  '/assets/images/screenshots/memos/memos_02.png',
+  '/assets/images/screenshots/memos/memos_03.png',
+  '/assets/images/screenshots/memos/memos_04.png',
+  '/assets/images/screenshots/memos/memos_05.png',
+  '/assets/images/screenshots/memos/memos_06.png',
+]
 ---
 
 ## Getting Started
