@@ -8,7 +8,7 @@ demo: 'https://www.hyperdx.io/search'
 tags: ["monitoring"]
 published: true
 createdAt: "2025-02-19T13:45:51.000Z"
-updatedAt: "2025-03-05T13:21:25.000Z"
+updatedAt: "2025-08-11T12:50:05Z"
 screenshots: [
   '/assets/images/screenshots/hyperdx/hyperdx_01.png',
   '/assets/images/screenshots/hyperdx/hyperdx_02.png',
