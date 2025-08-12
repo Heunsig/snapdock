@@ -11,11 +11,11 @@ defineProps<{
     path: string,
     logo?: string,
     tags?: string[],
+    stars?: number,
     createdAt?: string,
     updatedAt?: string
   }
 }>()
-
 </script>
 <template>
   <article 
@@ -76,6 +76,14 @@ defineProps<{
           {{ project.name }}
         </WordHighlighter>
       </h3>
+      <span 
+        v-if="project.stars"
+        class="text-sm text-neutral-600 dark:text-gray-400 inline-flex items-center gap-1"
+        title="GitHub Stars"
+      >
+        <Icon name="mdi:star" class="w-4 h-4" />
+        {{ project.stars }}
+      </span>
     </div>
     <div class="pt-0">
       <p class="text-neutral-800 dark:text-gray-300">

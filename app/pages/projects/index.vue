@@ -1,7 +1,20 @@
 <script setup lang="ts">
 import dayjs from 'dayjs'
+import githubStarsReport from '#shared/data/github-stars-report.json'
 
-const { data } = await useAsyncData('navigation', () => queryCollection('projects').where('published', '=', true).all())
+const { data } = await useAsyncData('navigation', async () => {
+  const data = await queryCollection('projects').where('published', '=', true).all()
+
+  const projects = data.map((project: any) => {
+    const githubStars = githubStarsReport.projects.find((p) => p.file === `${project.path.split('/').pop()}.md`)
+    return {
+      ...project,
+      stars: githubStars?.stars ?? 0
+    }
+  })
+
+  return projects
+})
 
 const projects = computed(() => data.value ?? [])
 const search = useRouteQuery('q', '', {
@@ -25,7 +38,7 @@ const filteredProjects = computed(() => projects.value.filter((project: any) => 
 
 const sortedProjects = computed(() => {
   return filteredProjects.value.sort((a: any, b: any) => {
-    if (orderBy.value === 'createdAt' || orderBy.value === 'updatedAt') {
+    if (orderBy.value === 'createdAt' || orderBy.value === 'updatedAt' || orderBy.value === 'stars') {
       return order.value === 'asc' ? dayjs(a[orderBy.value]).diff(dayjs(b[orderBy.value])) : dayjs(b[orderBy.value]).diff(dayjs(a[orderBy.value]))
     }
 
@@ -46,6 +59,9 @@ const options = ref([{
 }, {
   label: 'Updated At',
   value: 'updatedAt'
+}, {
+  label: 'Stars',
+  value: 'stars'
 }])
 
 const isOpen = ref(false)
@@ -271,6 +287,7 @@ function reset() {
           path: project.path,
           logo: project.logo,
           tags: getTags(project),
+          stars: project.stars,
           createdAt: project.createdAt,
           updatedAt: project.updatedAt
         }"
