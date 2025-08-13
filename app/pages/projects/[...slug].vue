@@ -6,6 +6,8 @@ const { data: page } = await useAsyncData(route.path, () => {
   return queryCollection('projects').path(route.path).first()
 })
 
+const { data: githubData } = await useFetch(`/api/github/${route.path.split('/').pop()}`)
+
 useSeoMeta({
   title: `${page.value?.name} | SnapDock`,
   description: page.value?.description
@@ -65,7 +67,17 @@ function formatDate(dateString: string) {
           class="md:row-span-2"
           width="48"
         />
-        <h1 class="text-lg font-bold" translate="no">{{ page.name }}</h1>
+        <div class="flex items-center gap-3">
+          <h1 class="text-lg font-bold" translate="no">{{ page.name }}</h1> 
+          <span 
+            v-if="githubData"
+            class="text-sm text-neutral-600 dark:text-gray-400 inline-flex items-center gap-1"
+            title="GitHub Stars"
+          >
+            <Icon name="mdi:star" class="w-4 h-4" />
+            {{ githubData.stars }}
+          </span>
+        </div>
         <p class="col-span-2 md:col-span-1 md:col-start-2 text-sm dark:text-gray-300">{{ page.description }}</p>
         <div 
           v-if="page.tags && page.tags.length > 0 || page.demo"
