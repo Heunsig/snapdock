@@ -4,10 +4,11 @@ description: Vikunja, the fluffy, open-source, self-hostable to-do app.
 logo: '/assets/images/logos/vikunja.svg'
 homepage: 'https://vikunja.io/'
 docker: 'https://vikunja.io/docs/full-docker-example/'
+github: 'https://github.com/go-vikunja/vikunja'
 tags: ['todo', 'Todoist']
 published: true
 createdAt: "2025-02-08T13:40:43.000Z"
-updatedAt: "2025-08-09T05:04:19Z"
+updatedAt: "2025-08-13T12:23:05Z"
 screenshots: [
   '/assets/images/screenshots/vikunja/vikunja_01.png',
   '/assets/images/screenshots/vikunja/vikunja_02.png',
