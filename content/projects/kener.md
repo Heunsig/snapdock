@@ -8,7 +8,23 @@ github: 'https://github.com/rajnandan1/kener'
 tags: ["healthcheck", "monitoring"]
 published: true
 createdAt: "2025-02-21T05:12:45.000Z"
-updatedAt: "2025-02-21T05:12:45.000Z"
+updatedAt: "2025-08-15T07:58:48Z"
+screenshots: [
+  '/assets/images/screenshots/kener/kener_01.png',
+  '/assets/images/screenshots/kener/kener_02.png',
+  '/assets/images/screenshots/kener/kener_03.png',
+  '/assets/images/screenshots/kener/kener_04.png',
+  '/assets/images/screenshots/kener/kener_05.png',
+  '/assets/images/screenshots/kener/kener_06.png',
+  '/assets/images/screenshots/kener/kener_07.png',
+  '/assets/images/screenshots/kener/kener_08.png',
+  '/assets/images/screenshots/kener/kener_09.png',
+  '/assets/images/screenshots/kener/kener_10.png',
+  '/assets/images/screenshots/kener/kener_11.png',
+  '/assets/images/screenshots/kener/kener_12.png',
+  '/assets/images/screenshots/kener/kener_13.png',
+  '/assets/images/screenshots/kener/kener_14.png',
+]
 ---
 
 ## Getting Started
