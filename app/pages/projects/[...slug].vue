@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import dayjs from 'dayjs'
+import { usePointerSwipe, useSwipe, type UseSwipeDirection } from '@vueuse/core'
 
 const route = useRoute()
 const { data: page } = await useAsyncData(route.path, () => {
@@ -53,6 +54,49 @@ function formatDate(dateString: string) {
   if (!dateString) return ''
   return dayjs(dateString).format('YYYY-MM-DD')
 }
+
+const translateX = shallowRef(0)
+const imageContainer = useTemplateRef('imageContainer')
+
+// Swipe configuration
+const SWIPE_THRESHOLD = 100
+const MAX_TRANSLATE = 200
+
+// Common swipe handler logic
+function handleSwipeMove(distance: number) {
+  const absDistance = Math.abs(distance)
+  if (absDistance < MAX_TRANSLATE) {
+    translateX.value = -distance
+  }
+}
+
+function handleSwipeEnd(direction: UseSwipeDirection) {
+  const absTranslateX = Math.abs(translateX.value)
+  translateX.value = 0
+  
+  if (absTranslateX < SWIPE_THRESHOLD) {
+    return
+  }
+
+  if (direction === 'right') {
+    prev()
+  } else if (direction === 'left') {
+    next()
+  }
+}
+
+// Use pointer swipe for mouse events
+const { distanceX } = usePointerSwipe(imageContainer, {
+  disableTextSelect: true,
+  onSwipe: () => handleSwipeMove(distanceX.value),
+  onSwipeEnd: (_, direction) => handleSwipeEnd(direction),
+})
+
+// Use touch swipe for mobile events  
+const { lengthX } = useSwipe(imageContainer, {
+  onSwipe: () => handleSwipeMove(lengthX.value),
+  onSwipeEnd: (_, direction) => handleSwipeEnd(direction),
+})
 </script>
 
 <template>
@@ -301,13 +345,22 @@ function formatDate(dateString: string) {
               </UButton>
             </div>
 
-            <div class="shadow-lg ring ring-neutral-200 dark:ring-gray-900 rounded-lg overflow-hidden">
+            <div 
+              ref="imageContainer"
+              class="shadow-lg ring ring-neutral-200 dark:ring-gray-900 rounded-lg overflow-hidden"
+              :style="{
+                'transform': `translateX(${translateX}px)`,
+                'transition': 'transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+                'cursor': 'grab'
+              }"
+            >
               <NuxtImg
                 v-if="expandedImage"
                 :src="expandedImage"
                 class="rounded-lg w-full"
                 sizes="400px sm:600px md:1200px"
                 loading="lazy"
+                draggable="false"
               />
             </div>
           </div>
