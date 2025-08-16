@@ -88,126 +88,78 @@ function reset() {
           v-model="search"
           icon="i-heroicons-magnifying-glass"
           placeholder="Search a project"
-          color="gray"
+          size="xl"
+          variant="subtle"
+          class="w-full"
           :ui="{
-            icon: {
-              leading: {
-                padding: {
-                  '2xs': 'ps-4',
-                  xs: 'ps-4',
-                  sm: 'ps-4',
-                  md: 'ps-4',
-                  lg: 'ps-4',
-                  xl: 'ps-4'
-                }
-              }
-            },
-            leading: {
-              padding: {
-                '2xs': 'ps-12',
-                xs: 'ps-12',
-                sm: 'ps-12',
-                md: 'ps-12',
-                lg: 'ps-12',
-                xl: 'ps-12'
-              }
-            },
-            padding: {
-              '2xs': 'py-3',
-              xs: 'py-3',
-              sm: 'py-3',
-              md: 'py-3',
-              lg: 'py-3',
-              xl: 'py-3'
-            },
-            rounded: 'rounded-lg',
+            leadingIcon: 'w-5 h-5'
           }"
         />
         <UButton 
           @click="() => openModal()"
           icon="i-heroicons-adjustments-horizontal-16-solid"
-          color="gray"
-          square
-          :ui="{
-            square: {
-              '2xs': 'p-3',
-              xs: 'p-3',
-              sm: 'p-3',
-              md: 'p-3',
-              lg: 'p-3',
-              xl: 'p-3'
-            }
-          }"
+          color="neutral"
+          variant="subtle"
           class="ml-2 md:hidden"
+          square
+          size="xl"
+          :ui="{
+            leadingIcon: 'w-5 h-5'
+          }"
         />
           
-        <UModal v-model="isOpen">
-          <UCard>
-            <UButtonGroup 
-              orientation="horizontal"
-            >
-              <UButton 
-                @click="() => toggleOrder()"
-                :icon="order === 'asc' ? 'i-heroicons-solid-sort-ascending' : 'i-heroicons-solid-sort-descending'"
-                color="gray"
-                square
-                :ui="{
-                  square: {
-                    '2xs': 'p-3',
-                    xs: 'p-3',
-                    sm: 'p-3',
-                    md: 'p-3',
-                    lg: 'p-3',
-                    xl: 'p-3'
-                  },
-                }"
-              />
-              <USelectMenu 
-                v-model="orderBy" 
-                :options="options"
-                color="gray"
-                value-attribute="value"
-                option-attribute="label"
-                :ui="{
-                  base: 'min-w-32',
-                  padding: {
-                    '2xs': 'py-3',
-                    xs: 'py-3',
-                    sm: 'py-3',
-                    md: 'py-3',
-                    lg: 'py-3',
-                    xl: 'py-3'
-                  },
-                }"
+        <UModal v-model:open="isOpen">
+          <template #content>
+            <UCard>
+              <UButtonGroup 
+                orientation="horizontal"
               >
-                <template #label>
-                  <span class="capitalize">{{ orderBy }}</span>
-                </template>
-                <template #option="{ option }">
-                  <span class="capitalize">{{ option.label }}</span>
-                </template>
-              </USelectMenu>
-            </UButtonGroup>
+                <UButton 
+                  @click="() => toggleOrder()"
+                  :icon="order === 'asc' ? 'i-heroicons-solid-sort-ascending' : 'i-heroicons-solid-sort-descending'"
+                  color="neutral"
+                  variant="subtle"
+                  square
+                  size="xl"
+                  :ui="{
+                    leadingIcon: 'w-5 h-5'
+                  }"
+                />
+                
+                <USelect 
+                  v-model="orderBy" 
+                  :items="options"
+                  value-key="value"
+                  label-key="label"
+                  variant="subtle"
+                  :ui="{
+                    base: 'min-w-32',
+                  }"
+                  size="xl"
+                >
+                </USelect>
+              </UButtonGroup>
 
-            <template #footer>
-              <div class="flex justify-end">
-                <UButton 
-                  color="gray"
-                  variant="ghost"
-                  @click="() => reset()"
-                >
-                  Reset
-                </UButton>
-                <UButton 
-                  color="gray"
-                  variant="ghost"
-                  @click="() => isOpen = false"
-                >
-                  Close
-                </UButton>
-              </div>
-            </template>
-          </UCard>
+              <template #footer>
+                <div class="flex justify-end">
+                  <UButton 
+                    variant="ghost"
+                    @click="() => reset()"
+                    color="neutral"
+                  >
+                    Reset
+                  </UButton>
+                  <UButton 
+                    variant="ghost"
+                    @click="() => { isOpen = false }"
+                    color="neutral"
+                  >
+                    Close
+                  </UButton>
+                </div>
+              </template>
+            </UCard>
+          </template>
         </UModal>
       </div>
       <div class="hidden md:flex justify-end lg:col-span-2">
@@ -217,61 +169,39 @@ function reset() {
           <UButton 
             @click="() => toggleOrder()"
             :icon="order === 'asc' ? 'i-heroicons-solid-sort-ascending' : 'i-heroicons-solid-sort-descending'"
-            color="gray"
+            color="neutral"
+            variant="subtle"
+            size="xl"
             square
             :ui="{
-              square: {
-                '2xs': 'p-3',
-                xs: 'p-3',
-                sm: 'p-3',
-                md: 'p-3',
-                lg: 'p-3',
-                xl: 'p-3'
-              },
+              base: 'px-2.5',
+              leadingIcon: 'w-5 h-5'
             }"
           />
-          <USelectMenu 
+          <USelect
             v-model="orderBy" 
-            :options="options"
-            color="gray"
-            value-attribute="value"
-            option-attribute="label"
+            :items="options"
+            value-key="value"
+            label-key="label"
             :ui="{
               base: 'min-w-32',
-              padding: {
-                '2xs': 'py-3',
-                xs: 'py-3',
-                sm: 'py-3',
-                md: 'py-3',
-                lg: 'py-3',
-                xl: 'py-3'
-              },
             }"
+            size="xl"
+            variant="subtle"
           >
-            <template #label>
-              <span class="capitalize">{{ orderBy }}</span>
-            </template>
-            <template #option="{ option }">
-              <span class="capitalize">{{ option.label }}</span>
-            </template>
-          </USelectMenu>
+          </USelect>
         </UButtonGroup>
         <UButton 
           @click="() => reset()"
           icon="i-heroicons-solid-refresh"
-          color="gray"
-          square
-          :ui="{
-            square: {
-              '2xs': 'p-3',
-              xs: 'p-3',
-              sm: 'p-3',
-              md: 'p-3',
-              lg: 'p-3',
-              xl: 'p-3'
-            }
-          }"
+          color="neutral"
+          variant="subtle"
           class="ml-2"
+          size="xl"
+          :ui="{
+            base: 'px-2.5',
+            leadingIcon: 'w-5 h-5'
+          }"
         />
       </div>
     </div>
