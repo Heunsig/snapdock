@@ -42,9 +42,10 @@ function next() {
 
 const target = useTemplateRef('target')
 onClickOutside(target, () => {
+  isOpen.value = false
   expandedImage.value = ''
 }, {
-  ignore: ['.zoom-modal']
+  ignore: ['.zoom-modal', '.zoom-modal-overlay']
 })
 
 // Format date for display
@@ -55,9 +56,13 @@ function formatDate(dateString: string) {
 </script>
 
 <template>
+  <!--  
+    Before: Using `1fr` can cause content to exceed the parent's max-width when it's too large (e.g., Carousel overflow)
+    After: Using `minmax(0, 1fr)` sets the minimum width to 0, preventing it from exceeding the parent container
+  -->
   <div
     v-if="page"
-    class="grid grid-cols-1 md:grid-cols-[70%_1fr] xl:grid-cols-[75%_1fr] gap-y-10 md:gap-y-8 md:gap-x-8"
+    class="grid grid-cols-1 md:grid-cols-[70%_minmax(0,1fr)] xl:grid-cols-[75%_minmax(0,1fr)] gap-y-10 md:gap-y-8 md:gap-x-8"
   >
     <header class="row-start-1">
       <div class="grid grid-cols-[1.75rem_auto] md:grid-cols-[3rem_auto] items-center gap-x-3 gap-y-1 md:gap-x-5 md:gap-y-0">
@@ -147,7 +152,7 @@ function formatDate(dateString: string) {
           translate="no"
         >
           <UButton
-            color="gray" 
+            color="neutral" 
             variant="link"
             icon="i-mdi-globe"
             tabindex="-1"
@@ -166,7 +171,7 @@ function formatDate(dateString: string) {
           translate="no"
         >
           <UButton
-            color="gray" 
+            color="neutral" 
             variant="link"
             icon="i-mdi-docker"
             tabindex="-1"
@@ -185,7 +190,7 @@ function formatDate(dateString: string) {
           translate="no"
         >
           <UButton 
-            color="gray" 
+            color="neutral" 
             variant="link"
             icon="i-mdi-github"
             tabindex="-1"
@@ -204,7 +209,7 @@ function formatDate(dateString: string) {
           translate="no"
         >
           <UButton 
-            color="gray" 
+            color="neutral" 
             variant="link"
             icon="i-mdi-play-circle"
             tabindex="-1"
@@ -222,15 +227,17 @@ function formatDate(dateString: string) {
         <UCarousel 
           v-slot="{ item }" 
           :items="screenshots" 
+          wheel-gestures
+          :skip-snaps="true"
           :ui="{ 
-            container: 'gap-1',
-            item: 'snap-align-none'
+            container: 'pl-2 pt-1',
+            item: 'pl-3 basis-auto'
           }">
-          <div class="p-1">
+          <div>
             <button
               ref="target"
               type="button"
-              class="rounded-lg overflow-hidden outline-none hover:ring-2 ring-offset-2 ring-yellow-500 ring-offset-white dark:ring-offset-gray-900 focus:ring-2 border border-neutral-200 dark:border-gray-950"
+              class="rounded-lg overflow-hidden outline-hidden hover:ring-2 ring-offset-2 ring-yellow-500 ring-offset-white dark:ring-offset-gray-900 focus:ring-2 border border-neutral-200 dark:border-gray-950 w-full min-w-5 max-w-50"
               :class="{
                 'ring-2': expandedImage === item
               }"
@@ -248,34 +255,64 @@ function formatDate(dateString: string) {
       </div>
     </div>
     
+    <!--
+      The fullscreen option was added to enable scrolling when the child element is larger. 
+     -->
     <UModal 
-      v-model="isOpen"
+      v-model:open="isOpen"
+      fullscreen
       :ui="{
-        wrapper: 'zoom-modal test',
-        width: 'w-full sm:max-w-[600px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1200px]',
-        background: 'bg-transparent dark:bg-transparent',
-        shadow: 'shadow-none',
+        overlay: 'zoom-modal-overlay',
+        content: 'overflow-auto bg-transparent block'
       }"
     >
-      <div class="flex items-center justify-center gap-4">
-        <UButton type="button" color="black" variant="link" @click="prev" class="text-lg" :disabled="disabledPrev">
-          <UIcon name="i-mdi-chevron-left" class="w-6 h-6"/>
-          Prev
-        </UButton>
-        <UButton type="button" color="black" variant="link" @click="next" class="text-lg" :disabled="disabledNext">
-          Next
-          <UIcon name="i-mdi-chevron-right" class="w-6 h-6"/>
-        </UButton>
-      </div>
+      <template #content>
+        <!-- 
+          When using flex to center content both horizontally and vertically,
+          `overflow: auto` may cause the top/bottom of the child element to be clipped
+          if it's taller than the parent.
+          Adding `min-height: min-content` ensures the parent adjusts to the child's
+          height, allowing the scroll to work correctly.
+         -->
+        <div class="flex justify-center items-center h-full min-h-min p-2">
+          <div class="zoom-modal w-full sm:max-w-[600px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1200px] ">
+            <div class="flex items-center justify-center gap-4">
+              <UButton 
+                type="button" 
+                color="neutral" 
+                variant="link" 
+                @click="prev" 
+                class="text-lg" 
+                :disabled="disabledPrev"
+              >
+                <UIcon name="i-mdi-chevron-left" class="w-6 h-6"/>
+                Prev
+              </UButton>
+              <UButton 
+                type="button" 
+                color="neutral" 
+                variant="link" 
+                @click="next" 
+                class="text-lg" 
+                :disabled="disabledNext"
+              >
+                Next
+                <UIcon name="i-mdi-chevron-right" class="w-6 h-6"/>
+              </UButton>
+            </div>
 
-      <div class="shadow-lg">
-        <NuxtImg
-          :src="expandedImage"
-          class="rounded-lg w-full"
-          sizes="400px sm:600px md:1200px"
-          loading="lazy"
-        />
-      </div>
+            <div class="shadow-lg ring ring-neutral-200 dark:ring-gray-900 rounded-lg overflow-hidden">
+              <NuxtImg
+                v-if="expandedImage"
+                :src="expandedImage"
+                class="rounded-lg w-full"
+                sizes="400px sm:600px md:1200px"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </template>
     </UModal>
   </div>
   <div v-else>Home not found</div>
