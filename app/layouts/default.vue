@@ -32,10 +32,10 @@ const colorModeOptions = [
 
           <!-- System, Light, Dark -->
           <ClientOnly>
-            <USelectMenu
+            <USelect
               v-model="colorMode.preference"
-              :options="colorModeOptions"
-              value-attribute="value"
+              :items="colorModeOptions"
+              value-key="value"
             />
 
             <template #fallback>

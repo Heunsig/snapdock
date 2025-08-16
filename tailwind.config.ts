@@ -1,5 +1,3 @@
-import tailwindcssTypography from '@tailwindcss/typography'
-
 /** @type {import('tailwindcss').Config} */
 export default {
   theme: {
@@ -41,7 +39,4 @@ export default {
       "./app/**/*.{vue,js,jsx,mjs,ts,tsx,html}"
     ]
   },
-  plugins: [
-    tailwindcssTypography()
-  ]
 }

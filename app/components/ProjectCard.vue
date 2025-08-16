@@ -34,7 +34,7 @@ defineProps<{
       border-neutral-200
       dark:border-gray-700
       hover:bg-neutral-200
-      hover:dark:bg-slate-800
+      dark:hover:bg-slate-800
       transition-all
       rounded-lg
       duration-150
@@ -44,17 +44,19 @@ defineProps<{
       <NuxtImg v-if="project.logo" :src="project.logo" :alt="`${project.name} logo`" width="28" />
       <h3 class="text-lg font-semibold text-neutral-800 dark:text-gray-100" translate="no">
         <!-- inset makes the link full with and height to the card -->
-        <NuxtLink :to="project.path" class="absolute inset-0"></NuxtLink>
+        <NuxtLink :to="project.path" class="absolute inset-0 rounded-lg"></NuxtLink>
         <UPopover
           class="absolute top-3 right-2"
         >
           <UButton
-            color="gray"
+            type="button"
+            color="neutral"
             variant="link"
             icon="i-mdi-information-outline"
+            class="cursor-pointer"
           />
 
-          <template #panel>
+          <template #content>
             <div 
               v-if="project.createdAt || project.updatedAt"
               class="p-2 space-y-1"

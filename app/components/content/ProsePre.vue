@@ -87,7 +87,7 @@ watch(preRef, () => {
       <pre
         ref="pre"
         :class="$props.class"
-        class="my-0 pr-12 sm:pr-0 bg-neutral-100 dark:bg-gray-950 text-neutral-900 dark:text-gray-100"
+        class="my-0 p-3 pr-12 sm:pr-0 bg-neutral-100 dark:bg-gray-950 text-neutral-900 dark:text-gray-100 overflow-auto rounded-lg mt-0 mb-0"
         translate="no"
       ><slot /></pre>
 
@@ -95,7 +95,7 @@ watch(preRef, () => {
         <UButton
           v-if="isOverflowing"
           variant="link"
-          color="gray"
+          color="neutral"
           size="sm"
           :icon="isExpanded ? 'i-mdi-chevron-up' : 'i-mdi-chevron-down'"
           @click="() => isExpanded ? collapseContent() : expandContent()"
@@ -103,7 +103,7 @@ watch(preRef, () => {
         />
         <UButton
           variant="link"
-          color="gray"
+          color="neutral"
           size="sm"
           :icon="isCopied ? 'i-mdi-check' : 'i-mdi-content-copy'"
           @click="() => copyCode()"
@@ -114,11 +114,11 @@ watch(preRef, () => {
 
     <div
       v-if="isOverflowing && !isExpanded"
-      class="flex items-end justify-center absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-neutral-100 dark:to-black"
+      class="flex items-end justify-center absolute bottom-0 left-0 w-full h-32 bg-linear-to-b from-transparent to-neutral-100 dark:to-black"
     >
       <UButton 
         label="Expand" 
-        color="gray"
+        color="neutral"
         variant="link"
         size="sm"
         class="mb-2"
