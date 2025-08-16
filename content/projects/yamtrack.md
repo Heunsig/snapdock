@@ -17,7 +17,6 @@ screenshots: [
   '/assets/images/screenshots/yamtrack/yamtrack_09.png',
   '/assets/images/screenshots/yamtrack/yamtrack_10.png',
   '/assets/images/screenshots/yamtrack/yamtrack_11.png',
-  '/assets/images/screenshots/yamtrack/yamtrack_12.png',
 ]
 createdAt: "2025-08-14T13:26:47Z"
 updatedAt: "2025-08-14T13:26:47Z"
