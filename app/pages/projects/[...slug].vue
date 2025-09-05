@@ -347,21 +347,27 @@ const { lengthX } = useSwipe(imageContainer, {
 
             <div 
               ref="imageContainer"
-              class="shadow-lg ring ring-neutral-200 dark:ring-gray-900 rounded-lg overflow-hidden"
+              class="shadow-lg ring ring-neutral-200 dark:ring-gray-900 rounded-lg overflow-hidden bg-neutral-100 min-h-[42rem]"
               :style="{
                 'transform': `translateX(${translateX}px)`,
                 'transition': 'transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
                 'cursor': 'grab'
               }"
             >
-              <NuxtImg
-                v-if="expandedImage"
-                :src="expandedImage"
-                class="rounded-lg w-full"
-                sizes="400px sm:600px md:1200px"
-                loading="lazy"
-                draggable="false"
-              />
+              <template
+                v-for="image in screenshots"
+                :key="image"
+              >
+                <NuxtImg
+                  v-show="expandedImage === image"
+                  :src="image"
+                  class="rounded-lg w-full"
+                  sizes="400px sm:600px md:1200px"
+                  loading="lazy"
+                  draggable="false"
+                  placeholder 
+                />
+              </template>
             </div>
           </div>
         </div>
