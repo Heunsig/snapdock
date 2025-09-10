@@ -2,6 +2,8 @@
 
 No setup hassle—just follow the steps and try the live demo!
 
+![Snapdoc main page](/screenshots/screenshot.jpg)
+
 ## Development
 
 1. Install dependencies
