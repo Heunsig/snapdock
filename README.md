@@ -15,3 +15,10 @@ pnpm dev
 ```
 
 3. Open the browser and navigate to `http://localhost:9000`
+
+## Fetch Github Stars
+
+1. Run the script
+```bash
+pnpm get-github-stars
+```
