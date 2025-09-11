@@ -7,8 +7,22 @@ docker: 'https://docs.firefly-iii.org/how-to/firefly-iii/installation/docker/'
 github: 'https://github.com/firefly-iii/firefly-iii/'
 demo: 'https://demo.firefly-iii.org/'
 tags: ["finance"]
+screenshots: [
+  '/assets/images/screenshots/firefly-iii/firefly-iii_01.png',
+  '/assets/images/screenshots/firefly-iii/firefly-iii_02.png',
+  '/assets/images/screenshots/firefly-iii/firefly-iii_03.png',
+  '/assets/images/screenshots/firefly-iii/firefly-iii_04.png',
+  '/assets/images/screenshots/firefly-iii/firefly-iii_05.png',
+  '/assets/images/screenshots/firefly-iii/firefly-iii_06.png',
+  '/assets/images/screenshots/firefly-iii/firefly-iii_07.png',
+  '/assets/images/screenshots/firefly-iii/firefly-iii_08.png',
+  '/assets/images/screenshots/firefly-iii/firefly-iii_09.png',
+  '/assets/images/screenshots/firefly-iii/firefly-iii_10.png',
+  '/assets/images/screenshots/firefly-iii/firefly-iii_11.png',
+  '/assets/images/screenshots/firefly-iii/firefly-iii_12.png',
+]
 createdAt: "2025-02-11T15:15:55.000Z"
-updatedAt: "2025-03-05T13:21:25.000Z"
+updatedAt: "2025-09-11T13:31:18Z"
 published: true
 ---
 
