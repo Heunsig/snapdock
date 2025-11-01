@@ -1,811 +1,820 @@
 {
-  "generatedAt": "2025-08-15T05:05:15.248Z",
-  "totalProjects": 89,
-  "successfulQueries": 89,
+  "generatedAt": "2025-11-01T08:28:45.740Z",
+  "totalProjects": 90,
+  "successfulQueries": 90,
   "failedQueries": 0,
-  "totalStars": 1475279,
-  "averageStars": 16576,
+  "totalStars": 1567889,
+  "averageStars": 17421,
   "projects": [
     {
       "name": "Ackee",
       "file": "ackee.md",
       "githubUrl": "https://github.com/electerious/Ackee",
-      "stars": 4429,
-      "forks": 374,
+      "stars": 4510,
+      "forks": 384,
       "language": "JavaScript",
-      "lastUpdated": "2025-08-15T04:14:44Z"
+      "lastUpdated": "2025-11-01T06:23:51Z"
     },
     {
       "name": "Actual Budget",
       "file": "actual-budget.md",
       "githubUrl": "https://github.com/actualbudget/actual",
-      "stars": 21606,
-      "forks": 1733,
+      "stars": 22909,
+      "forks": 1895,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-15T04:15:28Z"
+      "lastUpdated": "2025-11-01T07:24:37Z"
     },
     {
       "name": "Aptabase",
       "file": "aptabase.md",
       "githubUrl": "https://github.com/aptabase/aptabase",
-      "stars": 1421,
-      "forks": 97,
+      "stars": 1515,
+      "forks": 107,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-14T10:52:38Z"
+      "lastUpdated": "2025-10-31T03:06:29Z"
     },
     {
       "name": "Audiobookshelf",
       "file": "audiobookshelf.md",
       "githubUrl": "https://github.com/advplyr/audiobookshelf",
-      "stars": 9720,
-      "forks": 673,
+      "stars": 10482,
+      "forks": 759,
       "language": "JavaScript",
-      "lastUpdated": "2025-08-15T03:56:43Z"
+      "lastUpdated": "2025-11-01T07:35:02Z"
     },
     {
       "name": "Beszel",
       "file": "beszel.md",
       "githubUrl": "https://github.com/henrygd/beszel",
-      "stars": 13697,
-      "forks": 425,
+      "stars": 16413,
+      "forks": 526,
       "language": "Go",
-      "lastUpdated": "2025-08-15T01:57:54Z"
+      "lastUpdated": "2025-11-01T08:01:13Z"
     },
     {
       "name": "Bookstack",
       "file": "bookstack.md",
       "githubUrl": "https://github.com/BookStackApp/BookStack",
-      "stars": 17180,
-      "forks": 2181,
+      "stars": 17622,
+      "forks": 2253,
       "language": "PHP",
-      "lastUpdated": "2025-08-14T23:09:01Z"
+      "lastUpdated": "2025-11-01T05:01:13Z"
     },
     {
       "name": "ByteStash",
       "file": "byte-stash.md",
       "githubUrl": "https://github.com/jordan-dalby/ByteStash",
-      "stars": 1681,
-      "forks": 70,
+      "stars": 1836,
+      "forks": 86,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-12T16:49:18Z"
+      "lastUpdated": "2025-10-31T15:57:16Z"
     },
     {
       "name": "Bytebase",
       "file": "bytebase.md",
       "githubUrl": "https://github.com/bytebase/bytebase",
-      "stars": 12865,
-      "forks": 836,
+      "stars": 13195,
+      "forks": 861,
       "language": "Go",
-      "lastUpdated": "2025-08-15T04:16:20Z"
+      "lastUpdated": "2025-11-01T04:52:59Z"
     },
     {
       "name": "Checkmate",
       "file": "checkmate.md",
       "githubUrl": "https://github.com/bluewave-labs/Checkmate",
-      "stars": 7736,
-      "forks": 509,
+      "stars": 8482,
+      "forks": 593,
       "language": "JavaScript",
-      "lastUpdated": "2025-08-15T03:45:05Z"
+      "lastUpdated": "2025-10-31T20:13:57Z"
     },
     {
       "name": "checkmk",
       "file": "checkmk.md",
       "githubUrl": "https://github.com/Checkmk/checkmk",
-      "stars": 1955,
-      "forks": 508,
+      "stars": 2067,
+      "forks": 514,
       "language": "Python",
-      "lastUpdated": "2025-08-14T20:07:30Z"
+      "lastUpdated": "2025-10-31T18:59:41Z"
     },
     {
       "name": "Cockpit",
       "file": "cockpit.md",
       "githubUrl": "https://github.com/Cockpit-HQ/Cockpit",
-      "stars": 480,
-      "forks": 70,
+      "stars": 506,
+      "forks": 69,
       "language": "PHP",
-      "lastUpdated": "2025-08-14T01:05:57Z"
+      "lastUpdated": "2025-10-28T21:21:05Z"
     },
     {
       "name": "Corrot",
       "file": "coroot.md",
       "githubUrl": "https://github.com/coroot/coroot",
-      "stars": 6945,
-      "forks": 303,
+      "stars": 7135,
+      "forks": 327,
       "language": "Go",
-      "lastUpdated": "2025-08-14T21:52:26Z"
+      "lastUpdated": "2025-11-01T06:03:05Z"
     },
     {
       "name": "CyberChef",
       "file": "cyberchef.md",
       "githubUrl": "https://github.com/gchq/CyberChef/",
-      "stars": 32163,
-      "forks": 3620,
+      "stars": 32995,
+      "forks": 3711,
       "language": "JavaScript",
-      "lastUpdated": "2025-08-15T02:41:41Z"
+      "lastUpdated": "2025-11-01T04:47:41Z"
     },
     {
       "name": "Directus",
       "file": "directus.md",
       "githubUrl": "https://github.com/directus/directus",
-      "stars": 32015,
-      "forks": 4337,
+      "stars": 33378,
+      "forks": 4444,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-15T04:22:00Z"
+      "lastUpdated": "2025-11-01T05:36:18Z"
     },
     {
       "name": "Docmost",
       "file": "docmost.md",
       "githubUrl": "https://github.com/docmost/docmost",
-      "stars": 16810,
-      "forks": 886,
+      "stars": 17717,
+      "forks": 983,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-15T04:02:34Z"
+      "lastUpdated": "2025-11-01T08:14:53Z"
     },
     {
       "name": "Docspell",
       "file": "docspell.md",
       "githubUrl": "https://github.com/eikek/docspell",
-      "stars": 1845,
-      "forks": 147,
+      "stars": 1939,
+      "forks": 151,
       "language": "Elm",
-      "lastUpdated": "2025-08-13T16:49:47Z"
+      "lastUpdated": "2025-11-01T07:27:33Z"
     },
     {
       "name": "Docuseal",
       "file": "docuseal.md",
       "githubUrl": "https://github.com/docusealco/docuseal",
-      "stars": 9657,
-      "forks": 730,
+      "stars": 10824,
+      "forks": 856,
       "language": "Ruby",
-      "lastUpdated": "2025-08-14T19:31:33Z"
+      "lastUpdated": "2025-11-01T06:02:34Z"
     },
     {
       "name": "Dozzle",
       "file": "dozzle.md",
       "githubUrl": "https://github.com/amir20/dozzle",
-      "stars": 9297,
-      "forks": 400,
+      "stars": 10041,
+      "forks": 423,
       "language": "Go",
-      "lastUpdated": "2025-08-14T22:28:57Z"
+      "lastUpdated": "2025-11-01T08:02:06Z"
     },
     {
       "name": "Drupal",
       "file": "drupal.md",
       "githubUrl": "https://github.com/drupal/drupal",
-      "stars": 4191,
-      "forks": 1946,
+      "stars": 4210,
+      "forks": 1949,
       "language": "PHP",
-      "lastUpdated": "2025-08-14T03:24:38Z"
+      "lastUpdated": "2025-10-30T19:24:42Z"
     },
     {
       "name": "Eigenfocus",
       "file": "eigenfocus.md",
       "githubUrl": "https://github.com/Eigenfocus/eigenfocus",
-      "stars": 769,
+      "stars": 818,
       "forks": 24,
       "language": "Ruby",
-      "lastUpdated": "2025-08-14T14:35:46Z"
+      "lastUpdated": "2025-11-01T01:38:05Z"
     },
     {
       "name": "EspoCRM",
       "file": "espo-crm.md",
       "githubUrl": "https://github.com/espocrm/espocrm",
-      "stars": 2410,
-      "forks": 711,
+      "stars": 2587,
+      "forks": 757,
       "language": "PHP",
-      "lastUpdated": "2025-08-15T05:02:45Z"
+      "lastUpdated": "2025-10-31T14:03:24Z"
     },
     {
       "name": "Evershop",
       "file": "evershop.md",
       "githubUrl": "https://github.com/evershopcommerce/evershop",
-      "stars": 5359,
-      "forks": 1601,
-      "language": "JavaScript",
-      "lastUpdated": "2025-08-14T14:46:31Z"
+      "stars": 8536,
+      "forks": 2006,
+      "language": "TypeScript",
+      "lastUpdated": "2025-11-01T06:48:42Z"
     },
     {
       "name": "Fider",
       "file": "fider.md",
       "githubUrl": "https://github.com/getfider/fider",
-      "stars": 3705,
-      "forks": 708,
+      "stars": 3846,
+      "forks": 734,
       "language": "Go",
-      "lastUpdated": "2025-08-15T04:57:38Z"
+      "lastUpdated": "2025-11-01T04:12:56Z"
     },
     {
       "name": "File Browser",
       "file": "file-browser.md",
       "githubUrl": "https://github.com/filebrowser/filebrowser",
-      "stars": 30797,
-      "forks": 3448,
+      "stars": 31779,
+      "forks": 3549,
       "language": "Go",
-      "lastUpdated": "2025-08-15T04:18:50Z"
+      "lastUpdated": "2025-11-01T08:25:58Z"
     },
     {
       "name": "FileGator",
       "file": "file-gator.md",
       "githubUrl": "https://github.com/filegator/filegator",
-      "stars": 2713,
-      "forks": 420,
+      "stars": 2809,
+      "forks": 424,
       "language": "PHP",
-      "lastUpdated": "2025-08-14T15:16:31Z"
+      "lastUpdated": "2025-10-30T16:13:05Z"
     },
     {
       "name": "Firefly III",
       "file": "firefly-iii.md",
       "githubUrl": "https://github.com/firefly-iii/firefly-iii/",
-      "stars": 20057,
-      "forks": 1830,
+      "stars": 21327,
+      "forks": 1944,
       "language": "PHP",
-      "lastUpdated": "2025-08-15T02:49:14Z"
+      "lastUpdated": "2025-11-01T06:56:44Z"
     },
     {
       "name": "Flarum",
       "file": "flarum.md",
       "githubUrl": "https://github.com/flarum/flarum",
-      "stars": 15951,
-      "forks": 1640,
+      "stars": 16071,
+      "forks": 1661,
       "language": "PHP",
-      "lastUpdated": "2025-08-14T20:34:34Z"
+      "lastUpdated": "2025-10-31T19:43:31Z"
     },
     {
       "name": "Formbricks",
       "file": "formbricks.md",
       "githubUrl": "https://github.com/formbricks/formbricks",
-      "stars": 11091,
-      "forks": 1956,
+      "stars": 11477,
+      "forks": 2036,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-14T16:04:12Z"
+      "lastUpdated": "2025-10-31T19:54:27Z"
     },
     {
       "name": "Ghost",
       "file": "ghost.md",
       "githubUrl": "https://github.com/TryGhost/Ghost",
-      "stars": 50288,
-      "forks": 10994,
+      "stars": 51077,
+      "forks": 11131,
       "language": "JavaScript",
-      "lastUpdated": "2025-08-15T03:10:36Z"
+      "lastUpdated": "2025-11-01T06:39:03Z"
     },
     {
       "name": "Ghostfolio",
       "file": "ghostfolio.md",
       "githubUrl": "https://github.com/ghostfolio/ghostfolio",
-      "stars": 6327,
-      "forks": 705,
+      "stars": 6823,
+      "forks": 816,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-15T03:01:36Z"
+      "lastUpdated": "2025-11-01T08:07:07Z"
     },
     {
       "name": "Gitea",
       "file": "gitea.md",
       "githubUrl": "https://github.com/go-gitea/gitea",
-      "stars": 50123,
-      "forks": 5967,
+      "stars": 51742,
+      "forks": 6180,
       "language": "Go",
-      "lastUpdated": "2025-08-15T03:52:37Z"
+      "lastUpdated": "2025-11-01T07:55:26Z"
     },
     {
       "name": "GoMFT",
       "file": "gomft.md",
       "githubUrl": "https://github.com/starfleetcptn/gomft",
-      "stars": 623,
-      "forks": 23,
+      "stars": 638,
+      "forks": 27,
       "language": "templ",
-      "lastUpdated": "2025-08-13T22:46:52Z"
+      "lastUpdated": "2025-10-31T14:09:42Z"
     },
     {
       "name": "Grafana",
       "file": "grafana.md",
       "githubUrl": "https://github.com/grafana/grafana",
-      "stars": 69445,
-      "forks": 12851,
+      "stars": 70616,
+      "forks": 13136,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-15T04:07:38Z"
+      "lastUpdated": "2025-11-01T07:48:35Z"
     },
     {
       "name": "Grocy",
       "file": "grocy.md",
       "githubUrl": "https://github.com/grocy/grocy",
-      "stars": 8034,
-      "forks": 658,
+      "stars": 8328,
+      "forks": 681,
       "language": "Blade",
-      "lastUpdated": "2025-08-15T03:35:19Z"
+      "lastUpdated": "2025-10-31T19:22:03Z"
     },
     {
       "name": "Group Office",
       "file": "group-office.md",
       "githubUrl": "https://github.com/Intermesh/docker-groupoffice",
-      "stars": 33,
+      "stars": 35,
       "forks": 19,
       "language": "Dockerfile",
-      "lastUpdated": "2025-08-07T14:29:29Z"
+      "lastUpdated": "2025-10-27T15:26:18Z"
     },
     {
       "name": "Healthchecks",
       "file": "healthchecks.md",
       "githubUrl": "https://github.com/healthchecks/healthchecks",
-      "stars": 9323,
-      "forks": 921,
+      "stars": 9566,
+      "forks": 935,
       "language": "Python",
-      "lastUpdated": "2025-08-15T04:28:25Z"
+      "lastUpdated": "2025-10-31T14:44:22Z"
     },
     {
       "name": "HedgeDoc",
       "file": "hedge-doc.md",
       "githubUrl": "https://github.com/hedgedoc/hedgedoc",
-      "stars": 6329,
-      "forks": 475,
+      "stars": 6562,
+      "forks": 488,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-15T01:21:58Z"
+      "lastUpdated": "2025-10-31T08:39:31Z"
     },
     {
       "name": "hi.events",
       "file": "hi-events.md",
       "githubUrl": "https://github.com/HiEventsDev/hi.events",
-      "stars": 3071,
-      "forks": 417,
+      "stars": 3255,
+      "forks": 485,
       "language": "PHP",
-      "lastUpdated": "2025-08-14T17:13:27Z"
+      "lastUpdated": "2025-10-31T16:17:41Z"
     },
     {
       "name": "Hoarder",
       "file": "hoarder.md",
       "githubUrl": "https://github.com/hoarder-app/hoarder",
-      "stars": 19186,
-      "forks": 816,
+      "stars": 20718,
+      "forks": 904,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-15T03:34:30Z"
+      "lastUpdated": "2025-11-01T01:46:08Z"
     },
     {
       "name": "Homarr",
       "file": "homarr.md",
       "githubUrl": "https://github.com/homarr-labs/homarr",
-      "stars": 1551,
-      "forks": 89,
+      "stars": 1995,
+      "forks": 105,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-15T03:52:23Z"
+      "lastUpdated": "2025-11-01T07:21:18Z"
     },
     {
       "name": "HyperDX",
       "file": "hyper-dx.md",
       "githubUrl": "https://github.com/hyperdxio/hyperdx",
-      "stars": 8777,
-      "forks": 299,
+      "stars": 9004,
+      "forks": 322,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-15T04:31:45Z"
+      "lastUpdated": "2025-11-01T06:34:09Z"
     },
     {
       "name": "ILLA",
       "file": "illa.md",
       "githubUrl": "https://github.com/illacloud/illa-builder",
-      "stars": 12172,
-      "forks": 1176,
+      "stars": 12248,
+      "forks": 1185,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-15T04:37:34Z"
+      "lastUpdated": "2025-10-31T14:07:48Z"
     },
     {
       "name": "Immich",
       "file": "immich.md",
       "githubUrl": "https://github.com/immich-app/immich",
-      "stars": 72868,
-      "forks": 3843,
+      "stars": 83070,
+      "forks": 4350,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-15T04:57:26Z"
+      "lastUpdated": "2025-11-01T08:17:51Z"
     },
     {
       "name": "IT-Tools",
       "file": "it-tools.md",
       "githubUrl": "https://github.com/CorentinTh/it-tools",
-      "stars": 32061,
-      "forks": 3895,
+      "stars": 33788,
+      "forks": 4177,
       "language": "Vue",
-      "lastUpdated": "2025-08-15T04:34:24Z"
+      "lastUpdated": "2025-11-01T03:56:03Z"
     },
     {
       "name": "Kavita",
       "file": "kavita.md",
       "githubUrl": "https://github.com/Kareadita/Kavita",
-      "stars": 8623,
-      "forks": 471,
+      "stars": 9098,
+      "forks": 511,
       "language": "C#",
-      "lastUpdated": "2025-08-15T01:34:37Z"
+      "lastUpdated": "2025-11-01T03:54:57Z"
     },
     {
       "name": "Kener",
       "file": "kener.md",
       "githubUrl": "https://github.com/rajnandan1/kener",
-      "stars": 4221,
-      "forks": 200,
+      "stars": 4456,
+      "forks": 217,
       "language": "Svelte",
-      "lastUpdated": "2025-08-14T20:08:07Z"
+      "lastUpdated": "2025-10-31T14:00:52Z"
     },
     {
       "name": "Krayin",
       "file": "krayin.md",
       "githubUrl": "https://github.com/krayin/laravel-crm",
-      "stars": 16346,
-      "forks": 1146,
+      "stars": 19386,
+      "forks": 1253,
       "language": "PHP",
-      "lastUpdated": "2025-08-15T04:38:50Z"
+      "lastUpdated": "2025-11-01T07:33:53Z"
     },
     {
       "name": "Leantime",
       "file": "leantime.md",
       "githubUrl": "https://github.com/Leantime/leantime",
-      "stars": 5653,
-      "forks": 663,
+      "stars": 8555,
+      "forks": 826,
       "language": "PHP",
-      "lastUpdated": "2025-08-14T23:08:22Z"
+      "lastUpdated": "2025-11-01T02:05:05Z"
     },
     {
       "name": "LibreNMS",
       "file": "libre-nms.md",
       "githubUrl": "https://github.com/librenms/librenms",
-      "stars": 4340,
-      "forks": 2480,
+      "stars": 4432,
+      "forks": 2529,
       "language": "PHP",
-      "lastUpdated": "2025-08-14T19:13:15Z"
+      "lastUpdated": "2025-10-31T21:00:50Z"
     },
     {
       "name": "listmonk",
       "file": "listmonk.md",
       "githubUrl": "https://github.com/knadh/listmonk",
-      "stars": 17603,
-      "forks": 1712,
+      "stars": 18105,
+      "forks": 1796,
       "language": "Go",
-      "lastUpdated": "2025-08-15T03:31:46Z"
+      "lastUpdated": "2025-11-01T07:01:11Z"
     },
     {
       "name": "LogChef",
       "file": "logchef.md",
       "githubUrl": "https://github.com/mr-karan/logchef",
-      "stars": 452,
-      "forks": 25,
+      "stars": 480,
+      "forks": 27,
       "language": "Vue",
-      "lastUpdated": "2025-08-13T07:56:16Z"
+      "lastUpdated": "2025-10-27T23:33:18Z"
     },
     {
       "name": "Lychee",
       "file": "lychee.md",
       "githubUrl": "https://github.com/electerious/Lychee",
-      "stars": 6345,
-      "forks": 670,
+      "stars": 6352,
+      "forks": 669,
       "language": "PHP",
-      "lastUpdated": "2025-08-14T19:49:13Z"
+      "lastUpdated": "2025-10-28T17:50:15Z"
     },
     {
       "name": "Maybe",
       "file": "maybe.md",
       "githubUrl": "https://github.com/maybe-finance/maybe",
-      "stars": 52968,
-      "forks": 4311,
+      "stars": 53349,
+      "forks": 4558,
       "language": "Ruby",
-      "lastUpdated": "2025-08-15T04:57:14Z"
+      "lastUpdated": "2025-11-01T05:07:00Z"
     },
     {
       "name": "memos",
       "file": "memos.md",
       "githubUrl": "https://github.com/usememos/memos",
-      "stars": 43610,
-      "forks": 3107,
+      "stars": 45573,
+      "forks": 3261,
       "language": "Go",
-      "lastUpdated": "2025-08-15T03:05:05Z"
+      "lastUpdated": "2025-11-01T07:20:14Z"
     },
     {
       "name": "Metabase",
       "file": "metabase.md",
       "githubUrl": "https://github.com/metabase/metabase",
-      "stars": 43261,
-      "forks": 5801,
+      "stars": 44379,
+      "forks": 5976,
       "language": "Clojure",
-      "lastUpdated": "2025-08-15T04:05:06Z"
+      "lastUpdated": "2025-11-01T08:25:25Z"
     },
     {
       "name": "Metube",
       "file": "metube.md",
       "githubUrl": "https://github.com/alexta69/metube",
-      "stars": 9739,
-      "forks": 653,
-      "language": "TypeScript",
-      "lastUpdated": "2025-08-15T04:14:12Z"
+      "stars": 10564,
+      "forks": 707,
+      "language": "Python",
+      "lastUpdated": "2025-11-01T08:16:42Z"
     },
     {
       "name": "Monica",
       "file": "monica.md",
       "githubUrl": "https://github.com/monicahq/monica",
-      "stars": 23275,
-      "forks": 2338,
+      "stars": 23565,
+      "forks": 2374,
       "language": "PHP",
-      "lastUpdated": "2025-08-15T00:54:57Z"
+      "lastUpdated": "2025-11-01T05:01:33Z"
     },
     {
       "name": "Nginx Proxy Manager",
       "file": "nginx-proxy-manager.md",
       "githubUrl": "https://github.com/NginxProxyManager/nginx-proxy-manager",
-      "stars": 28010,
-      "forks": 3214,
+      "stars": 29103,
+      "forks": 3350,
       "language": "JavaScript",
-      "lastUpdated": "2025-08-15T01:21:31Z"
+      "lastUpdated": "2025-11-01T07:55:05Z"
     },
     {
       "name": "NocoDB",
       "file": "nocodb.md",
       "githubUrl": "https://github.com/nocodb/nocodb",
-      "stars": 56429,
-      "forks": 4089,
+      "stars": 58514,
+      "forks": 4319,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-15T04:28:28Z"
+      "lastUpdated": "2025-11-01T06:54:44Z"
     },
     {
       "name": "Odoo",
       "file": "odoo.md",
       "githubUrl": "https://github.com/odoo/odoo",
-      "stars": 45017,
-      "forks": 29097,
+      "stars": 46985,
+      "forks": 30236,
       "language": "Python",
-      "lastUpdated": "2025-08-15T03:38:37Z"
+      "lastUpdated": "2025-11-01T07:15:29Z"
     },
     {
       "name": "Omni Tools",
       "file": "omni-tools.md",
       "githubUrl": "https://github.com/iib0011/omni-tools",
-      "stars": 6187,
-      "forks": 301,
+      "stars": 7384,
+      "forks": 432,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-15T00:06:16Z"
+      "lastUpdated": "2025-11-01T08:04:23Z"
     },
     {
       "name": "OpenStatus",
       "file": "open-status.md",
       "githubUrl": "https://github.com/openstatushq/openstatus",
-      "stars": 7508,
-      "forks": 485,
+      "stars": 7912,
+      "forks": 511,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-15T04:57:39Z"
+      "lastUpdated": "2025-11-01T02:43:18Z"
     },
     {
       "name": "Organizr",
       "file": "organizr.md",
       "githubUrl": "https://github.com/causefx/Organizr",
-      "stars": 5531,
-      "forks": 306,
+      "stars": 5593,
+      "forks": 311,
       "language": "PHP",
-      "lastUpdated": "2025-08-14T17:03:30Z"
+      "lastUpdated": "2025-10-31T15:09:26Z"
     },
     {
       "name": "Paperless-ngx",
       "file": "paperless-ngx.md",
       "githubUrl": "https://github.com/paperless-ngx/paperless-ngx",
-      "stars": 30526,
-      "forks": 1842,
+      "stars": 33964,
+      "forks": 2117,
       "language": "Python",
-      "lastUpdated": "2025-08-15T05:03:23Z"
+      "lastUpdated": "2025-11-01T07:17:28Z"
     },
     {
       "name": "Papra",
       "file": "papra.md",
       "githubUrl": "https://github.com/papra-hq/papra",
-      "stars": 2169,
-      "forks": 119,
+      "stars": 2564,
+      "forks": 131,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-14T15:25:27Z"
+      "lastUpdated": "2025-10-31T19:37:01Z"
     },
     {
       "name": "Penpot",
       "file": "penpot.md",
       "githubUrl": "https://github.com/penpot/penpot",
-      "stars": 39575,
-      "forks": 2114,
+      "stars": 40976,
+      "forks": 2265,
       "language": "Clojure",
-      "lastUpdated": "2025-08-15T03:11:50Z"
+      "lastUpdated": "2025-10-31T22:45:55Z"
     },
     {
       "name": "phpMyAdmin",
       "file": "phpmyadmin.md",
       "githubUrl": "https://github.com/phpmyadmin/phpmyadmin",
-      "stars": 7588,
-      "forks": 3487,
+      "stars": 7685,
+      "forks": 3510,
       "language": "PHP",
-      "lastUpdated": "2025-08-14T23:17:43Z"
+      "lastUpdated": "2025-10-31T22:24:11Z"
     },
     {
       "name": "Pinchflat",
       "file": "pinchflat.md",
       "githubUrl": "https://github.com/kieraneglin/pinchflat",
-      "stars": 3498,
-      "forks": 83,
+      "stars": 4022,
+      "forks": 94,
       "language": "Elixir",
-      "lastUpdated": "2025-08-15T00:09:34Z"
+      "lastUpdated": "2025-11-01T02:14:13Z"
     },
     {
       "name": "QloApps",
       "file": "qloapps.md",
       "githubUrl": "https://github.com/Qloapps/QloApps",
-      "stars": 7037,
-      "forks": 598,
+      "stars": 10263,
+      "forks": 662,
       "language": "PHP",
-      "lastUpdated": "2025-08-15T04:38:49Z"
+      "lastUpdated": "2025-11-01T07:33:52Z"
     },
     {
       "name": "RALLLY",
       "file": "rallly.md",
       "githubUrl": "https://github.com/lukevella/rallly",
-      "stars": 4590,
-      "forks": 451,
+      "stars": 4765,
+      "forks": 462,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-14T22:48:11Z"
+      "lastUpdated": "2025-11-01T02:38:45Z"
     },
     {
       "name": "Rundeck",
       "file": "rundeck.md",
       "githubUrl": "https://github.com/rundeck/rundeck",
-      "stars": 5867,
-      "forks": 955,
+      "stars": 5927,
+      "forks": 958,
       "language": "Groovy",
-      "lastUpdated": "2025-08-14T17:42:12Z"
+      "lastUpdated": "2025-10-31T10:32:08Z"
     },
     {
       "name": "Snipe-IT",
       "file": "snipe-it.md",
       "githubUrl": "https://github.com/snipe/snipe-it",
-      "stars": 12588,
-      "forks": 3509,
+      "stars": 12914,
+      "forks": 3615,
       "language": "PHP",
-      "lastUpdated": "2025-08-15T02:36:30Z"
+      "lastUpdated": "2025-10-31T14:03:11Z"
     },
     {
       "name": "Stirling PDF",
       "file": "stirling-pdf.md",
       "githubUrl": "https://github.com/Stirling-Tools/Stirling-PDF",
-      "stars": 64336,
-      "forks": 5487,
+      "stars": 69394,
+      "forks": 5865,
       "language": "Java",
-      "lastUpdated": "2025-08-15T04:16:29Z"
+      "lastUpdated": "2025-11-01T08:10:54Z"
     },
     {
       "name": "Tandoor",
       "file": "tandoor.md",
       "githubUrl": "https://github.com/TandoorRecipes/recipes",
-      "stars": 7155,
-      "forks": 686,
+      "stars": 7391,
+      "forks": 717,
       "language": "HTML",
-      "lastUpdated": "2025-08-15T00:04:21Z"
+      "lastUpdated": "2025-11-01T06:54:51Z"
     },
     {
       "name": "Teable",
       "file": "teable.md",
       "githubUrl": "https://github.com/teableio/teable",
-      "stars": 19199,
-      "forks": 985,
+      "stars": 20229,
+      "forks": 1133,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-15T04:49:56Z"
+      "lastUpdated": "2025-11-01T08:08:01Z"
+    },
+    {
+      "name": "Termix",
+      "file": "termix.md",
+      "githubUrl": "https://github.com/Termix-SSH/Termix",
+      "stars": 6127,
+      "forks": 236,
+      "language": "TypeScript",
+      "lastUpdated": "2025-11-01T07:22:31Z"
     },
     {
       "name": "Tianji",
       "file": "tianji.md",
       "githubUrl": "https://github.com/msgbyte/tianji",
-      "stars": 2466,
-      "forks": 143,
+      "stars": 2810,
+      "forks": 176,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-14T16:24:18Z"
+      "lastUpdated": "2025-10-30T22:22:06Z"
     },
     {
       "name": "Typebot",
       "file": "typebot.md",
       "githubUrl": "https://github.com/baptisteArno/typebot.io",
-      "stars": 9072,
-      "forks": 2675,
+      "stars": 9319,
+      "forks": 2817,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-14T19:34:49Z"
+      "lastUpdated": "2025-10-31T21:07:37Z"
     },
     {
       "name": "Umami",
       "file": "umami.md",
       "githubUrl": "https://github.com/umami-software/umami",
-      "stars": 29876,
-      "forks": 5376,
+      "stars": 31369,
+      "forks": 5713,
       "language": "TypeScript",
-      "lastUpdated": "2025-08-15T04:40:08Z"
+      "lastUpdated": "2025-11-01T06:15:27Z"
     },
     {
       "name": "Uptime Kuma",
       "file": "uptime-kuma.md",
       "githubUrl": "https://github.com/louislam/uptime-kuma",
-      "stars": 73238,
-      "forks": 6517,
+      "stars": 77553,
+      "forks": 6859,
       "language": "JavaScript",
-      "lastUpdated": "2025-08-15T03:42:42Z"
+      "lastUpdated": "2025-11-01T07:45:32Z"
     },
     {
       "name": "Uptrace",
       "file": "uptrace.md",
       "githubUrl": "https://github.com/uptrace/uptrace",
-      "stars": 3810,
-      "forks": 196,
+      "stars": 3916,
+      "forks": 201,
       "language": "Go",
-      "lastUpdated": "2025-08-15T04:10:50Z"
+      "lastUpdated": "2025-10-30T14:56:14Z"
     },
     {
       "name": "Vaultwarden",
       "file": "vaultwarden.md",
       "githubUrl": "https://github.com/dani-garcia/vaultwarden",
-      "stars": 47932,
-      "forks": 2264,
+      "stars": 50372,
+      "forks": 2351,
       "language": "Rust",
-      "lastUpdated": "2025-08-15T04:06:02Z"
+      "lastUpdated": "2025-11-01T07:58:38Z"
     },
     {
       "name": "Vert",
       "file": "vert.md",
       "githubUrl": "https://github.com/VERT-sh/VERT",
-      "stars": 5244,
-      "forks": 224,
+      "stars": 8621,
+      "forks": 410,
       "language": "Svelte",
-      "lastUpdated": "2025-08-14T14:00:17Z"
+      "lastUpdated": "2025-11-01T08:24:38Z"
     },
     {
       "name": "Vikunja",
       "file": "vikunja.md",
       "githubUrl": "https://github.com/go-vikunja/vikunja",
-      "stars": 2155,
-      "forks": 188,
+      "stars": 2557,
+      "forks": 230,
       "language": "Go",
-      "lastUpdated": "2025-08-15T04:47:17Z"
+      "lastUpdated": "2025-10-31T21:28:23Z"
     },
     {
       "name": "Wger",
       "file": "wger.md",
       "githubUrl": "https://github.com/wger-project/wger",
-      "stars": 4985,
-      "forks": 722,
+      "stars": 5290,
+      "forks": 776,
       "language": "Python",
-      "lastUpdated": "2025-08-15T01:04:57Z"
+      "lastUpdated": "2025-11-01T01:02:30Z"
     },
     {
       "name": "Wiki.js",
       "file": "wiki-js.md",
       "githubUrl": "https://github.com/Requarks/wiki",
-      "stars": 26832,
-      "forks": 3013,
+      "stars": 27236,
+      "forks": 3085,
       "language": "Vue",
-      "lastUpdated": "2025-08-14T23:48:30Z"
+      "lastUpdated": "2025-11-01T01:29:05Z"
     },
     {
       "name": "Wordpress",
       "file": "wordpress.md",
       "githubUrl": "https://github.com/WordPress/WordPress",
-      "stars": 20400,
-      "forks": 12839,
+      "stars": 20597,
+      "forks": 12918,
       "language": "PHP",
-      "lastUpdated": "2025-08-14T23:13:04Z"
+      "lastUpdated": "2025-11-01T04:48:11Z"
     },
     {
       "name": "Yamtrack",
       "file": "yamtrack.md",
       "githubUrl": "https://github.com/FuzzyGrim/Yamtrack",
-      "stars": 1171,
-      "forks": 48,
+      "stars": 1448,
+      "forks": 70,
       "language": "Python",
-      "lastUpdated": "2025-08-14T23:24:17Z"
+      "lastUpdated": "2025-10-31T16:16:15Z"
     },
     {
       "name": "ZABBIX",
       "file": "zabbix.md",
       "githubUrl": "https://github.com/zabbix/zabbix",
-      "stars": 5153,
-      "forks": 1084,
+      "stars": 5324,
+      "forks": 1116,
       "language": "PHP",
-      "lastUpdated": "2025-08-14T23:00:36Z"
+      "lastUpdated": "2025-11-01T04:20:47Z"
     },
     {
       "name": "Zoomla",
       "file": "zoomla.md",
       "githubUrl": "https://github.com/joomla/joomla-cms",
-      "stars": 4943,
-      "forks": 3715,
+      "stars": 4980,
+      "forks": 3738,
       "language": "PHP",
-      "lastUpdated": "2025-08-14T23:14:50Z"
+      "lastUpdated": "2025-11-01T04:44:29Z"
     }
   ]
 }
