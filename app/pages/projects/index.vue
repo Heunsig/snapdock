@@ -111,7 +111,7 @@ function reset() {
         <UModal v-model:open="isOpen">
           <template #content>
             <UCard>
-              <UButtonGroup 
+              <UFieldGroup 
                 orientation="horizontal"
               >
                 <UButton 
@@ -138,7 +138,7 @@ function reset() {
                   size="xl"
                 >
                 </USelect>
-              </UButtonGroup>
+              </UFieldGroup>
 
               <template #footer>
                 <div class="flex justify-end">
@@ -163,7 +163,7 @@ function reset() {
         </UModal>
       </div>
       <div class="hidden md:flex justify-end lg:col-span-2">
-        <UButtonGroup 
+        <UFieldGroup 
           orientation="horizontal"
         >
           <UButton 
@@ -190,7 +190,7 @@ function reset() {
             variant="subtle"
           >
           </USelect>
-        </UButtonGroup>
+        </UFieldGroup>
         <UButton 
           @click="() => reset()"
           icon="i-heroicons-solid-refresh"
