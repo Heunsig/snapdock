@@ -1,0 +1,68 @@
+docs(projects): add PhotoPrism guide
+chore(skills): add snapdock-guide skill for demo-focused guide creation
+chore(github-stars-report): update star and fork counts for multiple projects
+docs(projects): add metadata-remote guide
+chore(dependencies): update @nuxt/ui to v4.1.0
+chore(github-stars-report): update star and fork counts for multiple projects
+docs(projects): add n8n guide
+chore(github-stars-report): update project star and fork counts
+docs(projects): add Alexandrie project documentation and assets
+docs(projects): add termix docker guide
+feat(firefly-iii): add screenshots to project documentation
+docs(README): add main page screenshot
+docs(README): add instructions for fetching GitHub stars
+feat: only the currently expanded image is displayed, improving performance and user experience
+feat(projects): implement swipe navigation for image gallery
+docs(yamtrack): remove outdated screenshot from Yamtrack project
+chore: upgrade Nuxt UI to v3
+docs(kener): add screenshots for Kener project
+feat(app): add loading indicator to the main layout
+feat(projects): add Gitea project details and media assets
+feat(projects): add Yamtrack project details and media assets
+docs(projects): update project details with GitHub links and tags
+feat(github-stars): integrate GitHub stars display in project details
+feat(projects): display GitHub stars for projects
+feat(github-stars): add script to fetch GitHub stars for projects
+docs(kavita): add additional tags and screenshots
+docs(hyperdx): update updatedAt timestamp
+docs(hyperdx): add screenshots for Hyper DX project
+docs(memos): add screenshots for Memos project
+fix(projects): add tabindex to project links for accessibility
+feat(layout): add fallback UI for color mode selection
+docs(projects): add tags and screenshots for Listmonk project
+fix(projects): enhance modal styles and image container
+fix(ProsePre): add text color for plain text
+style(ProsePre): update background color to neutral-100
+refactor(projects): enhance image handling and update styles
+fix(config): change primary color to yellow
+feat(ui): implement color mode selection
+refactor(projects): simplify data fetching for projects
+docs(projects): add tags to Vikunja project
+docs(projects): add tags to logchef project
+docs(projects): add screenshots for Vikunja project
+docs(projects): add logchef guide
+chore(dependencies): update package versions for Nuxt and related libraries
+refactor: adopt Nuxt 4 folder structure
+chore: upgrade to Nuxt 4
+feat(directus): add screenshots for Directus project
+feat(projects): display formatted creation and update dates
+docs(metoro): add multiple screenshots
+docs(docmost): update updatedAt timestamp
+chore(cursorrules): add commit message guidelines and conventions
+docs(docmost): add multiple screenshots to project documentation
+chore(dependencies): update package versions in package.json and pnpm-lock.yaml
+docs(open-status): update updatedAt and add screenshots
+docs(aptabase): add screenshots
+docs(readme): add instructions to open the browser after starting the server
+docs(readme): update project name and simplify setup instructions
+docs(hedge-doc): add screenshots
+docs(corrot): add screenshots
+docs(projects): add teable guide
+docs(projects): add papra guide
+docs(projects): add vert guide
+docs(eigenfocus): add screenshots
+docs(projects): add it-tools guide
+chore: update timestamps for omni-tools project
+docs(projects): add omni-tools guide
+docs(checkmate): add screenshots to Checkmate project
+feat(docuseal): add document and signing tags
