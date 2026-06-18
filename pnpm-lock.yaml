@@ -14,6 +14,9 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.11.4
         version: 0.11.4(db0@0.3.4(better-sqlite3@12.11.1))(ioredis@5.11.1)(magicast@0.5.3)(vite@7.3.5(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.48.0)(yaml@2.9.0))
+      '@nuxt/icon':
+        specifier: ^2.2.3
+        version: 2.2.3(magicast@0.5.3)(vite@7.3.5(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.48.0)(yaml@2.9.0))(vue@3.5.38(typescript@5.9.3))
       '@nuxt/image':
         specifier: 1.10.0
         version: 1.10.0(db0@0.3.4(better-sqlite3@12.11.1))(ioredis@5.11.1)(magicast@0.5.3)(srvx@0.11.16)
@@ -47,21 +50,12 @@ importers:
       dayjs:
         specifier: ^1.11.13
         version: 1.11.21
-      fonts:
-        specifier: 0.0.2
-        version: 0.0.2
       nuxt:
         specifier: ^4.4.8
         version: 4.4.8(@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.7))(@babel/plugin-syntax-typescript@7.29.7(@babel/core@7.29.7))(@parcel/watcher@2.5.6)(@vue/compiler-sfc@3.5.38)(better-sqlite3@12.11.1)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.11.1))(ioredis@5.11.1)(lightningcss@1.32.0)(magicast@0.5.3)(rollup-plugin-visualizer@7.0.1(rollup@4.62.0))(rollup@4.62.0)(srvx@0.11.16)(terser@5.48.0)(typescript@5.9.3)(vite@7.3.5(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.48.0)(yaml@2.9.0))(yaml@2.9.0)
       tailwind-merge:
         specifier: ^3.2.0
         version: 3.6.0
-      vue:
-        specifier: latest
-        version: 3.5.38(typescript@5.9.3)
-      vue-router:
-        specifier: latest
-        version: 5.1.0(@vue/compiler-sfc@3.5.38)(vite@7.3.5(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.48.0)(yaml@2.9.0))(vue@3.5.38(typescript@5.9.3))
       vue-word-highlighter:
         specifier: ^1.2.5
         version: 1.2.6(vue@3.5.38(typescript@5.9.3))
@@ -75,9 +69,6 @@ importers:
       '@iconify-json/mdi':
         specifier: ^1.2.3
         version: 1.2.3
-      '@nuxt/icon':
-        specifier: ^2.2.3
-        version: 2.2.3(magicast@0.5.3)(vite@7.3.5(jiti@2.7.0)(lightningcss@1.32.0)(terser@5.48.0)(yaml@2.9.0))(vue@3.5.38(typescript@5.9.3))
       '@nuxtjs/color-mode':
         specifier: ^3.5.2
         version: 3.5.2(magicast@0.5.3)
@@ -3368,9 +3359,6 @@ packages:
     peerDependenciesMeta:
       vite:
         optional: true
-
-  fonts@0.0.2:
-    resolution: {integrity: sha512-tKwxaeJZb6w0U1yNVDdjtuYaIUljA4qjRboSXvoybDFKFkX12tZ4wxRsi50X7s3MK80I8mka8uROPZeGQ2A8xg==}
 
   for-each@0.3.5:
     resolution: {integrity: sha512-dKx12eRCVIzqCxFGplyFKJMPvLEWgmNtUrpTiJIR5u97zEhRG8ySrtboPHZXx7daLxQVrl643cTzbab2tkQjxg==}
@@ -9480,8 +9468,6 @@ snapshots:
       - idb-keyval
       - ioredis
       - uploadthing
-
-  fonts@0.0.2: {}
 
   for-each@0.3.5:
     dependencies:
