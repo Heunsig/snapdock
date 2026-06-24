@@ -7,8 +7,8 @@ docker: 'https://docs.saleor.io/setup/docker-compose'
 github: 'https://github.com/saleor/saleor-platform'
 tags: ["e-commerce"]
 published: false
-createdAt: "2026-03-01T00:00:00Z"
-updatedAt: "2026-03-01T00:00:00Z"
+createdAt: "2026-06-24T00:00:00Z"
+updatedAt: "2026-06-24T00:00:00Z"
 ---
 
 ## Getting Started
