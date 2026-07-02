@@ -7,8 +7,8 @@ docker: 'https://www.keycloak.org/getting-started/getting-started-docker'
 github: 'https://github.com/keycloak/keycloak'
 tags: ["authentication", "authorization", "identity", "IAM"]
 published: false
-createdAt: "2026-07-01T00:00:00Z"
-updatedAt: "2026-07-01T00:00:00Z"
+createdAt: "2026-07-02T00:00:00Z"
+updatedAt: "2026-07-02T00:00:00Z"
 ---
 
 ## Getting Started
